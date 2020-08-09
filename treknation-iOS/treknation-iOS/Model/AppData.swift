@@ -7,4 +7,16 @@
 //
 
 import Foundation
+import UIKit
 //
+class AppData{
+    var title: String
+    var overview: String
+    var isOpen:Bool = false
+    
+    
+    init(title: String, overview :String) {
+        self.title = title;
+        self.overview = overview;
+    }
+}

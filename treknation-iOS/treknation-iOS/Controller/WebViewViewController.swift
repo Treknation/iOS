@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 
 class WebViewViewController: UIViewController {
+    @IBOutlet weak var backgroundView: UIView!
 
     @IBOutlet weak var webView: WKWebView!
     var linkURL : String!

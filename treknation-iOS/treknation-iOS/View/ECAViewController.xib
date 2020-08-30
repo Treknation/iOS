@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECAViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="JnR-hv-bWY" id="fSl-IT-wqZ"/>
+                <outlet property="isCompletedBtn" destination="UYI-Df-svQ" id="ft1-qL-3xb"/>
+                <outlet property="processingTimeBtn" destination="Rgm-b6-6Uj" id="NP6-eH-scq"/>
+                <outlet property="submitBtn" destination="JTG-Cn-Vac" id="kbI-Pc-PYF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnR-hv-bWY">
-                    <rect key="frame" x="13" y="46" width="388" height="1245"/>
+                    <rect key="frame" x="13" y="44" width="386" height="1251"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your ECA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU3-SV-ZPS">
@@ -46,7 +50,7 @@
                     <rect key="frame" x="0.0" y="94" width="414" height="1216"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy5-7u-izc" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is ECA?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-FK-Qfz">
                                     <rect key="frame" x="32" y="17" width="352" height="21"/>
@@ -62,16 +66,16 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbB-GC-Ig3">
                                     <rect key="frame" x="32" y="44" width="352" height="325"/>
-                                    <mutableString key="text">An Educational Credential Assessment (ECA) is used to verify that your foreign degree, diploma, or certificate (or other proof of your credential) is valid and equal to a Canadian one. For example, an ECA will determine if an applicant’s foreign Master’s degree is of the same standard when compared to a Canadian Master’s degree. You would need an ECA only if you have a non-Canadian degree.
+                                    <string key="text">An Educational Credential Assessment (ECA) is used to verify that your foreign degree, diploma, or certificate (or other proof of your credential) is valid and equal to a Canadian one. For example, an ECA will determine if an applicant’s foreign Master’s degree is of the same standard when compared to a Canadian Master’s degree. You would need an ECA only if you have a non-Canadian degree.
 
-In most cases, you will only need an assessment of your highest educational qualification but you can get an assessment for 2 or more credentials if it increases your CRS score. If your post-secondary credentials do not have a Canadian equivalent then you can get your secondary credentials assessed. </mutableString>
+In most cases, you will only need an assessment of your highest educational qualification but you can get an assessment for 2 or more credentials if it increases your CRS score. If your post-secondary credentials do not have a Canadian equivalent then you can get your secondary credentials assessed. </string>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="wU2-qN-CxV">
                                     <rect key="frame" x="32" y="423" width="352" height="592"/>
-                                    <mutableString key="text">You must get your assessment either from an Organization or from a Body designated by the IRCC. They will give you a report that tells you what your education is equal to in Canada. Make sure that the assessment is issued for Immigration Purpose since there are multiple types of ECA
+                                    <string key="text">You must get your assessment either from an Organization or from a Body designated by the IRCC. They will give you a report that tells you what your education is equal to in Canada. Make sure that the assessment is issued for Immigration Purpose since there are multiple types of ECA
 
 Designated Organization:
 
@@ -87,18 +91,20 @@ Designated Profession Bodies.
 
 • Pharmacy Examining Board of Canada (professional body for pharmacists) - For pharmacists (NOC 3131). 
 
-An ECA is valid for a period of 5 years from the date it is issued. </mutableString>
+An ECA is valid for a period of 5 years from the date it is issued. </string>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTG-Cn-Vac">
-                                    <rect key="frame" x="32" y="1082" width="329" height="38"/>
-                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTG-Cn-Vac">
+                                    <rect key="frame" x="32" y="1088" width="329" height="45"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="38" id="DUU-jk-NTZ"/>
+                                        <constraint firstAttribute="height" constant="45" id="DUU-jk-NTZ"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Lpp-zG-aqf"/>
                                     </constraints>
-                                    <state key="normal" title="How to Submit for EE &gt;">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="     How to Submit for EE">
                                         <color key="titleColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
@@ -107,7 +113,7 @@ An ECA is valid for a period of 5 years from the date it is issued. </mutableStr
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-Df-svQ">
-                                    <rect key="frame" x="32" y="1151" width="329" height="35"/>
+                                    <rect key="frame" x="32" y="1159" width="329" height="35"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="ELe-lv-O2M"/>
@@ -120,13 +126,14 @@ An ECA is valid for a period of 5 years from the date it is issued. </mutableStr
                                         <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="kQl-zu-5WD"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgm-b6-6Uj">
-                                    <rect key="frame" x="32" y="1033" width="329" height="38"/>
-                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgm-b6-6Uj">
+                                    <rect key="frame" x="32" y="1033" width="329" height="45"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="38" id="XOP-Se-FEF"/>
+                                        <constraint firstAttribute="height" constant="45" id="3QY-UJ-IZU"/>
                                     </constraints>
-                                    <state key="normal" title="Cost and Proccesing Time &gt;">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="     Cost and Proccesing Time ">
                                         <color key="titleColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
@@ -134,23 +141,38 @@ An ECA is valid for a period of 5 years from the date it is issued. </mutableStr
                                         <action selector="showCostandProcessingtimeVC:" destination="-1" eventType="touchUpInside" id="5Md-du-RUz"/>
                                     </connections>
                                 </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open_row" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-xH-Eij">
+                                    <rect key="frame" x="322" y="1043" width="24" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="5IT-5J-0XF"/>
+                                        <constraint firstAttribute="height" constant="25" id="t60-lJ-LrY"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="open_row" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-2z-3Yh">
+                                    <rect key="frame" x="322" y="1098" width="24" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="3hw-lx-zfX"/>
+                                        <constraint firstAttribute="height" constant="25" id="AT7-7M-JOR"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="KjL-7S-pNL" firstAttribute="top" secondItem="IbB-GC-Ig3" secondAttribute="bottom" constant="29" id="2dZ-Gi-Psr"/>
+                                <constraint firstItem="UYI-Df-svQ" firstAttribute="top" secondItem="JTG-Cn-Vac" secondAttribute="bottom" constant="26" id="5im-rA-ndH"/>
                                 <constraint firstItem="JTG-Cn-Vac" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="717-Me-tgT"/>
-                                <constraint firstAttribute="height" constant="1200" id="7Cm-F2-0Oj"/>
+                                <constraint firstAttribute="height" constant="1400" id="7Cm-F2-0Oj"/>
                                 <constraint firstAttribute="trailing" secondItem="KjL-7S-pNL" secondAttribute="trailing" constant="30" id="Axk-Mr-cp1"/>
                                 <constraint firstItem="wU2-qN-CxV" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="DFa-H5-Ejo"/>
                                 <constraint firstAttribute="trailing" secondItem="IbB-GC-Ig3" secondAttribute="trailing" constant="30" id="IMP-Od-XLs"/>
-                                <constraint firstItem="UYI-Df-svQ" firstAttribute="top" secondItem="JTG-Cn-Vac" secondAttribute="bottom" constant="31" id="NWL-wh-MCE"/>
+                                <constraint firstItem="sa3-xH-Eij" firstAttribute="top" secondItem="wU2-qN-CxV" secondAttribute="bottom" constant="28" id="Os3-FK-Bmc"/>
                                 <constraint firstItem="KjL-7S-pNL" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="Qnn-Pb-UDR"/>
                                 <constraint firstAttribute="trailing" secondItem="UYI-Df-svQ" secondAttribute="trailing" constant="53" id="U1Q-RP-zly"/>
-                                <constraint firstAttribute="bottom" secondItem="UYI-Df-svQ" secondAttribute="bottom" constant="14" id="U3Z-UK-ejp"/>
                                 <constraint firstAttribute="trailing" secondItem="Uk9-FK-Qfz" secondAttribute="trailing" constant="30" id="VrD-2B-FRO"/>
                                 <constraint firstAttribute="trailing" secondItem="wU2-qN-CxV" secondAttribute="trailing" constant="30" id="Xny-B0-xlb"/>
                                 <constraint firstItem="IbB-GC-Ig3" firstAttribute="top" secondItem="Uk9-FK-Qfz" secondAttribute="bottom" constant="6" id="Xyf-hT-JSB"/>
-                                <constraint firstItem="JTG-Cn-Vac" firstAttribute="top" secondItem="Rgm-b6-6Uj" secondAttribute="bottom" constant="11" id="cd8-Lu-ctB"/>
+                                <constraint firstItem="JTG-Cn-Vac" firstAttribute="top" secondItem="Rgm-b6-6Uj" secondAttribute="bottom" constant="10" id="axp-di-C1c"/>
+                                <constraint firstAttribute="trailing" secondItem="sa3-xH-Eij" secondAttribute="trailing" constant="68" id="btr-9w-ipS"/>
                                 <constraint firstItem="Rgm-b6-6Uj" firstAttribute="top" secondItem="wU2-qN-CxV" secondAttribute="bottom" constant="18" id="dLH-8i-tt4"/>
                                 <constraint firstItem="Rgm-b6-6Uj" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="ebo-5b-52i"/>
                                 <constraint firstItem="Uk9-FK-Qfz" firstAttribute="top" secondItem="Oy5-7u-izc" secondAttribute="top" constant="17" id="eoM-gW-uCX"/>
@@ -158,7 +180,9 @@ An ECA is valid for a period of 5 years from the date it is issued. </mutableStr
                                 <constraint firstAttribute="trailing" secondItem="JTG-Cn-Vac" secondAttribute="trailing" constant="53" id="haI-8X-qO6"/>
                                 <constraint firstAttribute="trailing" secondItem="Rgm-b6-6Uj" secondAttribute="trailing" constant="53" id="iZs-sc-l1b"/>
                                 <constraint firstItem="UYI-Df-svQ" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="los-sJ-tbA"/>
+                                <constraint firstAttribute="trailing" secondItem="CYg-2z-3Yh" secondAttribute="trailing" constant="68" id="mGn-z5-Uza"/>
                                 <constraint firstItem="wU2-qN-CxV" firstAttribute="top" secondItem="KjL-7S-pNL" secondAttribute="bottom" constant="4" id="saU-Ih-30w"/>
+                                <constraint firstItem="CYg-2z-3Yh" firstAttribute="top" secondItem="Rgm-b6-6Uj" secondAttribute="bottom" constant="20" id="yHf-YM-BYc"/>
                                 <constraint firstItem="IbB-GC-Ig3" firstAttribute="leading" secondItem="Oy5-7u-izc" secondAttribute="leading" constant="32" id="z0e-Dx-MWi"/>
                             </constraints>
                         </view>
@@ -171,31 +195,30 @@ An ECA is valid for a period of 5 years from the date it is issued. </mutableStr
                         <constraint firstAttribute="trailing" secondItem="Oy5-7u-izc" secondAttribute="trailing" id="jkS-X7-MHb"/>
                         <constraint firstItem="Oy5-7u-izc" firstAttribute="leading" secondItem="pby-bc-myx" secondAttribute="leading" id="n8O-MB-0Wh"/>
                     </constraints>
-                    <viewLayoutGuide key="contentLayoutGuide" id="xU6-ty-UsY"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="beb-g2-mE1"/>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="gU3-SV-ZPS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="6go-ZP-SHi"/>
-                <constraint firstItem="JnR-hv-bWY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="Ac7-fD-NQp"/>
                 <constraint firstItem="pby-bc-myx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ByA-fF-tov"/>
+                <constraint firstItem="JnR-hv-bWY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CMw-tn-ag8"/>
                 <constraint firstItem="JnR-hv-bWY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="Jho-7p-nAx"/>
+                <constraint firstAttribute="bottom" secondItem="JnR-hv-bWY" secondAttribute="bottom" constant="15" id="Png-zm-iXj"/>
                 <constraint firstItem="pby-bc-myx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="Rnz-pp-DhB"/>
                 <constraint firstItem="gU3-SV-ZPS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bf0-Nq-z8d"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pby-bc-myx" secondAttribute="trailing" id="bv2-Zs-SgI"/>
                 <constraint firstItem="NuK-tI-JoF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="dbU-GD-ecG"/>
-                <constraint firstItem="JnR-hv-bWY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="15" id="nlS-u6-MSv"/>
                 <constraint firstItem="NuK-tI-JoF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pjq-2W-n2P"/>
                 <constraint firstItem="pby-bc-myx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xvg-WZ-ccT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JnR-hv-bWY" secondAttribute="trailing" constant="13" id="zFf-2J-Udu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JnR-hv-bWY" secondAttribute="trailing" constant="15" id="zFf-2J-Udu"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="131.8840579710145" y="269.19642857142856"/>
+            <point key="canvasLocation" x="-296" y="378"/>
         </view>
     </objects>
     <resources>
         <image name="back" width="20" height="20"/>
+        <image name="open_row" width="19" height="19"/>
     </resources>
 </document>

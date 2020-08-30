@@ -14,7 +14,9 @@ class NOCViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     var appData: AppData!
     @IBOutlet weak var detailLabel: UILabel!
-    
+    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var isCompletedBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scrollView.contentSize = CGSize(width: 320, height: 960)
@@ -32,8 +34,8 @@ class NOCViewController: UIViewController {
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 642, length: 15))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 869, length: 29))
         
-        attributedString.addAttribute(.link, value: "https://www.hackingwithswift.com", range: NSRange(location: 912, length: 4))
-        attributedString.addAttribute(.link, value: "https://www.hackingwithswift.com", range: NSRange(location: 993, length: 8))
+        attributedString.addAttribute(.link, value: "", range: NSRange(location: 912, length: 4))
+        attributedString.addAttribute(.link, value: "", range: NSRange(location: 993, length: 8))
         
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -45,6 +47,14 @@ class NOCViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         //self.scrollView.contentSize = CGSize(width: 320, height: 960)
         self.tabBarController?.tabBar.isHidden = true
+        
+        self.isCompletedBtn.layer.cornerRadius = 10
+        self.backgroundView.layer.cornerRadius = 10
+        self.backgroundView.layer.shadowColor = UIColor.lightGray.cgColor
+        self.backgroundView.layer.shadowOpacity = 1
+        self.backgroundView.layer.shadowOffset = .zero
+        self.backgroundView.layer.shadowRadius = 3
+        
     }
 
     func setAppData(data : AppData) {
@@ -56,15 +66,10 @@ class NOCViewController: UIViewController {
         {
             return
         }
-        print(text)
-        print(text as NSString)
+
         let conditionRange = (text as NSString).range(of: "this")
-        print(conditionRange)
         let cancellationRange = (text as NSString).range(of: "Job Bank")
-        print(cancellationRange)
-        
-        
-        
+
         if sender.didTapAttributedTextInLabel(label: self.detailLabel, inRange:conditionRange){
            let webView = WebViewViewController()
             webView.setLinkURL(link: Constant.URLConstants.this)
@@ -80,7 +85,13 @@ class NOCViewController: UIViewController {
     }
     
     @IBAction func markAsComplete(_ sender: Any) {
-        appData.isComplete = true
+        let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            self.appData.isComplete = true
+            self.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
     }
     
     @IBAction func back(_ sender: Any) {

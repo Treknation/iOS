@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if tempAppData.isComplete {
             cell.contentView.backgroundColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
             cell.expandBtn.setImage(UIImage(named: "complete.png"), for: .normal)
+            cell.expandBtn.isUserInteractionEnabled = false
             cell.title.textColor = UIColor.white
         }
         else{

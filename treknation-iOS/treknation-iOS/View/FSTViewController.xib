@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSTViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="EGZ-YJ-LFK" id="X3S-C5-dB6"/>
+                <outlet property="detailedLabel" destination="AcV-VH-8It" id="xvt-Dv-SvW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGZ-YJ-LFK">
-                    <rect key="frame" x="17" y="28" width="379" height="1377"/>
+                    <rect key="frame" x="17" y="44" width="379" height="1361"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEX-FY-SKA">
-                    <rect key="frame" x="15" y="52" width="27" height="22"/>
+                    <rect key="frame" x="22" y="57" width="27" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="27" id="PdI-zs-JIF"/>
                         <constraint firstAttribute="height" constant="22" id="svP-OJ-3I9"/>
@@ -32,17 +34,17 @@
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="0mV-Tb-tMM"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c31-xl-bqI">
-                    <rect key="frame" x="134" y="52" width="146" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c31-xl-bqI">
+                    <rect key="frame" x="134" y="58" width="146" height="23"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="146" id="liY-Nk-0G2"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWx-7s-Q5A">
-                    <rect key="frame" x="0.0" y="90" width="414" height="1338"/>
+                    <rect key="frame" x="0.0" y="96" width="414" height="1332"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOk-16-J0i" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1198"/>
@@ -56,67 +58,49 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-VH-8It">
-                                    <rect key="frame" x="30" y="36" width="355" height="821.5"/>
-                                    <mutableString key="text" base64-UTF8="YES">
-VG8gcXVhbGlmeSBmb3IgRlNULCB5b3UgbXVzdCBtZWV0IHRoZSBiZWxvdyBtaW5pbXVtIHJlcXVpcmVt
-ZW50cwoK4oCiIFdvcmsgRXhwZXJpZW5jZQoJ4oCiIFNraWxsZWQgd29yayBleHBlcmllbmNlIG9mIGF0
-IGxlYXN0IDIgeWVhciAJCWZ1bGwgdGltZSB3aXRoaW4gdGhlIGxhc3QgNSB5ZWFycyBpbiBOT0Mgam9i
-IAkJZ3JvdXBzIEIgd2hpY2ggaXMgcGFpZCBmb3IgdGhlIGJlbG93IG1ham9yIAkJZ3JvdXBzLgoJ4oCi
-IE1ham9yIEdyb3VwIDcyLCBpbmR1c3RyaWFsLCBlbGVjdHJpY2FsIGFuZCAJCWNvbnN0cnVjdGlvbiB0
-cmFkZXMKCeKAoiBNYWpvciBHcm91cCA3MywgbWFpbnRlbmFuY2UgYW5kIAkJCWVxdWlwbWVudCBvcGVy
-YXRpb24gdHJhZGVzCgnigKIgTWFqb3IgR3JvdXAgODIsIHN1cGVydmlzb3JzIGFuZCAgdGVjaG5pY2Fs
-IAkJam9icyBpbiBuYXR1cmFsIHJlc291cmNlcywgYWdyaWN1bHR1cmUsIGFuZCAJCXJlbGF0ZWQgcHJv
-ZHVjdGlvbgoJ4oCiIE1ham9yIEdyb3VwIDkyLCBwcm9jZXNzaW5nLCBtYW51ZmFjdHVyaW5nIAlhbmQg
-dXRpbGl0eSBzdXBlcnZpc29ycyBhbmQgY2VudHJhbCBjb250cm9sIAkJb3BlcmF0b3JzCgnigKIgTWlu
-b3IgR3JvdXAgNjMyLCBjaGVmcyBhbmQgY29va3MKCeKAoiBNaW5vciBHcm91cCA2MzMsIGJ1dGNoZXJz
-IGFuZCBiYWtlcnMKCuKAoiBKb2IgT2ZmZXIKTXVzdCBoYXZlIGEgdmFsaWQgam9iIG9mZmVyIGZvciBh
-IHRvdGFsIHBlcmlvZCBvZiBhdCBsZWFzdCAxIHllYXIgT1IgYSBjZXJ0aWZpY2F0ZSBvZiBxdWFsaWZp
-Y2F0aW9uIGluIHRoYXQgc2tpbGxlZCB0cmFkZSBpc3N1ZWQgYnkgYSBDYW5hZGlhbiBhdXRob3JpdHkK
-CuKAoiBMYW5ndWFnZSAKR2V0IGEgbWluaW11bSBzY29yZSBvZiBDTEIgNSBmb3Igc3BlYWtpbmcgYW5k
-IGxpc3RlbmluZyBhbmQgQ0xCIDQgZm9yIHJlYWRpbmcgYW5kIHdyaXRpbmcKCuKAoiBFZHVjYXRpb24K
-VGhlcmUgYXJlIG5vIG1pbmltdW0gZWR1Y2F0aW9uIHJlcXVpcmVtZW50cyBmb3IgRlNULCBidXQKCeKA
-oiBJZiB5b3Ugd2VudCB0byBzY2hvb2wgaW4gQ2FuYWRhLCB5b3UgY2FuIAkJc3VibWl0IGNlcnRpZmlj
-YXRlLCBkaXBsb21hIG9yIGRlZ3JlZSBmcm9tIGEgCUNhbmFkaWFuIGhpZ2ggc2Nob29sIG9yIHBvc3Qt
-c2Vjb25kYXJ5IAkJaW5zdGl0dXRpb24gdG8gZWFybiBleHRyYSBDUlMgcG9pbnRzCgnigKIgSWYgeW91
-IGhhdmUgZm9yZWlnbiBlZHVjYXRpb24sIHlvdSBjYW4gCQlzdWJtaXQgYW4gRUNBIHZlcmlmaWVkIGNl
-cnRpZmljYXRlLCBkaXBsb21hIG9yIAlkZWdyZWUgdG8gZWFybiBleHRyYSBDUlMgcG9pbnRzCgrigKIg
-Tm8gcGxhbnMgdG8gbGl2ZSBpbiBRdWViZWMKCA
-</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdQ-uI-dSF">
-                                    <rect key="frame" x="30" y="854.5" width="355" height="76.5"/>
-                                    <string key="text">• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQ9-Ss-aAB">
-                                    <rect key="frame" x="30" y="942" width="355" height="134"/>
-                                    <string key="text">You can also use the Come to Canada tool to confirm your eligibility and your personal reference code. This reference code will keep your record with IRCC and will pre-populate the forms with your details when you create your profile on CIC. Personal reference code is valid only for 60 days. See more.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-VH-8It">
+                                    <rect key="frame" x="30" y="36" width="355" height="1002.5"/>
+                                    <mutableString key="text">To qualify for FST, you must meet the below minimum requirements
+
+• Work Experience
+	• Skilled work experience of at least 2 year 		full time within the last 5 years in NOC job 		groups B which is paid for the below major 		groups.
+	• Major Group 72, industrial, electrical and 		construction trades
+	• Major Group 73, maintenance and 			equipment operation trades
+	• Major Group 82, supervisors and  technical 		jobs in natural resources, agriculture, and 		related production
+	• Major Group 92, processing, manufacturing 	and utility supervisors and central control 		operators
+	• Minor Group 632, chefs and cooks
+	• Minor Group 633, butchers and bakers
+
+• Job Offer
+Must have a valid job offer for a total period of at least 1 year OR a certificate of qualification in that skilled trade issued by a Canadian authority
+
+• Language 
+Get a minimum score of CLB 5 for speaking and listening and CLB 4 for reading and writing
+
+• Education
+There are no minimum education requirements for FST, but
+	• If you went to school in Canada, you can 		submit certificate, diploma or degree from a 	Canadian high school or post-secondary 		institution to earn extra CRS points
+	• If you have foreign education, you can 		submit an ECA verified certificate, diploma or 	degree to earn extra CRS points
+
+• No plans to live in Quebec
+
+• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.
+
+
+You can also use the Come to Canada tool to confirm your eligibility and your personal reference code. This reference code will keep your record with IRCC and will pre-populate the forms with your details when you create your profile on CIC. Personal reference code is valid only for 60 days. See more.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="bQ9-Ss-aAB" firstAttribute="leading" secondItem="KOk-16-J0i" secondAttribute="leading" constant="30" id="B6B-Cn-n1e"/>
                                 <constraint firstAttribute="trailing" secondItem="AcV-VH-8It" secondAttribute="trailing" constant="29" id="E4h-Eh-eAw"/>
-                                <constraint firstItem="bQ9-Ss-aAB" firstAttribute="top" secondItem="OdQ-uI-dSF" secondAttribute="bottom" constant="11" id="GHc-c9-2Vg"/>
-                                <constraint firstAttribute="bottom" secondItem="bQ9-Ss-aAB" secondAttribute="bottom" constant="122" id="Tig-Aa-svm"/>
                                 <constraint firstItem="AcV-VH-8It" firstAttribute="top" secondItem="Ktf-O2-Wtv" secondAttribute="bottom" constant="8" id="YE9-3d-cYz"/>
                                 <constraint firstItem="Ktf-O2-Wtv" firstAttribute="top" secondItem="KOk-16-J0i" secondAttribute="top" constant="8" id="aJP-24-Sjt"/>
                                 <constraint firstItem="AcV-VH-8It" firstAttribute="top" secondItem="Ktf-O2-Wtv" secondAttribute="bottom" constant="8" id="at1-Nr-4qX"/>
                                 <constraint firstItem="AcV-VH-8It" firstAttribute="leading" secondItem="KOk-16-J0i" secondAttribute="leading" constant="30" id="eCM-p6-8Ho"/>
-                                <constraint firstAttribute="trailing" secondItem="bQ9-Ss-aAB" secondAttribute="trailing" constant="29" id="fL8-MZ-8Ks"/>
                                 <constraint firstAttribute="height" constant="1198" id="jm7-2c-5Qd"/>
-                                <constraint firstItem="bQ9-Ss-aAB" firstAttribute="top" secondItem="OdQ-uI-dSF" secondAttribute="bottom" constant="11" id="kQC-mM-Uaa"/>
-                                <constraint firstAttribute="trailing" secondItem="OdQ-uI-dSF" secondAttribute="trailing" constant="29" id="orB-5u-h46"/>
-                                <constraint firstItem="OdQ-uI-dSF" firstAttribute="leading" secondItem="KOk-16-J0i" secondAttribute="leading" constant="30" id="rEW-Ws-FqP"/>
                                 <constraint firstItem="Ktf-O2-Wtv" firstAttribute="leading" secondItem="KOk-16-J0i" secondAttribute="leading" constant="30" id="stf-UX-GwD"/>
                             </constraints>
                         </view>
@@ -134,21 +118,21 @@ Tm8gcGxhbnMgdG8gbGl2ZSBpbiBRdWViZWMKCA
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Ri-Ch-hDp"/>
-                <constraint firstItem="c31-xl-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="DvJ-MR-qxr"/>
+                <constraint firstItem="c31-xl-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="DvJ-MR-qxr"/>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ELh-Bh-Bsp"/>
                 <constraint firstAttribute="bottom" secondItem="EGZ-YJ-LFK" secondAttribute="bottom" constant="23" id="Fe7-yE-Mxw"/>
                 <constraint firstItem="c31-xl-bqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kfy-wm-EZ6"/>
                 <constraint firstAttribute="bottom" secondItem="UWx-7s-Q5A" secondAttribute="bottom" id="QAk-04-Jb4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGZ-YJ-LFK" secondAttribute="trailing" constant="18" id="QP0-zi-kd8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="EGZ-YJ-LFK" secondAttribute="top" id="VjS-9h-wfU"/>
                 <constraint firstItem="EGZ-YJ-LFK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="cie-0C-2gh"/>
-                <constraint firstItem="EGZ-YJ-LFK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="ec5-7s-Te6"/>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="top" secondItem="c31-xl-bqI" secondAttribute="bottom" constant="15" id="gVo-iG-gQD"/>
-                <constraint firstItem="gEX-FY-SKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ijl-SS-B2u"/>
-                <constraint firstItem="gEX-FY-SKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="s1w-3k-Kmt"/>
+                <constraint firstItem="gEX-FY-SKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="ijl-SS-B2u"/>
+                <constraint firstItem="gEX-FY-SKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="s1w-3k-Kmt"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="131.8840579710145" y="310.71428571428572"/>
+            <point key="canvasLocation" x="-409" y="240"/>
         </view>
     </objects>
     <resources>

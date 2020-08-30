@@ -9,10 +9,17 @@
 import UIKit
 
 class CECViewController: UIViewController {
+    @IBOutlet weak var backgroundView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.backgroundView.layer.cornerRadius = 10
+        self.backgroundView.layer.shadowColor = UIColor.lightGray.cgColor
+        self.backgroundView.layer.shadowOpacity = 1
+        self.backgroundView.layer.shadowOffset = .zero
+        self.backgroundView.layer.shadowRadius = 3
+        
         // Do any additional setup after loading the view.
     }
 

@@ -54,8 +54,13 @@ class Constant: NSObject {
         
         static let this = "https://noc.esdc.gc.ca/Home/Welcome/4f6368c7a3b44140bc06c177bfebbaa0?GoCTemplateCulture=en-CA";
         static let JobBank = "https://www.jobbank.gc.ca/home"
-    
+        static let overviewHere = "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html"
+        static let fswLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers/six-selection-factors-federal-skilled-workers.html"
+        static let fundsPoofFSW = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"
         
+        static let fstJobOffer = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"
+        
+        static let fstSecondLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/come-canada-tool-immigration-express-entry.html"
     }
 
 }

@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSWViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="Jre-Zn-ujb" id="ICv-oI-x34"/>
+                <outlet property="detailLabel" destination="Ges-BC-Ukj" id="ctQ-5Q-Ehz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="1047"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-Ny-m0O">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jre-Zn-ujb">
+                    <rect key="frame" x="15" y="44" width="385" height="993"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-Ny-m0O">
                     <rect key="frame" x="125" y="61" width="146" height="23"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="146" id="eeU-2P-anl"/>
                         <constraint firstAttribute="height" constant="23" id="iXr-aI-3o5"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-yy-waP">
@@ -48,16 +54,18 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07J-zr-RmT" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="969.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FSW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-Da-wFJ">
-                                    <rect key="frame" x="29" y="4" width="38" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FSW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-Da-wFJ">
+                                    <rect key="frame" x="29" y="4" width="57" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="Ofd-1A-tTN"/>
+                                        <constraint firstAttribute="width" constant="57" id="ZtW-dH-XDU"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-BC-Ukj">
-                                    <rect key="frame" x="29" y="33" width="359" height="634"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-BC-Ukj">
+                                    <rect key="frame" x="29" y="26" width="359" height="734"/>
                                     <mutableString key="text">You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.
 
 • Work Experience
@@ -73,51 +81,51 @@ Get a minimum score of CLB 7 in all 4 abilities of ECB in either English or Fren
 	• If you went to school in Canada, you must 		submit certificate, diploma or degree from a 	Canadian high school or post-secondary 		institution
 	• If you have foreign education, you must 		submit an ECA verified certificate, diploma or 	degree
 
-• No plans to live in Quebec</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ww-iB-glT">
-                                    <rect key="frame" x="29" y="675" width="359" height="83"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can check your points by visiting the this link." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="79M-La-L1i">
-                                    <rect key="frame" x="27" y="780" width="359" height="19"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
+• No plans to live in Quebec
+
+• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.
+
+
+You can check your points by visiting the this link.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ges-BC-Ukj" secondAttribute="trailing" constant="26" id="JKM-l9-NBr"/>
+                                <constraint firstItem="Ges-BC-Ukj" firstAttribute="top" secondItem="a7g-Da-wFJ" secondAttribute="bottom" constant="1" id="KgG-pA-oGv"/>
+                                <constraint firstItem="a7g-Da-wFJ" firstAttribute="leading" secondItem="07J-zr-RmT" secondAttribute="leading" constant="29" id="Nuc-ot-zmM"/>
+                                <constraint firstItem="Ges-BC-Ukj" firstAttribute="leading" secondItem="07J-zr-RmT" secondAttribute="leading" constant="29" id="fIv-I0-IHK"/>
+                                <constraint firstAttribute="height" constant="969.5" id="p4w-ms-BGj"/>
+                                <constraint firstItem="a7g-Da-wFJ" firstAttribute="top" secondItem="07J-zr-RmT" secondAttribute="top" constant="4" id="qcd-kv-yi1"/>
+                            </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="07J-zr-RmT" firstAttribute="width" secondItem="yDm-jS-NRg" secondAttribute="width" id="17G-iV-ZR4"/>
                         <constraint firstAttribute="bottom" secondItem="07J-zr-RmT" secondAttribute="bottom" constant="-19" id="7ST-fX-1cd"/>
-                        <constraint firstItem="07J-zr-RmT" firstAttribute="top" secondItem="IVV-zH-TgA" secondAttribute="top" id="Owb-OK-12z"/>
+                        <constraint firstItem="07J-zr-RmT" firstAttribute="top" secondItem="yDm-jS-NRg" secondAttribute="top" id="Owb-OK-12z"/>
                         <constraint firstItem="07J-zr-RmT" firstAttribute="leading" secondItem="yDm-jS-NRg" secondAttribute="leading" id="Vz1-zE-Zni"/>
                         <constraint firstAttribute="trailing" secondItem="07J-zr-RmT" secondAttribute="trailing" id="Xv3-zN-jhh"/>
-                        <constraint firstItem="07J-zr-RmT" firstAttribute="height" secondItem="yDm-jS-NRg" secondAttribute="height" multiplier="1.02387" id="deE-pk-jPq"/>
                     </constraints>
-                    <viewLayoutGuide key="contentLayoutGuide" id="2zD-tv-Pnt"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="IVV-zH-TgA"/>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Jre-Zn-ujb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5sd-ux-ZR3"/>
                 <constraint firstItem="JaR-Ny-m0O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="6Z1-f6-wI0"/>
                 <constraint firstItem="3dA-yy-waP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="Bgh-0y-DHm"/>
+                <constraint firstItem="Jre-Zn-ujb" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="24" id="NgL-xR-jjl"/>
                 <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="Tm1-UY-HyZ"/>
                 <constraint firstItem="yDm-jS-NRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UEv-aE-l7B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jre-Zn-ujb" secondAttribute="trailing" constant="14" id="cAx-t2-1rt"/>
                 <constraint firstItem="3dA-yy-waP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="f8P-R2-4of"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JaR-Ny-m0O" secondAttribute="trailing" constant="143" id="ksf-1O-DNR"/>
                 <constraint firstItem="yDm-jS-NRg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pAq-VQ-QYD"/>
+                <constraint firstItem="Jre-Zn-ujb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="w94-Xo-3DS"/>
                 <constraint firstItem="yDm-jS-NRg" firstAttribute="top" secondItem="JaR-Ny-m0O" secondAttribute="bottom" constant="16" id="wDj-ft-YA8"/>
                 <constraint firstAttribute="bottom" secondItem="yDm-jS-NRg" secondAttribute="bottom" id="xa3-Md-H6X"/>
                 <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="zwa-Qn-XeF"/>

@@ -10,7 +10,7 @@ import UIKit
 
 class HomrTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var detailedOverview: UITextView!
+    @IBOutlet weak var detailedOverview: UILabel!
     @IBOutlet weak var expandBtn: UIButton!
-    
+    @IBOutlet weak var textViewConstraints : NSLayoutConstraint!
 }

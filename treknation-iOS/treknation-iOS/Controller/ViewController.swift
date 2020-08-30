@@ -60,9 +60,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let tempAppData = appData[indexPath.section]
         var height:CGFloat = CGFloat()
-
         if tempAppData.isOpen {
-            height = 150
+            height = UITableView.automaticDimension
         }
         else{
             height = 50

@@ -13,7 +13,7 @@ class AppData{
     var title: String
     var overview: String
     var isOpen:Bool = false
-    
+    var isComplete = false
     
     init(title: String, overview :String) {
         self.title = title;

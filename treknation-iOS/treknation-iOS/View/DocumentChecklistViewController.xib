@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentChecklistViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1395"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90j-vb-nkh">
+                    <rect key="frame" x="21" y="20" width="374" height="866"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Checklist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPp-ul-4n0">
+                    <rect key="frame" x="124.5" y="44" width="165" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="mco-cD-wm3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1x-rW-fXD">
+                    <rect key="frame" x="33" y="44" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="ZL0-GC-hJx"/>
+                        <constraint firstAttribute="height" constant="22" id="xL4-Y7-PY3"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="ogn-OA-UlA"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfY-9K-K3Z">
+                    <rect key="frame" x="0.0" y="84" width="415" height="1314"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-0K-hcr" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="1300"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tZ-7D-teR">
+                                    <rect key="frame" x="38" y="8" width="341" height="267.5"/>
+                                    <mutableString key="text">Once you fill out the post ITA application forms a personalized document checklist is created for you. Since you only have 60 days to gather all documents and to submit them we recommend starting the process ASAP so that you can avoid delays.
+
+The document checklist is mostly made up of the following section. You would need to upload documents in each of these sections. You would need to make sure that the size of the file is no larger than 4 MB. The file formats you can upload are .tiff, .jpg, .png, .doc, .docx and .pdf.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZY-hP-K8U">
+                                    <rect key="frame" x="38" y="292" width="341" height="153"/>
+                                    <string key="text">Identification documents
+• Passport
+• Marriage Certificate / Common law proof/ Divorce-Proof
+• Dependent Children (Birth Certificate, LOE if you don't have the birth certificate, proof of adoption)
+• Digital Photograph (See specification - Link)</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Byg-FQ-dLH">
+                                    <rect key="frame" x="38" y="459" width="341" height="76.5"/>
+                                    <string key="text">Mandatory documents
+• Police Certification
+• Medical Exam
+• Proof of funds</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ho-HZ-KRd">
+                                    <rect key="frame" x="38" y="560" width="341" height="153"/>
+                                    <string key="text">Other documents as applicable
+• Work experience
+• Study
+• Canadian Job offer
+• Relatives
+• Certificate of qualification
+• Other names
+• Use of representative</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hN-Ko-JaX">
+                                    <rect key="frame" x="38" y="745" width="341" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATj-6m-fw1">
+                                    <rect key="frame" x="41" y="765" width="349" height="496.5"/>
+                                    <mutableString key="text">If one of your documents is in a language other than English or French, you must also upload:
+• An English or French translation
+• A certified photocopy of the original document
+• An affidavit from the person who completed the translation (if they’re not a certified translator)
+
+If a certified translator completed your translation:
+
+• The document must be stamped with the translator’s certification or registration number
+• You can indicate that you’re not providing an affidavit because a certified translator completed the translation (write a letter and scan it with your translated document)
+
+If you feel like a document you are submitting might raise the slightest question from an immigration officer, you should add a Letter of Explanation (LoE) (sample in the link) to your documents. For example, if it concerns your passport section, then add your LoE to the PDF file that you will upload to the passport section.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pN2-6u-3jq">
+                                    <rect key="frame" x="37" y="1270" width="340" height="36"/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="BOU-ji-XHE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" title="Mark as Complete">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="Kdf-fO-G3W"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NZY-hP-K8U" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="38" id="535-gV-Pvy"/>
+                                <constraint firstItem="9tZ-7D-teR" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="38" id="74A-lW-HAD"/>
+                                <constraint firstAttribute="trailing" secondItem="NZY-hP-K8U" secondAttribute="trailing" constant="36" id="7wr-91-oMy"/>
+                                <constraint firstItem="NZY-hP-K8U" firstAttribute="top" secondItem="9tZ-7D-teR" secondAttribute="bottom" constant="16.5" id="BbO-aQ-f6T"/>
+                                <constraint firstItem="9tZ-7D-teR" firstAttribute="top" secondItem="ahA-0K-hcr" secondAttribute="top" constant="8" id="IqT-UU-Iaa"/>
+                                <constraint firstItem="2hN-Ko-JaX" firstAttribute="top" secondItem="0ho-HZ-KRd" secondAttribute="bottom" constant="32" id="J6Z-QQ-Am3"/>
+                                <constraint firstItem="Byg-FQ-dLH" firstAttribute="top" secondItem="NZY-hP-K8U" secondAttribute="bottom" constant="14" id="Jcs-Yc-SRL"/>
+                                <constraint firstAttribute="trailing" secondItem="2hN-Ko-JaX" secondAttribute="trailing" constant="36" id="Jiy-zE-tz4"/>
+                                <constraint firstItem="ATj-6m-fw1" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="41" id="Qmx-Qh-A31"/>
+                                <constraint firstItem="pN2-6u-3jq" firstAttribute="top" secondItem="ATj-6m-fw1" secondAttribute="bottom" constant="8.5" id="VhM-Ys-r7n"/>
+                                <constraint firstItem="pN2-6u-3jq" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="37" id="ZJv-nn-vh3"/>
+                                <constraint firstItem="ATj-6m-fw1" firstAttribute="top" secondItem="2hN-Ko-JaX" secondAttribute="bottom" constant="0.5" id="a4L-eZ-gOp"/>
+                                <constraint firstItem="Byg-FQ-dLH" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="38" id="ena-JP-uFS"/>
+                                <constraint firstItem="0ho-HZ-KRd" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="38" id="fNA-gn-KI1"/>
+                                <constraint firstAttribute="trailing" secondItem="ATj-6m-fw1" secondAttribute="trailing" constant="25" id="kaY-fz-BmC"/>
+                                <constraint firstItem="2hN-Ko-JaX" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="38" id="nce-9E-cRf"/>
+                                <constraint firstAttribute="trailing" secondItem="pN2-6u-3jq" secondAttribute="trailing" constant="38" id="oSj-aW-Xgp"/>
+                                <constraint firstAttribute="height" constant="1300" id="tAG-UY-qPQ"/>
+                                <constraint firstAttribute="trailing" secondItem="Byg-FQ-dLH" secondAttribute="trailing" constant="36" id="tgi-Yu-pBG"/>
+                                <constraint firstItem="0ho-HZ-KRd" firstAttribute="top" secondItem="Byg-FQ-dLH" secondAttribute="bottom" constant="24.5" id="vaz-2o-tlu"/>
+                                <constraint firstAttribute="trailing" secondItem="9tZ-7D-teR" secondAttribute="trailing" constant="36" id="ywe-hu-6Ni"/>
+                                <constraint firstAttribute="trailing" secondItem="0ho-HZ-KRd" secondAttribute="trailing" constant="36" id="z9X-mZ-ZTs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ahA-0K-hcr" firstAttribute="leading" secondItem="QfY-9K-K3Z" secondAttribute="leading" id="Knm-Pk-52O"/>
+                        <constraint firstItem="ahA-0K-hcr" firstAttribute="width" secondItem="QfY-9K-K3Z" secondAttribute="width" id="RP7-oy-zTr"/>
+                        <constraint firstAttribute="bottom" secondItem="ahA-0K-hcr" secondAttribute="bottom" constant="-9" id="b7T-cz-tM3"/>
+                        <constraint firstItem="ahA-0K-hcr" firstAttribute="top" secondItem="QfY-9K-K3Z" secondAttribute="top" id="lPN-Ed-Xec"/>
+                        <constraint firstAttribute="trailing" secondItem="ahA-0K-hcr" secondAttribute="trailing" id="tYF-jr-to5"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QfY-9K-K3Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AdF-vZ-7bF"/>
+                <constraint firstItem="T1x-rW-fXD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="QBs-CH-W8Z"/>
+                <constraint firstAttribute="bottom" secondItem="QfY-9K-K3Z" secondAttribute="bottom" constant="-3" id="Yzw-2r-9Qp"/>
+                <constraint firstItem="QfY-9K-K3Z" firstAttribute="top" secondItem="T1x-rW-fXD" secondAttribute="bottom" constant="18" id="c8M-1i-0CZ"/>
+                <constraint firstItem="RPp-ul-4n0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sfP-YE-vf5"/>
+                <constraint firstItem="RPp-ul-4n0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u3W-sx-4gf"/>
+                <constraint firstAttribute="trailing" secondItem="QfY-9K-K3Z" secondAttribute="trailing" constant="-1" id="uCD-uz-ARd"/>
+                <constraint firstItem="T1x-rW-fXD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xG0-VI-rXL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="319.75446428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

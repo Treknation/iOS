@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CECViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-57-Vih">
+                    <rect key="frame" x="36" y="100" width="34" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Ezi-Rp-Ko5"/>
+                        <constraint firstAttribute="height" constant="21" id="Rcw-oP-XD3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-hj-Cxw">
+                    <rect key="frame" x="134" y="53" width="146" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="DmL-4P-R9v"/>
+                        <constraint firstAttribute="height" constant="23" id="jww-ne-3iy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Un-NB-Z7P">
+                    <rect key="frame" x="25" y="53" width="27" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="8Oc-pP-Jhf"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="BuE-al-pel"/>
+                        <constraint firstAttribute="height" constant="22" id="Ud9-T7-JJ2"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="n3Y-uS-kbx"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="RQD-Gd-NW6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a05-CV-EAV">
+                    <rect key="frame" x="36" y="138" width="358" height="516"/>
+                    <mutableString key="text">To qualify for CEC, you must
+
+• Have a minimum of one year of work experience in NOC skill type 0, A, or B in Canada (either full-time, 30 h/week, or an equivalent amount part-time, at least 15 h/week). Self-employment and internships are not counted under this program
+
+• Not plan to live in Quebec province
+
+• Have legally gained your job experience in Canada (with a work permit) and
+
+• Have the minimum language levels needed for your job in each of the four language abilities (writing, speaking, listening, reading):
+	• CLB7 for NOC skill level/type 0 or A jobs, 
+	or
+	• CLB5 for NOC skill type B jobs.
+
+There is no minimum education requirement for CEC but if you have a degree, diploma, or certificate outside Canada, it might be beneficial to get ECA to get extra CRS points.
+
+</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="xfT-57-Vih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="9rL-ys-nT1"/>
+                <constraint firstItem="xfT-57-Vih" firstAttribute="top" secondItem="2Un-NB-Z7P" secondAttribute="bottom" constant="25" id="JFv-TW-OfP"/>
+                <constraint firstItem="tlW-hj-Cxw" firstAttribute="leading" secondItem="2Un-NB-Z7P" secondAttribute="trailing" constant="82" id="K0V-nf-o7V"/>
+                <constraint firstItem="a05-CV-EAV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="KJf-eM-r6U"/>
+                <constraint firstItem="2Un-NB-Z7P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="OM0-Yo-9qj"/>
+                <constraint firstItem="2Un-NB-Z7P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="UGA-i3-Eg7"/>
+                <constraint firstItem="a05-CV-EAV" firstAttribute="top" secondItem="xfT-57-Vih" secondAttribute="bottom" constant="17" id="Z8X-j6-PYR"/>
+                <constraint firstItem="tlW-hj-Cxw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="c0v-SN-MSp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tlW-hj-Cxw" secondAttribute="trailing" constant="134" id="gPe-dA-1ir"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a05-CV-EAV" secondAttribute="trailing" constant="20" id="k44-PX-MtB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

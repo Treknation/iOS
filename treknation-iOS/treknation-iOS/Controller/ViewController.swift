@@ -27,7 +27,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.title.text = tempAppData.title
         cell.detailedOverview.text = tempAppData.overview
         cell.expandBtn.tag = indexPath.section
-        cell.expandBtn.addTarget(self, action: #selector(self.didExpand), for: .touchUpInside)
+        if tempAppData.isComplete {
+            cell.contentView.backgroundColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
+            cell.expandBtn.setImage(UIImage(named: "complete.png"), for: .normal)
+            cell.title.textColor = UIColor.white
+        }
+        else{
+            cell.contentView.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+            cell.expandBtn.addTarget(self, action: #selector(self.didExpand), for: .touchUpInside)
+            cell.title.textColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
+
+            if tempAppData.isOpen {
+                cell.expandBtn.setImage(UIImage(named: "close.png"), for: .normal)
+            }else{
+                cell.expandBtn.setImage(UIImage(named: "open.png"), for: .normal)
+            }
+        }
         return cell
     }
     
@@ -57,6 +72,58 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        switch indexPath.section {
+        case 0:
+            let overviewVC = OverviewViewController()
+            self.navigationController?.pushViewController(overviewVC, animated: true)
+            overviewVC.setAppData(data: appData[indexPath.section])
+        case 1:
+            let nocVC = NOCViewController()
+            self.navigationController?.pushViewController(nocVC, animated: true)
+            nocVC.setAppData(data: appData[indexPath.section])
+        case 2:
+            let ecaVC = ECAViewController()
+            self.navigationController?.pushViewController(ecaVC, animated: true)
+            ecaVC.setAppData(data: appData[indexPath.section])
+        case 3:
+            let langVC = LanguageTestViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 4:
+            let langVC = EligibilityViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 5:
+            let langVC = CRSScoreViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 6:
+            let langVC = EnterEEViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 7:
+            let langVC = ITAViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 8:
+            let langVC = DocumentChecklistViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 9:
+            let langVC = EPRViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 10:
+            let langVC = PPRViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        case 11:
+            let langVC = LanguageTestViewController()
+            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.setAppData(data: appData[indexPath.section])
+        default:
+            print("")
+        }
     }
     
     var appData: [AppData] = []
@@ -66,32 +133,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         appData = createAppData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+        homeTableView.reloadData()
+
+    }
+    
     
     func createAppData() -> [AppData]{
         var temp:[AppData] = []
-        let overview = AppData.init(title:"Overview" , overview: "Express Entry is an electronic immigration selection system for selecting applicants for permanent residence under the 3 programs Federal Skilled Worker, Canadian Experience Class, and Federal Skilled Trades. You can also apply through express entry if you have received a nomination from a province or territory. This nomination is also called PNP which stands for Provincial Nominee Program.")
-        let noc = AppData.init(title:"Find your NOC" , overview: "NOC stands for National Occupation Classification. It helps to determine your job code which you will need while creating your EE profile. There are 5 types of NOC groups: NOC 0, A, B, C and D")
+        let overview = AppData.init(title:Constant.AppDetailsConstants.overviewTitle , overview: Constant.AppDetailsConstants.overviewDetails)
+        let noc = AppData.init(title:Constant.AppDetailsConstants.fyNOCTitle , overview: Constant.AppDetailsConstants.fyNOCDetails)
         
-        let eca = AppData.init(title:"Get your ECA" , overview: "An Educational Credential Assessment (ECA) is used to verify that your foreign degree, diploma, or certificate (or other proof of your credential) is valid and equal to a Canadian one. You would need an ECA only if you have a non-Canadian degree and must be issued for Immigration purposes")
+        let eca = AppData.init(title: Constant.AppDetailsConstants.getECATitle , overview: Constant.AppDetailsConstants.getECADetails)
         
-        let languageTests = AppData.init(title:"Language Tests" , overview: "In this step, you will be required to take a language test in English and/or French and score a number of points to be eligible for Express Entry programs. Express Entry uses CLB(Canadian Language Benchmark) as a method of checking your language level based on your test results. ")
+        let languageTests = AppData.init(title: Constant.AppDetailsConstants.languageTestTitle , overview: Constant.AppDetailsConstants.languageTestDetails)
         
-        let checkEligibility = AppData.init(title:"Check Eligibility" , overview: "Express Entry uses CLB(Canadian Language Benchmark) as a method of checking your language level based on your test results.")
+        let checkEligibility = AppData.init(title:Constant.AppDetailsConstants.checkEligibilityTitle , overview: Constant.AppDetailsConstants.checkEligibilityDetails)
         
-        let calculateCRS = AppData.init(title:"Calculate CRS score" , overview: "CRS Score is the score used by IRCC to rank candidates in the Express Entry pool. Applicants with the highest CRS score in the pool above a certain cutoff are given the ITA.")
+        let calculateCRS = AppData.init(title:Constant.AppDetailsConstants.checkCRSTitle , overview: Constant.AppDetailsConstants.checkCRSDetails)
         
         
-        let enterEEPool = AppData.init(title:"Enter Express Entry Pool" , overview: "In this step, you will now create your IRCC secure account and get into the pool of applicants for your EE program.")
+        let enterEEPool = AppData.init(title:Constant.AppDetailsConstants.enterEETitle , overview: Constant.AppDetailsConstants.enterEEDetails)
         
-        let getITA = AppData.init(title:"Receiving ITA" , overview: "Once you have created your online profile you would need to wait for an ITA(Invitation to Apply). You will get an invite if your CRS score is greater than or equal to the cut-off of the draw.")
+        let getITA = AppData.init(title:Constant.AppDetailsConstants.getITATitle , overview: Constant.AppDetailsConstants.getITADetails)
     
-        let documentChecklist = AppData.init(title:"Document Checklist" , overview: "Once you get the ITA and fill out the post-ITA application forms, a personalized document checklist will be generated for your profile. You will have 60 days to gather all documents and upload the scanned copies.")
+        let documentChecklist = AppData.init(title:Constant.AppDetailsConstants.documentChecklistTitle , overview: Constant.AppDetailsConstants.documentChecklistDetails)
         
-        let applicationFees = AppData.init(title:"E-APR Fees" , overview: "Once you fill out the online form and upload the documents in the last step, you will be shown fees you need to pay for your e-APR (Electronic Application for Permanent Residence).")
+        let applicationFees = AppData.init(title:Constant.AppDetailsConstants.applicationFeesTitle , overview: Constant.AppDetailsConstants.applicationFeesDetails)
         
-        let aorToPPR = AppData.init(title:"AoR to PoR" , overview: "After submitting your e-APR, you will receive an Acknowledgement of Receipt (AOR). This is the AOR date and is the date from when your 6 months intended processing time begins. Once IRCC has reviewed your biometrics, background checks, and medical examinations evaluations you will get a golden email for Passport Request (PPR).")
+        let aorToPPR = AppData.init(title:Constant.AppDetailsConstants.aorToPPRTitle , overview: Constant.AppDetailsConstants.aorToPPRDetails)
 
-        let landingPreparation = AppData.init(title:"Prepare for Landing" , overview: "Congratulations!! now that you have received your COPR you are just one step away from getting your PR card. The next steps will depend on whether you are inside or outside of Canada.")
+        let landingPreparation = AppData.init(title:Constant.AppDetailsConstants.landingPreparationTitle , overview: Constant.AppDetailsConstants.landingPreparationDetails)
         
         temp.append(overview)
         temp.append(noc)

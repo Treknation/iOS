@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverviewViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="isCompletedBtn" destination="FJb-5R-3gy" id="ER1-KW-MDu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1071"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reF-Lg-VjJ">
+                    <rect key="frame" x="15" y="44" width="385" height="1027"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8j-ZQ-bD5">
+                    <rect key="frame" x="10" y="52" width="42" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="GDG-eQ-gCx"/>
+                        <constraint firstAttribute="height" constant="22" id="N3L-UE-Kvi"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="goback:" destination="-1" eventType="touchUpInside" id="Et0-Py-Wz5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="qkO-hD-8OX">
+                    <rect key="frame" x="164.33333333333334" y="54" width="85.666666666666657" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="gia-Ms-vV5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEP-Xi-WGl">
+                    <rect key="frame" x="0.0" y="82" width="414" height="989"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAe-RV-90I" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="989"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does Express Entry Work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MC-ji-kjU">
+                                    <rect key="frame" x="29" y="12" width="341" height="20"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much does Express Entry cost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USy-TQ-SLc">
+                                    <rect key="frame" x="29" y="415" width="341" height="20"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long does it take?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyx-k9-X3B">
+                                    <rect key="frame" x="29" y="625" width="268" height="20"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Express Entry works by submitting an online profile for determining eligibility for the one of the below programs:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnb-wI-FzS" customClass="AutoFitLabel">
+                                    <rect key="frame" x="29" y="34" width="357" height="57"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1Z-KC-ytz">
+                                    <rect key="frame" x="29" y="94" width="330" height="54"/>
+                                    <string key="text">	• 	Federal Skilled Worker (FSW) 
+	• 	Canadian Experience Class (CEC)
+	• 	Federal Skilled Trades (FST)</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0DJ-fc-Tzh">
+                                    <rect key="frame" x="29" y="156" width="357" height="77"/>
+                                    <string key="text">2. You can enter details about your age, education, work experience and language score to gain CRS(Comprehensive Ranking System) score.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. You are then placed in the Express Entry pool and ranked relative to each other based on your CRS score. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckr-uB-LwY">
+                                    <rect key="frame" x="29" y="232" width="357" height="57"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cau-pJ-NXB">
+                                    <rect key="frame" x="29" y="289" width="357" height="96"/>
+                                    <string key="text">4. You will be invited to apply for the permanent residence if your score is above the cut off score for that draw. This invitation is also called Invitation to Apply(ITA). A draw is conducted generally twice a month.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjh-9E-4Uf">
+                                    <rect key="frame" x="29" y="440" width="357" height="172"/>
+                                    <string key="text">Express Entry generally costs $1325 CAD. There is an additional cost of $1325 CAD if your application has a spouse. There is also a fee of $225 CAD per dependent child in the application. This is just the fee charged by IRCC and there are other costs as well associated with education verification, language test, medical test and police verification which you will find in relevant sections.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJb-5R-3gy">
+                                    <rect key="frame" x="40" y="841" width="334" height="29"/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" title="Mark as Complete">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="bcK-1v-LeP"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EkO-KX-nbT">
+                                    <rect key="frame" x="29" y="646" width="357" height="172"/>
+                                    <string key="text">It usually takes 6 months after you receive your ITA.  
+
+It may take additional time for other processes such as educational document verification, police verification, medical test and language test. These processes can take up to an additional 9 weeks. We suggest you visit this link and check your processing time - here.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="cau-pJ-NXB" secondAttribute="trailing" constant="28" id="12Y-Ry-O8h"/>
+                                <constraint firstAttribute="trailing" secondItem="USy-TQ-SLc" secondAttribute="trailing" constant="44" id="2a1-Xa-UAx"/>
+                                <constraint firstAttribute="bottom" secondItem="FJb-5R-3gy" secondAttribute="bottom" constant="119" id="2mY-hU-P2S"/>
+                                <constraint firstItem="nyx-k9-X3B" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="7Hq-jO-J8j"/>
+                                <constraint firstAttribute="trailing" secondItem="nyx-k9-X3B" secondAttribute="trailing" constant="117" id="8jE-fF-znk"/>
+                                <constraint firstAttribute="trailing" secondItem="Gjh-9E-4Uf" secondAttribute="trailing" constant="28" id="9py-ED-Mna"/>
+                                <constraint firstItem="Gjh-9E-4Uf" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="BUi-AH-tJ4"/>
+                                <constraint firstItem="ckr-uB-LwY" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="Gb1-Wo-LMy"/>
+                                <constraint firstItem="cau-pJ-NXB" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="J3o-84-tVd"/>
+                                <constraint firstItem="L1Z-KC-ytz" firstAttribute="top" secondItem="Cnb-wI-FzS" secondAttribute="bottom" constant="3" id="LdL-jF-2hb"/>
+                                <constraint firstItem="USy-TQ-SLc" firstAttribute="top" secondItem="cau-pJ-NXB" secondAttribute="bottom" constant="30" id="MMB-tL-TWt"/>
+                                <constraint firstItem="cau-pJ-NXB" firstAttribute="top" secondItem="ckr-uB-LwY" secondAttribute="bottom" id="QZd-pC-xfw"/>
+                                <constraint firstItem="EkO-KX-nbT" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="S66-uc-iVl"/>
+                                <constraint firstItem="USy-TQ-SLc" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="SSn-Xo-UcN"/>
+                                <constraint firstItem="2MC-ji-kjU" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="UaW-XM-KTa"/>
+                                <constraint firstItem="0DJ-fc-Tzh" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="VwX-AL-jes"/>
+                                <constraint firstItem="nyx-k9-X3B" firstAttribute="top" secondItem="Gjh-9E-4Uf" secondAttribute="bottom" constant="13" id="XZc-Q8-dSt"/>
+                                <constraint firstItem="Gjh-9E-4Uf" firstAttribute="top" secondItem="USy-TQ-SLc" secondAttribute="bottom" constant="5" id="XjJ-Uz-xCg"/>
+                                <constraint firstItem="EkO-KX-nbT" firstAttribute="top" secondItem="nyx-k9-X3B" secondAttribute="bottom" constant="1" id="ZeC-pQ-XKY"/>
+                                <constraint firstItem="Cnb-wI-FzS" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="ai8-Yq-zgw"/>
+                                <constraint firstAttribute="trailing" secondItem="2MC-ji-kjU" secondAttribute="trailing" constant="44" id="ar9-SV-vOe"/>
+                                <constraint firstItem="ckr-uB-LwY" firstAttribute="top" secondItem="0DJ-fc-Tzh" secondAttribute="bottom" constant="-1" id="asr-bP-UdP"/>
+                                <constraint firstItem="0DJ-fc-Tzh" firstAttribute="top" secondItem="L1Z-KC-ytz" secondAttribute="bottom" constant="8" id="ax7-aN-8jS"/>
+                                <constraint firstItem="FJb-5R-3gy" firstAttribute="top" secondItem="EkO-KX-nbT" secondAttribute="bottom" constant="23" id="g22-o2-CaN"/>
+                                <constraint firstItem="FJb-5R-3gy" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="40" id="hON-yu-crH"/>
+                                <constraint firstItem="L1Z-KC-ytz" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="iav-aq-e67"/>
+                                <constraint firstItem="2MC-ji-kjU" firstAttribute="top" secondItem="xAe-RV-90I" secondAttribute="top" constant="12" id="oZt-DL-HST"/>
+                                <constraint firstAttribute="trailing" secondItem="ckr-uB-LwY" secondAttribute="trailing" constant="28" id="s9p-zE-V81"/>
+                                <constraint firstAttribute="trailing" secondItem="L1Z-KC-ytz" secondAttribute="trailing" constant="55" id="sHH-pv-LbZ"/>
+                                <constraint firstAttribute="trailing" secondItem="Cnb-wI-FzS" secondAttribute="trailing" constant="28" id="szD-iS-XCE"/>
+                                <constraint firstItem="Cnb-wI-FzS" firstAttribute="top" secondItem="2MC-ji-kjU" secondAttribute="bottom" constant="2" id="v1A-FW-SLi"/>
+                                <constraint firstAttribute="trailing" secondItem="EkO-KX-nbT" secondAttribute="trailing" constant="28" id="vv8-cq-pcN"/>
+                                <constraint firstAttribute="trailing" secondItem="FJb-5R-3gy" secondAttribute="trailing" constant="40" id="w4g-kI-Czn"/>
+                                <constraint firstAttribute="trailing" secondItem="0DJ-fc-Tzh" secondAttribute="trailing" constant="28" id="wR7-Af-75c"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xAe-RV-90I" secondAttribute="bottom" id="0SE-3j-l1X"/>
+                        <constraint firstItem="xAe-RV-90I" firstAttribute="height" secondItem="DEP-Xi-WGl" secondAttribute="height" priority="250" id="5cd-QD-GIq"/>
+                        <constraint firstItem="xAe-RV-90I" firstAttribute="leading" secondItem="DEP-Xi-WGl" secondAttribute="leading" id="V3I-k4-hdw"/>
+                        <constraint firstAttribute="trailing" secondItem="xAe-RV-90I" secondAttribute="trailing" id="aUK-vw-wrh"/>
+                        <constraint firstItem="xAe-RV-90I" firstAttribute="top" secondItem="DEP-Xi-WGl" secondAttribute="top" id="bzn-1A-OOV"/>
+                        <constraint firstItem="xAe-RV-90I" firstAttribute="width" secondItem="DEP-Xi-WGl" secondAttribute="width" id="mGN-as-H2q"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Bp6-a0-wMs"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="hHG-YD-xat"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qkO-hD-8OX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="7Xr-4q-ffL"/>
+                <constraint firstItem="reF-Lg-VjJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="CmT-n8-TWw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="reF-Lg-VjJ" secondAttribute="trailing" constant="14" id="OFJ-9V-V9q"/>
+                <constraint firstItem="reF-Lg-VjJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="dgp-ZX-Tbu"/>
+                <constraint firstItem="DEP-Xi-WGl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gun-Aj-ms4"/>
+                <constraint firstItem="DEP-Xi-WGl" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="lC9-Lc-UzE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="reF-Lg-VjJ" secondAttribute="top" id="les-Ww-bG6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DEP-Xi-WGl" secondAttribute="trailing" id="uWf-GJ-PNE"/>
+                <constraint firstItem="U8j-ZQ-bD5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="vmE-pd-tiz"/>
+                <constraint firstItem="DEP-Xi-WGl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="38" id="x8b-rv-g4O"/>
+                <constraint firstItem="qkO-hD-8OX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xyN-Dr-FLH"/>
+                <constraint firstItem="U8j-ZQ-bD5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="yMv-mk-Pq2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="128.98550724637681" y="191.18303571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

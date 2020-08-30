@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSWViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1047"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-Ny-m0O">
+                    <rect key="frame" x="125" y="61" width="146" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="eeU-2P-anl"/>
+                        <constraint firstAttribute="height" constant="23" id="iXr-aI-3o5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-yy-waP">
+                    <rect key="frame" x="16" y="61" width="27" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="8Zn-nF-PNF"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="JCh-VY-Pz2"/>
+                        <constraint firstAttribute="height" constant="22" id="ge3-1Q-lH4"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="27" id="ndl-nl-MPj"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="oFi-DH-hkd"/>
+                        <constraint firstAttribute="width" constant="27" id="zZK-Ui-cz9"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="BRv-cl-JFQ"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDm-jS-NRg">
+                    <rect key="frame" x="0.0" y="100" width="414" height="947"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07J-zr-RmT" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="969.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FSW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-Da-wFJ">
+                                    <rect key="frame" x="29" y="4" width="38" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-BC-Ukj">
+                                    <rect key="frame" x="29" y="33" width="359" height="634"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <mutableString key="text">You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.
+
+• Work Experience
+	• Skilled work experience of at least 1-			year continuous full time within the last 10 		years in NOC job groups 0, A, or B which is 		paid.
+	• Full-time at 1 job: 30 hours/week for 12 		months = 1 year full time (1,560 hours)
+	• Equal amount in part-time: 15 hours/week 		for 24 months = 1 year full time (1,560 hours)
+	• Full-time at more than 1 job: 30 hours/week 	for 12 months at more than 1 job = 1-year full 	time (1,560 hours)
+
+• Language 
+Get a minimum score of CLB 7 in all 4 abilities of ECB in either English or French language
+
+• Education
+	• If you went to school in Canada, you must 		submit certificate, diploma or degree from a 	Canadian high school or post-secondary 		institution
+	• If you have foreign education, you must 		submit an ECA verified certificate, diploma or 	degree
+
+• No plans to live in Quebec</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ww-iB-glT">
+                                    <rect key="frame" x="29" y="675" width="359" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <string key="text">• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can check your points by visiting the this link." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="79M-La-L1i">
+                                    <rect key="frame" x="27" y="780" width="359" height="19"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="07J-zr-RmT" firstAttribute="width" secondItem="yDm-jS-NRg" secondAttribute="width" id="17G-iV-ZR4"/>
+                        <constraint firstAttribute="bottom" secondItem="07J-zr-RmT" secondAttribute="bottom" constant="-19" id="7ST-fX-1cd"/>
+                        <constraint firstItem="07J-zr-RmT" firstAttribute="top" secondItem="IVV-zH-TgA" secondAttribute="top" id="Owb-OK-12z"/>
+                        <constraint firstItem="07J-zr-RmT" firstAttribute="leading" secondItem="yDm-jS-NRg" secondAttribute="leading" id="Vz1-zE-Zni"/>
+                        <constraint firstAttribute="trailing" secondItem="07J-zr-RmT" secondAttribute="trailing" id="Xv3-zN-jhh"/>
+                        <constraint firstItem="07J-zr-RmT" firstAttribute="height" secondItem="yDm-jS-NRg" secondAttribute="height" multiplier="1.02387" id="deE-pk-jPq"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="2zD-tv-Pnt"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="IVV-zH-TgA"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="JaR-Ny-m0O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="6Z1-f6-wI0"/>
+                <constraint firstItem="3dA-yy-waP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="Bgh-0y-DHm"/>
+                <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="Tm1-UY-HyZ"/>
+                <constraint firstItem="yDm-jS-NRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UEv-aE-l7B"/>
+                <constraint firstItem="3dA-yy-waP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="f8P-R2-4of"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JaR-Ny-m0O" secondAttribute="trailing" constant="143" id="ksf-1O-DNR"/>
+                <constraint firstItem="yDm-jS-NRg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pAq-VQ-QYD"/>
+                <constraint firstItem="yDm-jS-NRg" firstAttribute="top" secondItem="JaR-Ny-m0O" secondAttribute="bottom" constant="16" id="wDj-ft-YA8"/>
+                <constraint firstAttribute="bottom" secondItem="yDm-jS-NRg" secondAttribute="bottom" id="xa3-Md-H6X"/>
+                <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="zwa-Qn-XeF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="183.14732142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

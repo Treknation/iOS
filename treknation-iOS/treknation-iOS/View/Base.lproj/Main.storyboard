@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="havania.ttf">
+            <string>HavaniaRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -31,7 +36,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="DEc-lH-eTb"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="textColor" red="0.078431372549019607" green="0.23921568627450979" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -50,11 +55,11 @@
                                                         <constraint firstAttribute="height" constant="1" id="Hw2-Tr-SLW"/>
                                                     </constraints>
                                                 </view>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-OG-maf">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-OG-maf">
                                                     <rect key="frame" x="17" y="51" width="334" height="99"/>
                                                     <string key="text">You can become a Permenent Resident of Canada through the Express Entry System which has three programs Federal Skilled Worker, Canadian Experience Class and Federal Skills Trade.</string>
                                                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -100,7 +105,7 @@
                                     <constraint firstAttribute="height" constant="41" id="eGO-xp-p1Q"/>
                                     <constraint firstAttribute="width" constant="179" id="fRQ-3d-jCf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="HavaniaRegular" family="Havania" pointSize="33"/>
                                 <color key="textColor" red="0.078431372549019607" green="0.23921568627450979" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -131,7 +136,9 @@
         <scene sceneID="J0O-Z6-6I1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gBq-tc-SHo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="files" id="Ko0-RV-6wW"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="homeActive" id="Ko0-RV-6wW">
+                        <color key="badgeColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Doj-rM-gES">
@@ -146,17 +153,67 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="119.86607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="8mh-xb-tL0">
             <objects>
-                <viewController id="enz-BB-Hv5" sceneMemberID="viewController">
+                <viewController id="enz-BB-Hv5" customClass="MoreViewController" customModule="treknation_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A6D-qn-LhP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sEz-jc-bhB">
+                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ceO-IJ-np7">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ceO-IJ-np7" id="BEr-pV-n4z">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="enz-BB-Hv5" id="amS-db-Fti"/>
+                                    <outlet property="delegate" destination="enz-BB-Hv5" id="hKP-N5-JuI"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="KPD-e3-NGg">
+                                <rect key="frame" x="12" y="58" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ABb-20-I6h"/>
+                                    <constraint firstAttribute="width" constant="24" id="zYe-YQ-WYj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrekNation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fig-Ia-Pia">
+                                <rect key="frame" x="49" y="50" width="179" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="npL-Nq-O9r"/>
+                                    <constraint firstAttribute="width" constant="179" id="yGR-Ng-Ma4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HavaniaRegular" family="Havania" pointSize="33"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sEz-jc-bhB" firstAttribute="trailing" secondItem="5PE-fm-sCb" secondAttribute="trailing" id="0b1-Dp-1vi"/>
+                            <constraint firstItem="sEz-jc-bhB" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="55" id="MfJ-wf-Zl9"/>
+                            <constraint firstItem="fig-Ia-Pia" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="6" id="UBx-oe-IaL"/>
+                            <constraint firstItem="KPD-e3-NGg" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="14" id="bti-BY-62f"/>
+                            <constraint firstItem="sEz-jc-bhB" firstAttribute="bottom" secondItem="5PE-fm-sCb" secondAttribute="bottom" id="cAV-p6-f7C"/>
+                            <constraint firstItem="KPD-e3-NGg" firstAttribute="leading" secondItem="5PE-fm-sCb" secondAttribute="leading" constant="12" id="d15-cJ-xP3"/>
+                            <constraint firstItem="sEz-jc-bhB" firstAttribute="leading" secondItem="5PE-fm-sCb" secondAttribute="leading" id="oEZ-P1-aHR"/>
+                            <constraint firstItem="fig-Ia-Pia" firstAttribute="leading" secondItem="KPD-e3-NGg" secondAttribute="trailing" constant="13" id="oyl-hH-prB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5PE-fm-sCb"/>
                     </view>
                     <navigationItem key="navigationItem" id="QAC-TH-aN9"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="sEz-jc-bhB" id="Jiv-Jj-1rS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2Y-t8-CNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,6 +228,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="gBq-tc-SHo" kind="relationship" relationship="viewControllers" id="giT-he-mWG"/>
@@ -185,7 +244,9 @@
         <scene sceneID="ihr-tu-bTs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ch1-gT-9sd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" selectedImage="settings" id="hYa-dh-yuP"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" selectedImage="moreActive" id="hYa-dh-yuP">
+                        <color key="badgeColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U5G-oF-fL1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -202,9 +263,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="files" width="24" height="25"/>
+        <image name="home" width="24" height="25"/>
+        <image name="homeActive" width="24" height="25"/>
+        <image name="more" width="24" height="25"/>
+        <image name="moreActive" width="24" height="25"/>
         <image name="open" width="18" height="19"/>
-        <image name="settings" width="24" height="25"/>
         <image name="shape" width="24" height="24"/>
     </resources>
 </document>

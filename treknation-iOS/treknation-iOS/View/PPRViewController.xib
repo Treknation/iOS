@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPRViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1693"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-1f-dSk">
+                    <rect key="frame" x="20" y="37" width="374" height="853"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AOR to PPR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-p0-I9y">
+                    <rect key="frame" x="154" y="54" width="106" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knP-AP-MKw">
+                    <rect key="frame" x="32" y="54" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="8hg-ar-6ja"/>
+                        <constraint firstAttribute="height" constant="22" id="uop-PE-OD9"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="Gym-pt-WQx"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-9Q-ujE">
+                    <rect key="frame" x="-1" y="90" width="415" height="1607"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia4-ku-GF9" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="1350"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ngp-RR-9vy">
+                                    <rect key="frame" x="42" y="14" width="346" height="1146"/>
+                                    <mutableString key="text">After you submit your e-APR you get an AOR which is a confirmation that your application was received by IRCC and they have created a file with your application number. After you submit your application, you can use this Webform if you need to report important changes to your application such as:
+
+• Changes in address, telephone number, email or other contact information
+• Births or deaths in your immediate family                   • Marriages or divorces
+• Adoptions
+• Changes to your job or job offer
+• A new educational credential
+• Updated language test results
+
+IRCC will communicate with you through your online account to:
+
+• Tell you to give your biometrics and medical
+• Confirm that they have reviewed your application
+• Send you updates on the status of your application
+• Ask you for more documents, if necessary
+• Set up an interview, if necessary
+• Tell you what you need to do and what will happen next
+
+IRCC will decide on your application depending on:
+
+• Whether you meet the eligibility criteria for the program
+• Whether you’re admissible to Canada, based on the results of your
+	• Medical exam
+	• Police certificates
+	• Background checks
+
+If your application is Rejected and you would like to be considered for future rounds, then:
+
+• Fill out and submit a new Express Entry profile
+• Meet the eligibility criteria
+• Be accepted into the pool again
+
+If your application is approved then you would need to send your passport to IRCC, who will then mail you a:
+
+• Confirmation of Permanent Residence (COPR)
+• A permanent resident visa (if you're from a country that requires a visa)
+
+Your COPR will have information about who you are, as well as your photograph. Your COPR is valid for a limited time so use it before it expires.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-j6-VAD">
+                                    <rect key="frame" x="37" y="1192" width="340" height="36"/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="kC0-Yy-UuQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" title="Mark as Complete">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="BaB-WW-YdO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1350" id="00q-9G-zQn"/>
+                                <constraint firstItem="ngp-RR-9vy" firstAttribute="top" secondItem="Ia4-ku-GF9" secondAttribute="top" constant="14" id="S9e-Dk-gat"/>
+                                <constraint firstItem="ngp-RR-9vy" firstAttribute="leading" secondItem="Ia4-ku-GF9" secondAttribute="leading" constant="42" id="Ykg-Rc-HRd"/>
+                                <constraint firstAttribute="trailing" secondItem="ngp-RR-9vy" secondAttribute="trailing" constant="27" id="aZQ-sm-QUn"/>
+                                <constraint firstItem="Jwy-j6-VAD" firstAttribute="leading" secondItem="Ia4-ku-GF9" secondAttribute="leading" constant="37" id="hka-lj-Ta6"/>
+                                <constraint firstAttribute="trailing" secondItem="Jwy-j6-VAD" secondAttribute="trailing" constant="38" id="oIk-Th-fmQ"/>
+                                <constraint firstItem="Jwy-j6-VAD" firstAttribute="top" secondItem="ngp-RR-9vy" secondAttribute="bottom" constant="32" id="q7m-gh-yiK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ia4-ku-GF9" secondAttribute="trailing" id="SMR-md-GBT"/>
+                        <constraint firstItem="Ia4-ku-GF9" firstAttribute="top" secondItem="Thd-9Q-ujE" secondAttribute="top" id="T8Z-qp-bHp"/>
+                        <constraint firstItem="Ia4-ku-GF9" firstAttribute="width" secondItem="Thd-9Q-ujE" secondAttribute="width" id="ngV-Tn-pAF"/>
+                        <constraint firstItem="Ia4-ku-GF9" firstAttribute="leading" secondItem="Thd-9Q-ujE" secondAttribute="leading" id="r57-oB-rGu"/>
+                        <constraint firstAttribute="bottom" secondItem="Ia4-ku-GF9" secondAttribute="bottom" constant="-9" id="xme-po-OhB"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="knP-AP-MKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="IVN-r8-4z9"/>
+                <constraint firstAttribute="bottom" secondItem="Thd-9Q-ujE" secondAttribute="bottom" constant="-4" id="Vxw-IG-0fU"/>
+                <constraint firstItem="knP-AP-MKw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="gvg-Cd-vG3"/>
+                <constraint firstItem="Thd-9Q-ujE" firstAttribute="top" secondItem="knP-AP-MKw" secondAttribute="bottom" constant="14" id="k9o-DX-yzu"/>
+                <constraint firstItem="Thd-9Q-ujE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nqW-wJ-YbA"/>
+                <constraint firstItem="Thd-9Q-ujE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="o3R-qE-JCb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="420.20089285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPRViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-Zb-bOw">
+                    <rect key="frame" x="21" y="30" width="374" height="1145"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E-APR Fees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-hl-p4a">
+                    <rect key="frame" x="158" y="46" width="116" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-EY-RJT">
+                    <rect key="frame" x="33" y="46" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Y5L-M3-avH"/>
+                        <constraint firstAttribute="width" constant="20" id="sta-0B-lRx"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="x0G-p7-ofa"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVw-vj-zGC">
+                    <rect key="frame" x="0.0" y="77" width="415" height="1115"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hH2-wM-WoJ" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="1300"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-d4-Kcx">
+                                    <rect key="frame" x="37" y="1007" width="340" height="36"/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="Uah-sh-AgX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" title="Mark as Complete">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="iLQ-Bl-jpK"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Lb-Avg">
+                                    <rect key="frame" x="38" y="17" width="340" height="687.5"/>
+                                    <mutableString key="text">There are 3 types of fees that you would need to pay for your e-APR:
+
+• Processing fees: You need to pay a processing fee for yourself and your dependents who are part of the application. Usually, the fee is around 825 CAD per person and 225 CAD for a dependent child
+
+• Right of Permanent Residence fee: You would need to pay 500 CAD for the Right to Permanent residence fee. You can pay the fee along with the processing fee to avoid delays or wait until IRCC approves your application. We recommend you pay this fee along with the Processing Fee. Note that this fee is paid per application hence you will not be required to pay for each individual in your application. This fee can be refunded if your application is rejected
+
+• Biometrics fees: In most cases, you must pay a biometrics fee when you submit your application. Otherwise, you may experience delays. The biometrics fee covers the cost of collecting fingerprints and a digital photo and usually costs 85 CAD per person. After you pay the biometrics fee with a complete application, IRCC will send you a letter confirming that you need to give your biometrics and where you can go. You must show this letter when you give your biometrics. You must give your biometrics in person. Make sure to book an appointment if this service is offered. Find a collection point close to you.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can see the complete fee list here " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-he-uee">
+                                    <rect key="frame" x="38" y="716" width="340" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gu-wP-t7N">
+                                    <rect key="frame" x="38" y="754" width="340" height="229.5"/>
+                                    <string key="text">Refunds
+If your application isn’t complete, you can get a refund for:
+·       processing fee
+·       right of permanent residence fee (if you’ve paid it)
+You won’t get a refund of the processing fee once IRCC starts processing your application. 
+
+After you submit your application, you can use this Webform if you need to report important changes in your application</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="0Gu-wP-t7N" secondAttribute="trailing" constant="37" id="0Hl-Wv-MPo"/>
+                                <constraint firstItem="0Gu-wP-t7N" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="4Ob-yg-1Qk"/>
+                                <constraint firstItem="pEA-d4-Kcx" firstAttribute="top" secondItem="0Gu-wP-t7N" secondAttribute="bottom" constant="23.5" id="7en-tx-QiM"/>
+                                <constraint firstItem="pEA-d4-Kcx" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="37" id="FcT-UE-1j3"/>
+                                <constraint firstItem="Hqn-Lb-Avg" firstAttribute="top" secondItem="hH2-wM-WoJ" secondAttribute="top" constant="17" id="KEQ-5V-LH2"/>
+                                <constraint firstItem="0Gu-wP-t7N" firstAttribute="top" secondItem="dxj-he-uee" secondAttribute="bottom" constant="18.5" id="OkV-ah-JVs"/>
+                                <constraint firstAttribute="height" constant="1300" id="cJ8-yn-4ZA"/>
+                                <constraint firstAttribute="trailing" secondItem="pEA-d4-Kcx" secondAttribute="trailing" constant="38" id="iMs-cU-OLg"/>
+                                <constraint firstAttribute="trailing" secondItem="Hqn-Lb-Avg" secondAttribute="trailing" constant="37" id="imp-gm-Jo3"/>
+                                <constraint firstItem="dxj-he-uee" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="tTW-xY-Fd2"/>
+                                <constraint firstAttribute="trailing" secondItem="dxj-he-uee" secondAttribute="trailing" constant="37" id="xRA-DR-ZAZ"/>
+                                <constraint firstItem="dxj-he-uee" firstAttribute="top" secondItem="Hqn-Lb-Avg" secondAttribute="bottom" constant="11.5" id="z08-N3-sJP"/>
+                                <constraint firstItem="Hqn-Lb-Avg" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="zjJ-9D-hdF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hH2-wM-WoJ" firstAttribute="width" secondItem="pVw-vj-zGC" secondAttribute="width" id="2e0-fX-bZV"/>
+                        <constraint firstItem="hH2-wM-WoJ" firstAttribute="top" secondItem="pVw-vj-zGC" secondAttribute="top" id="2gw-Qy-GdT"/>
+                        <constraint firstItem="hH2-wM-WoJ" firstAttribute="leading" secondItem="pVw-vj-zGC" secondAttribute="leading" id="4RF-eI-eqA"/>
+                        <constraint firstAttribute="trailing" secondItem="hH2-wM-WoJ" secondAttribute="trailing" id="LNd-Xl-mUI"/>
+                        <constraint firstAttribute="bottom" secondItem="hH2-wM-WoJ" secondAttribute="bottom" id="ssU-LF-Jhf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pVw-vj-zGC" secondAttribute="trailing" constant="-1" id="CXP-6R-xGv"/>
+                <constraint firstItem="pW1-EY-RJT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="EFj-tz-tg4"/>
+                <constraint firstItem="pVw-vj-zGC" firstAttribute="top" secondItem="pW1-EY-RJT" secondAttribute="bottom" constant="9" id="OE1-MW-NYU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xyb-Zb-bOw" secondAttribute="trailing" constant="19" id="UKx-ax-vsa"/>
+                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Utm-Tj-vIh"/>
+                <constraint firstItem="pW1-EY-RJT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="YjL-Mp-na7"/>
+                <constraint firstItem="pVw-vj-zGC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dxI-sw-hzp"/>
+                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="igF-H5-OSo"/>
+                <constraint firstAttribute="bottom" secondItem="Xyb-Zb-bOw" secondAttribute="bottom" constant="17" id="og6-3p-Kxn"/>
+                <constraint firstAttribute="bottom" secondItem="pVw-vj-zGC" secondAttribute="bottom" id="tiG-hz-uQX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="252.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

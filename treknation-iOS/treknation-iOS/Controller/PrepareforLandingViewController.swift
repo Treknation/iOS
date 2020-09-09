@@ -34,6 +34,7 @@ class PrepareforLandingViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func markAsComplete(_ sender: Any) {
            appData.isComplete = true
            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
@@ -42,15 +43,16 @@ class PrepareforLandingViewController: UIViewController {
            }))
            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
            self.present(alert, animated: true)
-       }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    
+    @IBAction func ifAlredyInCanada(_ sender: Any) {
+        let vc = InCanadaViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func ifOutsideCanada(_ sender: Any) {
+        let vc = OutsideCanadaViewController()
+          self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

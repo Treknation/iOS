@@ -118,7 +118,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: appData[indexPath.section])
         case 11:
-            let langVC = LanguageTestViewController()
+            let langVC = PrepareforLandingViewController()
             self.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: appData[indexPath.section])
         default:

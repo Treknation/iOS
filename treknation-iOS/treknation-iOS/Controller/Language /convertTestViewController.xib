@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="convertTestViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="7FT-tf-pLY" id="3pc-d3-N2k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcf-rF-ZKx">
+                    <rect key="frame" x="22" y="59" width="28" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="UKK-of-k6i"/>
+                        <constraint firstAttribute="width" constant="28" id="paX-BW-FdM"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FT-tf-pLY">
+                    <rect key="frame" x="15" y="44" width="384" height="823"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E8-9k-ukQ">
+                    <rect key="frame" x="20" y="61" width="28" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="YtJ-mx-FuK"/>
+                        <constraint firstAttribute="height" constant="22" id="q6n-9m-DGo"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="qzf-Nf-guF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Tests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSW-PR-UOd">
+                    <rect key="frame" x="135.5" y="62" width="143.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7YW-th-e9A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to convert your test results?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGm-Ex-NbD">
+                    <rect key="frame" x="27" y="103" width="349" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRA-8l-00G">
+                    <rect key="frame" x="27" y="130" width="364" height="131"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="131" id="DmU-5i-jv0"/>
+                    </constraints>
+                    <string key="text">For each test, there is a conversion table from the test mark per ability (speaking, reading, listening, writing) to the Canadian Level Benchmark (CLB). CLBs are the norm for assessing language ability by IRCC. You can check your conversion through this link.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7FT-tf-pLY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8S7-eE-RWv"/>
+                <constraint firstItem="eGm-Ex-NbD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="9Y9-FP-5wa"/>
+                <constraint firstItem="BRA-8l-00G" firstAttribute="top" secondItem="eGm-Ex-NbD" secondAttribute="bottom" constant="7.5" id="EwI-By-1Or"/>
+                <constraint firstItem="eGm-Ex-NbD" firstAttribute="top" secondItem="wSW-PR-UOd" secondAttribute="bottom" constant="20" id="N00-fs-T09"/>
+                <constraint firstItem="7E8-9k-ukQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Qdq-0h-T4F"/>
+                <constraint firstItem="7E8-9k-ukQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="THE-49-YjR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7FT-tf-pLY" secondAttribute="trailing" constant="15" id="U8r-O5-lAR"/>
+                <constraint firstItem="7FT-tf-pLY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ZFx-gG-raj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BRA-8l-00G" secondAttribute="trailing" constant="23" id="a3T-sj-h8p"/>
+                <constraint firstItem="BRA-8l-00G" firstAttribute="top" secondItem="eGm-Ex-NbD" secondAttribute="bottom" constant="7.5" id="c95-G0-fj5"/>
+                <constraint firstItem="BRA-8l-00G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="ipK-RT-1pI"/>
+                <constraint firstItem="wSW-PR-UOd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ovD-bs-NTo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eGm-Ex-NbD" secondAttribute="trailing" constant="38" id="t4z-o4-J4w"/>
+                <constraint firstItem="7FT-tf-pLY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="uZb-zl-9T6"/>
+                <constraint firstItem="wSW-PR-UOd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="uh9-Cg-v8f"/>
+                <constraint firstItem="eGm-Ex-NbD" firstAttribute="top" secondItem="wSW-PR-UOd" secondAttribute="bottom" constant="20" id="wcq-1I-AEJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

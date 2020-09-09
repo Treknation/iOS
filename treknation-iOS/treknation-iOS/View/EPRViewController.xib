@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EPRViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="Xyb-Zb-bOw" id="Y1c-ht-JKs"/>
+                <outlet property="detailedLabel" destination="Hqn-Lb-Avg" id="z7b-z4-vco"/>
+                <outlet property="isCompletedBtn" destination="pEA-d4-Kcx" id="9wC-ID-7od"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,21 +21,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-Zb-bOw">
-                    <rect key="frame" x="21" y="30" width="374" height="1145"/>
+                    <rect key="frame" x="15" y="44" width="384" height="1114"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E-APR Fees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-hl-p4a">
-                    <rect key="frame" x="158" y="46" width="116" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-APR Fees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-hl-p4a">
+                    <rect key="frame" x="154" y="55" width="106" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-EY-RJT">
-                    <rect key="frame" x="33" y="46" width="20" height="22"/>
+                    <rect key="frame" x="20" y="54" width="20" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="22" id="Y5L-M3-avH"/>
-                        <constraint firstAttribute="width" constant="20" id="sta-0B-lRx"/>
+                        <constraint firstAttribute="width" constant="20" id="oZQ-1C-grV"/>
+                        <constraint firstAttribute="height" constant="20" id="y6j-Fp-VOe"/>
                     </constraints>
                     <state key="normal" image="back"/>
                     <connections>
@@ -40,13 +42,36 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVw-vj-zGC">
-                    <rect key="frame" x="0.0" y="77" width="415" height="1115"/>
+                    <rect key="frame" x="0.0" y="85" width="415" height="1107"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hH2-wM-WoJ" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="415" height="1300"/>
                             <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Lb-Avg">
+                                    <rect key="frame" x="38" y="21" width="340" height="859.5"/>
+                                    <mutableString key="text">There are 3 types of fees that you would need to pay for your e-APR:
+
+• Processing fees: You need to pay a processing fee for yourself and your dependents who are part of the application. Usually, the fee is around 825 CAD per person and 225 CAD for a dependent child
+
+• Right of Permanent Residence fee: You would need to pay 500 CAD for the Right to Permanent residence fee. You can pay the fee along with the processing fee to avoid delays or wait until IRCC approves your application. We recommend you pay this fee along with the Processing Fee. Note that this fee is paid per application hence you will not be required to pay for each individual in your application. This fee can be refunded if your application is rejected
+
+• Biometrics fees: In most cases, you must pay a biometrics fee when you submit your application. Otherwise, you may experience delays. The biometrics fee covers the cost of collecting fingerprints and a digital photo and usually costs 85 CAD per person. After you pay the biometrics fee with a complete application, IRCC will send you a letter confirming that you need to give your biometrics and where you can go. You must show this letter when you give your biometrics. You must give your biometrics in person. Make sure to book an appointment if this service is offered. Find a collection point close to you.
+
+You can see the complete fee list here 
+
+Refunds
+If your application isn’t complete, you can get a refund for:
+• Processing fee
+• Right of permanent residence fee (if you’ve paid it)
+You won’t get a refund of the processing fee once IRCC starts processing your application. 
+
+After you submit your application, you can use this Webform if you need to report important changes in your application</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-d4-Kcx">
-                                    <rect key="frame" x="37" y="1007" width="340" height="36"/>
+                                    <rect key="frame" x="37" y="926" width="340" height="36"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="Uah-sh-AgX"/>
@@ -59,53 +84,15 @@
                                         <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="iLQ-Bl-jpK"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Lb-Avg">
-                                    <rect key="frame" x="38" y="17" width="340" height="687.5"/>
-                                    <mutableString key="text">There are 3 types of fees that you would need to pay for your e-APR:
-
-• Processing fees: You need to pay a processing fee for yourself and your dependents who are part of the application. Usually, the fee is around 825 CAD per person and 225 CAD for a dependent child
-
-• Right of Permanent Residence fee: You would need to pay 500 CAD for the Right to Permanent residence fee. You can pay the fee along with the processing fee to avoid delays or wait until IRCC approves your application. We recommend you pay this fee along with the Processing Fee. Note that this fee is paid per application hence you will not be required to pay for each individual in your application. This fee can be refunded if your application is rejected
-
-• Biometrics fees: In most cases, you must pay a biometrics fee when you submit your application. Otherwise, you may experience delays. The biometrics fee covers the cost of collecting fingerprints and a digital photo and usually costs 85 CAD per person. After you pay the biometrics fee with a complete application, IRCC will send you a letter confirming that you need to give your biometrics and where you can go. You must show this letter when you give your biometrics. You must give your biometrics in person. Make sure to book an appointment if this service is offered. Find a collection point close to you.</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can see the complete fee list here " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-he-uee">
-                                    <rect key="frame" x="38" y="716" width="340" height="19.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gu-wP-t7N">
-                                    <rect key="frame" x="38" y="754" width="340" height="229.5"/>
-                                    <string key="text">Refunds
-If your application isn’t complete, you can get a refund for:
-·       processing fee
-·       right of permanent residence fee (if you’ve paid it)
-You won’t get a refund of the processing fee once IRCC starts processing your application. 
-
-After you submit your application, you can use this Webform if you need to report important changes in your application</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="0Gu-wP-t7N" secondAttribute="trailing" constant="37" id="0Hl-Wv-MPo"/>
-                                <constraint firstItem="0Gu-wP-t7N" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="4Ob-yg-1Qk"/>
-                                <constraint firstItem="pEA-d4-Kcx" firstAttribute="top" secondItem="0Gu-wP-t7N" secondAttribute="bottom" constant="23.5" id="7en-tx-QiM"/>
+                                <constraint firstItem="Hqn-Lb-Avg" firstAttribute="top" secondItem="hH2-wM-WoJ" secondAttribute="top" constant="21" id="7zo-Sy-WzX"/>
+                                <constraint firstItem="pEA-d4-Kcx" firstAttribute="top" secondItem="Hqn-Lb-Avg" secondAttribute="bottom" constant="45.5" id="DJE-xy-mla"/>
                                 <constraint firstItem="pEA-d4-Kcx" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="37" id="FcT-UE-1j3"/>
-                                <constraint firstItem="Hqn-Lb-Avg" firstAttribute="top" secondItem="hH2-wM-WoJ" secondAttribute="top" constant="17" id="KEQ-5V-LH2"/>
-                                <constraint firstItem="0Gu-wP-t7N" firstAttribute="top" secondItem="dxj-he-uee" secondAttribute="bottom" constant="18.5" id="OkV-ah-JVs"/>
                                 <constraint firstAttribute="height" constant="1300" id="cJ8-yn-4ZA"/>
                                 <constraint firstAttribute="trailing" secondItem="pEA-d4-Kcx" secondAttribute="trailing" constant="38" id="iMs-cU-OLg"/>
                                 <constraint firstAttribute="trailing" secondItem="Hqn-Lb-Avg" secondAttribute="trailing" constant="37" id="imp-gm-Jo3"/>
-                                <constraint firstItem="dxj-he-uee" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="tTW-xY-Fd2"/>
-                                <constraint firstAttribute="trailing" secondItem="dxj-he-uee" secondAttribute="trailing" constant="37" id="xRA-DR-ZAZ"/>
-                                <constraint firstItem="dxj-he-uee" firstAttribute="top" secondItem="Hqn-Lb-Avg" secondAttribute="bottom" constant="11.5" id="z08-N3-sJP"/>
                                 <constraint firstItem="Hqn-Lb-Avg" firstAttribute="leading" secondItem="hH2-wM-WoJ" secondAttribute="leading" constant="38" id="zjJ-9D-hdF"/>
                             </constraints>
                         </view>
@@ -120,18 +107,20 @@ After you submit your application, you can use this Webform if you need to repor
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Xyb-Zb-bOw" secondAttribute="top" id="4rM-T1-DHD"/>
                 <constraint firstAttribute="trailing" secondItem="pVw-vj-zGC" secondAttribute="trailing" constant="-1" id="CXP-6R-xGv"/>
-                <constraint firstItem="pW1-EY-RJT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="EFj-tz-tg4"/>
-                <constraint firstItem="pVw-vj-zGC" firstAttribute="top" secondItem="pW1-EY-RJT" secondAttribute="bottom" constant="9" id="OE1-MW-NYU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xyb-Zb-bOw" secondAttribute="trailing" constant="19" id="UKx-ax-vsa"/>
-                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Utm-Tj-vIh"/>
-                <constraint firstItem="pW1-EY-RJT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="YjL-Mp-na7"/>
+                <constraint firstItem="pW1-EY-RJT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="HIp-96-Hyt"/>
+                <constraint firstItem="pVw-vj-zGC" firstAttribute="top" secondItem="W6g-hl-p4a" secondAttribute="bottom" constant="7" id="L97-5K-glC"/>
+                <constraint firstItem="W6g-hl-p4a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NHX-nC-TSY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xyb-Zb-bOw" secondAttribute="trailing" constant="15" id="UKx-ax-vsa"/>
+                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Utm-Tj-vIh"/>
                 <constraint firstItem="pVw-vj-zGC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dxI-sw-hzp"/>
-                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="igF-H5-OSo"/>
-                <constraint firstAttribute="bottom" secondItem="Xyb-Zb-bOw" secondAttribute="bottom" constant="17" id="og6-3p-Kxn"/>
+                <constraint firstItem="pW1-EY-RJT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="e2N-x9-bmW"/>
+                <constraint firstItem="W6g-hl-p4a" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="pbU-fZ-Zk0"/>
                 <constraint firstAttribute="bottom" secondItem="pVw-vj-zGC" secondAttribute="bottom" id="tiG-hz-uQX"/>
+                <constraint firstItem="Xyb-Zb-bOw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="xf0-lN-0Iw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

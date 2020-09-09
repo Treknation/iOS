@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InCanadaViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="sX3-bx-5jd" id="4Uq-mI-jQA"/>
+                <outlet property="detailedLabel" destination="HOA-6E-PeF" id="Hc8-Uf-Qdz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX3-bx-5jd">
+                    <rect key="frame" x="15" y="44" width="385" height="823"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-MI-NaV">
+                    <rect key="frame" x="2" y="88" width="415" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-FF-rf3" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="798"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are already in Canada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-lK-aoZ">
+                                    <rect key="frame" x="32" y="26" width="344" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="1Q9-3f-OwN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="HOA-6E-PeF">
+                                    <rect key="frame" x="32" y="55" width="350" height="394"/>
+                                    <mutableString key="text">IRCC contact you and let you know what to do next.
+You’ll need to have a short interview with an officer. You have two options for your interview:
+• Make an appointment at one of our offices in Canada (best option)
+• Go to a Canadian “port of entry” (border crossing), and present proof that you have the funds to support yourself and your family and your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if applicable).
+
+During the interview the officer will:
+• Make sure all your documents are valid
+• Ask you a few questions to make sure you still meet the terms to immigrate to Canada
+• Confirm your Canadian mailing address, so we can mail your permanent resident card (PR card)
+
+If you change your address within 180 days of getting your status, you must tell IRCC using the Webform.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="oLT-lK-aoZ" firstAttribute="top" secondItem="rZV-FF-rf3" secondAttribute="top" constant="26" id="MP2-tY-4ui"/>
+                                <constraint firstItem="HOA-6E-PeF" firstAttribute="top" secondItem="oLT-lK-aoZ" secondAttribute="bottom" constant="8" id="Ons-6v-77J"/>
+                                <constraint firstAttribute="trailing" secondItem="oLT-lK-aoZ" secondAttribute="trailing" constant="39" id="R8q-TS-B8X"/>
+                                <constraint firstAttribute="trailing" secondItem="HOA-6E-PeF" secondAttribute="trailing" constant="33" id="dvF-o4-Mnx"/>
+                                <constraint firstItem="HOA-6E-PeF" firstAttribute="leading" secondItem="rZV-FF-rf3" secondAttribute="leading" constant="32" id="gQg-K3-60e"/>
+                                <constraint firstAttribute="height" constant="798" id="yq0-FA-aZg"/>
+                                <constraint firstItem="oLT-lK-aoZ" firstAttribute="leading" secondItem="rZV-FF-rf3" secondAttribute="leading" constant="32" id="z49-sL-MhE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rZV-FF-rf3" secondAttribute="bottom" constant="19" id="3Y2-hy-Jtq"/>
+                        <constraint firstItem="rZV-FF-rf3" firstAttribute="width" secondItem="fqv-MI-NaV" secondAttribute="width" id="75m-XP-o8M"/>
+                        <constraint firstItem="rZV-FF-rf3" firstAttribute="leading" secondItem="fqv-MI-NaV" secondAttribute="leading" id="Lne-fq-77W"/>
+                        <constraint firstItem="rZV-FF-rf3" firstAttribute="top" secondItem="fqv-MI-NaV" secondAttribute="top" id="Voj-Ax-fEq"/>
+                        <constraint firstAttribute="trailing" secondItem="rZV-FF-rf3" secondAttribute="trailing" id="zs1-KU-rRz"/>
+                    </constraints>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prepare for Landing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUY-1u-Zao">
+                    <rect key="frame" x="103" y="61" width="208" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="3CA-Rd-vQH"/>
+                        <constraint firstAttribute="width" constant="208" id="XLh-p1-Uf6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-Sl-5xZ">
+                    <rect key="frame" x="21" y="59" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="4k0-f7-4vW"/>
+                        <constraint firstAttribute="width" constant="20" id="zEX-mV-dET"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="6vJ-Tu-LLI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="3" id="6YG-Yh-wn6"/>
+                <constraint firstItem="sX3-bx-5jd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9pe-aU-O4W"/>
+                <constraint firstItem="5Ud-Sl-5xZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="BC4-Ta-c5j"/>
+                <constraint firstItem="sX3-bx-5jd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="Ewn-ck-Rid"/>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="2" id="M6A-Py-8Zr"/>
+                <constraint firstItem="sX3-bx-5jd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="NH8-vm-FhH"/>
+                <constraint firstItem="5Ud-Sl-5xZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Qqg-lw-f4z"/>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="RZy-k9-RhT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sX3-bx-5jd" secondAttribute="trailing" constant="14" id="T2x-zD-hHr"/>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="U36-Yb-kk6"/>
+                <constraint firstItem="bUY-1u-Zao" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="acg-IZ-zWc"/>
+                <constraint firstItem="bUY-1u-Zao" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vbJ-fK-2uQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="134.59821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterEEViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="6yh-AS-gK9" id="dlw-jM-VJa"/>
+                <outlet property="detailedLabel" destination="F8U-mO-JBv" id="rmO-UK-qFM"/>
+                <outlet property="isCompletedBtn" destination="Ywv-iE-z4H" id="q02-hW-RJE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yh-AS-gK9">
-                    <rect key="frame" x="20" y="30" width="374" height="849"/>
+                    <rect key="frame" x="20" y="44" width="374" height="823"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywv-iE-z4H">
-                            <rect key="frame" x="17" y="663" width="340" height="36"/>
+                            <rect key="frame" x="17" y="601.5" width="340" height="36"/>
                             <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="YcL-Zj-oQw"/>
@@ -30,17 +33,19 @@
                             <state key="normal" title="Mark as Complete">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="vpv-4M-D6h"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="Ywv-iE-z4H" firstAttribute="leading" secondItem="6yh-AS-gK9" secondAttribute="leading" constant="17" id="N6F-P9-fhR"/>
-                        <constraint firstItem="Ywv-iE-z4H" firstAttribute="top" secondItem="6yh-AS-gK9" secondAttribute="top" constant="663" id="hR9-Bc-UmD"/>
                         <constraint firstAttribute="trailing" secondItem="Ywv-iE-z4H" secondAttribute="trailing" constant="17" id="tum-nU-BgE"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-pz-7hg">
-                    <rect key="frame" x="35" y="92" width="344" height="210.5"/>
+                    <rect key="frame" x="35" y="103" width="344" height="179.5"/>
                     <string key="text">Please make sure you have completed the below steps before proceeding to create your profile:
 
 1. ECA from Step 2
@@ -48,32 +53,33 @@
 3. Personal preference code from the Eligibility form in Step 4
 
 In order to create an express entry profile, you would need to create a GC Key account.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Express Entry Pool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRm-ok-ZDd">
-                    <rect key="frame" x="106.5" y="49" width="201" height="21"/>
+                    <rect key="frame" x="89.5" y="62" width="235" height="23"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="201" id="Weg-xt-RsK"/>
+                        <constraint firstAttribute="width" constant="235" id="Weg-xt-RsK"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avG-jz-1SU">
-                    <rect key="frame" x="32" y="49" width="20" height="22"/>
+                    <rect key="frame" x="32" y="60" width="20" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="aAh-lu-rfw"/>
                         <constraint firstAttribute="width" constant="20" id="kzJ-zJ-2pY"/>
                     </constraints>
                     <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="ZPQ-2r-poX"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-mO-JBv">
-                    <rect key="frame" x="32" y="310" width="344" height="363"/>
-                    <attributedString key="attributedText">
-                        <fragment>
-                            <string key="content">Steps
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-mO-JBv">
+                    <rect key="frame" x="32" y="297.5" width="344" height="322.5"/>
+                    <string key="text">Steps
 
 • Create GC key account by going to this page(Please do not choose sign in with partner account) . Please remember the 4 security questions and answers thoroughly since you will be asked each time you log in.
 
@@ -83,34 +89,32 @@ In order to create an express entry profile, you would need to create a GC Key a
 
 
 Note: You have 60 days to fill up and submit your profile.</string>
-                            <attributes>
-                                <font key="NSFont" metaFont="system" size="16"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="F8U-mO-JBv" firstAttribute="top" secondItem="Mpf-pz-7hg" secondAttribute="bottom" constant="7.5" id="8e9-3U-WVZ"/>
+                <constraint firstItem="6yh-AS-gK9" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="2c2-2n-lRw"/>
+                <constraint firstItem="F8U-mO-JBv" firstAttribute="top" secondItem="Mpf-pz-7hg" secondAttribute="bottom" constant="15" id="8e9-3U-WVZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6yh-AS-gK9" secondAttribute="trailing" constant="20" id="BXF-EH-scc"/>
-                <constraint firstAttribute="bottom" secondItem="6yh-AS-gK9" secondAttribute="bottom" constant="17" id="McL-DY-S4g"/>
                 <constraint firstItem="F8U-mO-JBv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="PEk-S7-lOW"/>
                 <constraint firstItem="avG-jz-1SU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Sr2-0f-5dw"/>
-                <constraint firstItem="YRm-ok-ZDd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="UVE-SB-I0P"/>
+                <constraint firstItem="YRm-ok-ZDd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="UVE-SB-I0P"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F8U-mO-JBv" secondAttribute="trailing" constant="38" id="dQS-VF-i7f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mpf-pz-7hg" secondAttribute="trailing" constant="35" id="ebt-m3-T2o"/>
-                <constraint firstItem="6yh-AS-gK9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="fKm-P5-ARB"/>
                 <constraint firstItem="Mpf-pz-7hg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="gKZ-Qr-ssX"/>
                 <constraint firstItem="Mpf-pz-7hg" firstAttribute="top" secondItem="avG-jz-1SU" secondAttribute="bottom" constant="21" id="jwD-HN-Y3j"/>
-                <constraint firstItem="avG-jz-1SU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="k7z-wC-5iD"/>
+                <constraint firstItem="avG-jz-1SU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="k7z-wC-5iD"/>
+                <constraint firstItem="Ywv-iE-z4H" firstAttribute="top" secondItem="F8U-mO-JBv" secondAttribute="bottom" constant="25.5" id="pVk-De-vbu"/>
                 <constraint firstItem="6yh-AS-gK9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qHC-kF-3b2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="6yh-AS-gK9" secondAttribute="top" id="uc8-kI-yEQ"/>
                 <constraint firstItem="YRm-ok-ZDd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wUr-zU-vNS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+            <point key="canvasLocation" x="-675" y="152"/>
         </view>
     </objects>
     <resources>

@@ -20,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jre-Zn-ujb">
-                    <rect key="frame" x="15" y="44" width="385" height="993"/>
+                    <rect key="frame" x="15" y="44" width="384" height="974"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-Ny-m0O">
-                    <rect key="frame" x="125" y="61" width="146" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-Ny-m0O">
+                    <rect key="frame" x="134" y="62" width="146" height="23"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="146" id="eeU-2P-anl"/>
                         <constraint firstAttribute="height" constant="23" id="iXr-aI-3o5"/>
@@ -34,13 +34,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-yy-waP">
-                    <rect key="frame" x="16" y="61" width="27" height="22"/>
+                    <rect key="frame" x="20" y="61" width="27" height="22"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="8Zn-nF-PNF"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="JCh-VY-Pz2"/>
                         <constraint firstAttribute="height" constant="22" id="ge3-1Q-lH4"/>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="27" id="ndl-nl-MPj"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="oFi-DH-hkd"/>
                         <constraint firstAttribute="width" constant="27" id="zZK-Ui-cz9"/>
                     </constraints>
                     <state key="normal" image="back"/>
@@ -49,7 +47,7 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDm-jS-NRg">
-                    <rect key="frame" x="0.0" y="100" width="414" height="947"/>
+                    <rect key="frame" x="0.0" y="95" width="414" height="923"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07J-zr-RmT" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="969.5"/>
@@ -66,7 +64,7 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-BC-Ukj">
                                     <rect key="frame" x="29" y="26" width="359" height="734"/>
-                                    <mutableString key="text">You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.
+                                    <string key="text">You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.
 
 • Work Experience
 	• Skilled work experience of at least 1-			year continuous full time within the last 10 		years in NOC job groups 0, A, or B which is 		paid.
@@ -86,7 +84,7 @@ Get a minimum score of CLB 7 in all 4 abilities of ECB in either English or Fren
 • You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.
 
 
-You can check your points by visiting the this link.</mutableString>
+You can check your points by visiting the this link.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -115,20 +113,18 @@ You can check your points by visiting the this link.</mutableString>
             </subviews>
             <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="JaR-Ny-m0O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="33y-xg-N4i"/>
                 <constraint firstItem="Jre-Zn-ujb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5sd-ux-ZR3"/>
-                <constraint firstItem="JaR-Ny-m0O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="6Z1-f6-wI0"/>
+                <constraint firstItem="JaR-Ny-m0O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="6Z1-f6-wI0"/>
                 <constraint firstItem="3dA-yy-waP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="Bgh-0y-DHm"/>
-                <constraint firstItem="Jre-Zn-ujb" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="24" id="NgL-xR-jjl"/>
-                <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="Tm1-UY-HyZ"/>
+                <constraint firstItem="Jre-Zn-ujb" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="NgL-xR-jjl"/>
+                <constraint firstItem="yDm-jS-NRg" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="SWs-U2-bkN"/>
                 <constraint firstItem="yDm-jS-NRg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UEv-aE-l7B"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jre-Zn-ujb" secondAttribute="trailing" constant="14" id="cAx-t2-1rt"/>
-                <constraint firstItem="3dA-yy-waP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="f8P-R2-4of"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JaR-Ny-m0O" secondAttribute="trailing" constant="143" id="ksf-1O-DNR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jre-Zn-ujb" secondAttribute="trailing" constant="15" id="cAx-t2-1rt"/>
+                <constraint firstItem="3dA-yy-waP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="f8P-R2-4of"/>
                 <constraint firstItem="yDm-jS-NRg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pAq-VQ-QYD"/>
                 <constraint firstItem="Jre-Zn-ujb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="w94-Xo-3DS"/>
-                <constraint firstItem="yDm-jS-NRg" firstAttribute="top" secondItem="JaR-Ny-m0O" secondAttribute="bottom" constant="16" id="wDj-ft-YA8"/>
-                <constraint firstAttribute="bottom" secondItem="yDm-jS-NRg" secondAttribute="bottom" id="xa3-Md-H6X"/>
-                <constraint firstItem="JaR-Ny-m0O" firstAttribute="leading" secondItem="3dA-yy-waP" secondAttribute="trailing" constant="82" id="zwa-Qn-XeF"/>
+                <constraint firstItem="yDm-jS-NRg" firstAttribute="top" secondItem="JaR-Ny-m0O" secondAttribute="bottom" constant="10" id="wDj-ft-YA8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

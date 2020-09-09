@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRSScoreViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="5TF-6h-MSa" id="ZpH-n0-iJA"/>
+                <outlet property="detailLabel" destination="CCR-HP-kTn" id="UGt-fS-MQG"/>
+                <outlet property="isCompletedBtn" destination="IsB-6R-4VA" id="s4t-hb-2wB"/>
+                <outlet property="overviewLabel" destination="acz-b8-ql6" id="2zA-rl-UCc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,39 +21,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="1603"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-6h-MSa">
-                    <rect key="frame" x="20" y="34" width="374" height="849"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-6h-MSa">
+                    <rect key="frame" x="15" y="44" width="384" height="1530"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0CJ-Cb-iS6">
-                    <rect key="frame" x="0.0" y="86" width="414" height="1517"/>
+                    <rect key="frame" x="0.0" y="91" width="414" height="1483"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-vE-5sC" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1426"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acz-b8-ql6">
-                                    <rect key="frame" x="32" y="6" width="349" height="130"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acz-b8-ql6">
+                                    <rect key="frame" x="32" y="6" width="357" height="125.5"/>
                                     <string key="text">Express Entry is a competitive system that chooses applicants with the highest CRS score in the pool for giving ITA. You should try to achieve the highest points possible to increase your chances of getting an ITA. Use this link to check your CRS Scrore. Below are some of the ways of increasing your CRS score.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqK-AP-qQw">
-                                    <rect key="frame" x="32" y="1217" width="347" height="156"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Provincial Nominee Programs
-
-• If you are short of points even after trying all the above methods, you should try to apply for PNP. Getting a nomination through PNP gives you an additional 600 points. You can find more information for PNP for each of the provinces at this link.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-HP-kTn">
-                                    <rect key="frame" x="32" y="153" width="349" height="1041"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <mutableString key="text">Language Proficiency
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCR-HP-kTn">
+                                    <rect key="frame" x="35" y="153" width="349" height="1235.5"/>
+                                    <string key="text">Language Proficiency
 
 • Increasing the points with the language test is the easiest and surest way of increasing the CRS score. So, it's best if you give the language test after sufficient practice. For example, increasing your score from CLB 7 to CLB 9 in each section increases your score by 14 points per section. So, in total your points increase by a total of 56 (14 x 4).
 • You can also earn extra points for your Secondary language abilities. You can earn 4 additional points if you get the score in the below range:
@@ -74,25 +65,43 @@ Spouse Points
 
 Job Offer Points
 
-• You can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.</mutableString>
+• You can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.
+
+Provincial Nominee Programs
+
+• If you are short of points even after trying all the above methods, you should try to apply for PNP. Getting a nomination through PNP gives you an additional 600 points. You can find more information for PNP for each of the provinces at this link.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
-                                    <mutableString key="userLabel">Language Proficiency  • Increasing the points with the language test is the easiest and surest way of increasing the CRS score. So, it's best if you give the language test after sufficient practice. For example, increasing your score from CLB 7 to CLB 9 in each section increases your score by 14 points per section. So, in total your points increase by a total of 56 (14 x 4). • You can also earn extra points for your Secondary language abilities. You can earn 4 additional points if you get the score in the below range:   • Speaking, Listening and Writing:   CLB 5 - CLB 9  • Reading: CLB 4 - CLB 9  Education Points  • If you have a master's degree or have more than 1 degree from outside Canada, it is beneficial to submit the education Assessment for all the degrees and not just for the highest degree as it gives you points for the additional degrees as well. This does not cost an additional amount if done in one take. • You can earn 15 points if you get a 1-year Canadian degree and 30 points if your Canadian degree is 2 years or more in duration. • You earn an additional 50 points if Canadian education combined with Canadian work experience.  Non - Canadian Work Experience  • If your work experience outside Canada is less than 3 years, you can wait till you have completed 3 years. This will help you gain additional points in work experience. Receiving CLB 9 in ECA, along with 3 years of work experience can also add additional points.  Spouse Points  • Depending on who is the primary applicant, your total points can change. If you are the primary applicant and your age is 40 years and your spouse’s age is 28 years, all other factors being the same, it could be beneficial to make your spouse the primary applicant since she gets additional points for age.  Job Offer Points  • You can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.</mutableString>
+                                    <string key="userLabel">Language Proficiency  • Increasing the points with the language test is the easiest and surest way of increasing the CRS score. So, it's best if you give the language test after sufficient practice. For example, increasing your score from CLB 7 to CLB 9 in each section increases your score by 14 points per section. So, in total your points increase by a total of 56 (14 x 4). • You can also earn extra points for your Secondary language abilities. You can earn 4 additional points if you get the score in the below range:   • Speaking, Listening and Writing:   CLB 5 - CLB 9  • Reading: CLB 4 - CLB 9  Education Points  • If you have a master's degree or have more than 1 degree from outside Canada, it is beneficial to submit the education Assessment for all the degrees and not just for the highest degree as it gives you points for the additional degrees as well. This does not cost an additional amount if done in one take. • You can earn 15 points if you get a 1-year Canadian degree and 30 points if your Canadian degree is 2 years or more in duration. • You earn an additional 50 points if Canadian education combined with Canadian work experience.  Non - Canadian Work Experience  • If your work experience outside Canada is less than 3 years, you can wait till you have completed 3 years. This will help you gain additional points in work experience. Receiving CLB 9 in ECA, along with 3 years of work experience can also add additional points.  Spouse Points  • Depending on who is the primary applicant, your total points can change. If you are the primary applicant and your age is 40 years and your spouse’s age is 28 years, all other factors being the same, it could be beneficial to make your spouse the primary applicant since she gets additional points for age.  Job Offer Points  • You can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.</string>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsB-6R-4VA">
-                                    <rect key="frame" x="40" y="1389" width="334" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsB-6R-4VA">
+                                    <rect key="frame" x="40" y="1413.5" width="334" height="34"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="CSy-ud-ywy"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                     <state key="normal" title="Mark as Complete">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="g8t-XM-Y0M"/>
+                                    </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="1426" id="Yi9-Z9-7gq"/>
+                                <constraint firstItem="IsB-6R-4VA" firstAttribute="leading" secondItem="GHc-vE-5sC" secondAttribute="leading" constant="40" id="4Xu-bh-EZE"/>
+                                <constraint firstItem="IsB-6R-4VA" firstAttribute="top" secondItem="CCR-HP-kTn" secondAttribute="bottom" constant="25" id="FFr-cj-kFd"/>
+                                <constraint firstAttribute="trailing" secondItem="IsB-6R-4VA" secondAttribute="trailing" constant="40" id="KMA-e5-4AK"/>
+                                <constraint firstItem="CCR-HP-kTn" firstAttribute="top" secondItem="acz-b8-ql6" secondAttribute="bottom" constant="21.5" id="WeZ-no-EID"/>
+                                <constraint firstAttribute="height" constant="1600" id="Yi9-Z9-7gq"/>
+                                <constraint firstItem="acz-b8-ql6" firstAttribute="leading" secondItem="GHc-vE-5sC" secondAttribute="leading" constant="32" id="dW1-kJ-Tae"/>
+                                <constraint firstAttribute="trailing" secondItem="acz-b8-ql6" secondAttribute="trailing" constant="25" id="gxc-tV-l96"/>
+                                <constraint firstItem="CCR-HP-kTn" firstAttribute="leading" secondItem="GHc-vE-5sC" secondAttribute="leading" constant="35" id="j8H-9Y-Khu"/>
+                                <constraint firstItem="acz-b8-ql6" firstAttribute="top" secondItem="GHc-vE-5sC" secondAttribute="top" constant="6" id="nuu-qv-qOF"/>
+                                <constraint firstAttribute="trailing" secondItem="CCR-HP-kTn" secondAttribute="trailing" constant="30" id="tVJ-sG-Ood"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -106,29 +115,36 @@ Job Offer Points
                     </constraints>
                 </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate CRS Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIc-TR-DrL">
-                    <rect key="frame" x="127.5" y="51" width="159" height="20"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <rect key="frame" x="114" y="61" width="186.5" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlg-Hy-jSG">
-                    <rect key="frame" x="32" y="50" width="20" height="22"/>
+                    <rect key="frame" x="20" y="59" width="20" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="7qj-QJ-Ut3"/>
                         <constraint firstAttribute="height" constant="22" id="H5Y-7o-CnQ"/>
                     </constraints>
                     <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="w3Z-uW-9bo"/>
+                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5TF-6h-MSa" secondAttribute="bottom" constant="-5" id="3av-bC-ebJ"/>
                 <constraint firstItem="0CJ-Cb-iS6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="61A-pV-HA3"/>
-                <constraint firstItem="mlg-Hy-jSG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="6" id="99G-mR-imn"/>
+                <constraint firstItem="mlg-Hy-jSG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="99G-mR-imn"/>
                 <constraint firstItem="FIc-TR-DrL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HCZ-km-M2e"/>
-                <constraint firstItem="mlg-Hy-jSG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Ifd-SR-vaH"/>
-                <constraint firstAttribute="bottom" secondItem="0CJ-Cb-iS6" secondAttribute="bottom" id="T7b-K2-XEd"/>
-                <constraint firstItem="0CJ-Cb-iS6" firstAttribute="top" secondItem="mlg-Hy-jSG" secondAttribute="bottom" constant="14" id="Ujl-2g-Ewz"/>
-                <constraint firstItem="FIc-TR-DrL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="eBj-sQ-uGr"/>
+                <constraint firstItem="mlg-Hy-jSG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ifd-SR-vaH"/>
+                <constraint firstItem="0CJ-Cb-iS6" firstAttribute="top" secondItem="mlg-Hy-jSG" secondAttribute="bottom" constant="10" id="Ujl-2g-Ewz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5TF-6h-MSa" secondAttribute="trailing" constant="15" id="VFo-Eq-Pxj"/>
+                <constraint firstItem="FIc-TR-DrL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="eBj-sQ-uGr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="5TF-6h-MSa" secondAttribute="top" id="gVB-gz-Xci"/>
+                <constraint firstItem="5TF-6h-MSa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="luq-Vn-zwD"/>
+                <constraint firstItem="0CJ-Cb-iS6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="o9f-2X-WBT"/>
                 <constraint firstItem="0CJ-Cb-iS6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uVO-Vb-dig"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

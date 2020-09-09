@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="submitEEViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="Zz0-Jx-KVg" id="2t4-IR-Ofp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,13 +23,13 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Submit for Express Entry:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ge-Uv-nw0">
-                    <rect key="frame" x="27" y="93" width="349" height="19.5"/>
+                    <rect key="frame" x="27" y="103" width="349" height="19.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Your ECA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWC-d0-2HJ">
-                    <rect key="frame" x="146.5" y="58" width="121" height="21"/>
+                    <rect key="frame" x="146.5" y="62" width="121" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="UHf-wG-Wwl"/>
                     </constraints>
@@ -37,18 +38,18 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-5F-s7Z">
-                    <rect key="frame" x="27" y="120" width="364" height="172"/>
+                    <rect key="frame" x="27" y="130" width="364" height="161.5"/>
                     <string key="text">Once you get your report from the organization you would need to 
 
 1. Enter the results and the reference number into your Express Entry profile
 
 2. Keep your originals(report, transcripts, credentials) as you would be required to upload copies if you get an ITA - Step 7</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-zB-zaA">
-                    <rect key="frame" x="22" y="57" width="28" height="22"/>
+                    <rect key="frame" x="22" y="59" width="28" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="28" id="bCB-Ut-zB4"/>
                         <constraint firstAttribute="height" constant="22" id="tDP-vM-9wJ"/>
@@ -61,16 +62,16 @@
             </subviews>
             <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="YLk-zB-zaA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="20R-Wp-AB1"/>
+                <constraint firstItem="YLk-zB-zaA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="20R-Wp-AB1"/>
                 <constraint firstItem="TFK-5F-s7Z" firstAttribute="top" secondItem="9Ge-Uv-nw0" secondAttribute="bottom" constant="7.5" id="CMR-UO-Hwx"/>
                 <constraint firstItem="Zz0-Jx-KVg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IgF-jD-OsX"/>
                 <constraint firstItem="9Ge-Uv-nw0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="LId-7B-vFa"/>
                 <constraint firstItem="UWC-d0-2HJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NpP-bs-XQy"/>
                 <constraint firstItem="TFK-5F-s7Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="Q62-ua-OjP"/>
-                <constraint firstItem="UWC-d0-2HJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="T3D-4S-qw3"/>
+                <constraint firstItem="UWC-d0-2HJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="T3D-4S-qw3"/>
                 <constraint firstAttribute="bottom" secondItem="Zz0-Jx-KVg" secondAttribute="bottom" constant="15" id="bKB-zY-qEl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zz0-Jx-KVg" secondAttribute="trailing" constant="15" id="cn3-hk-UAF"/>
-                <constraint firstItem="9Ge-Uv-nw0" firstAttribute="top" secondItem="UWC-d0-2HJ" secondAttribute="bottom" constant="14" id="dXA-Vw-WMe"/>
+                <constraint firstItem="9Ge-Uv-nw0" firstAttribute="top" secondItem="UWC-d0-2HJ" secondAttribute="bottom" constant="20" id="dXA-Vw-WMe"/>
                 <constraint firstItem="Zz0-Jx-KVg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="jV5-zF-RCn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TFK-5F-s7Z" secondAttribute="trailing" constant="23" id="qXO-bu-pj5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Ge-Uv-nw0" secondAttribute="trailing" constant="38" id="yOQ-y5-ZOI"/>

@@ -24,7 +24,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEX-FY-SKA">
-                    <rect key="frame" x="22" y="57" width="27" height="22"/>
+                    <rect key="frame" x="22" y="59" width="27" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="27" id="PdI-zs-JIF"/>
                         <constraint firstAttribute="height" constant="22" id="svP-OJ-3I9"/>
@@ -35,7 +35,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c31-xl-bqI">
-                    <rect key="frame" x="134" y="58" width="146" height="23"/>
+                    <rect key="frame" x="134" y="62" width="146" height="23"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="146" id="liY-Nk-0G2"/>
                     </constraints>
@@ -44,7 +44,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWx-7s-Q5A">
-                    <rect key="frame" x="0.0" y="96" width="414" height="1332"/>
+                    <rect key="frame" x="0.0" y="95" width="414" height="1304"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOk-16-J0i" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1198"/>
@@ -60,7 +60,7 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-VH-8It">
                                     <rect key="frame" x="30" y="36" width="355" height="1002.5"/>
-                                    <mutableString key="text">To qualify for FST, you must meet the below minimum requirements
+                                    <string key="text">To qualify for FST, you must meet the below minimum requirements
 
 • Work Experience
 	• Skilled work experience of at least 2 year 		full time within the last 5 years in NOC job 		groups B which is paid for the below major 		groups.
@@ -87,7 +87,7 @@ There are no minimum education requirements for FST, but
 • You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.
 
 
-You can also use the Come to Canada tool to confirm your eligibility and your personal reference code. This reference code will keep your record with IRCC and will pre-populate the forms with your details when you create your profile on CIC. Personal reference code is valid only for 60 days. See more.</mutableString>
+You can also use the Come to Canada tool to confirm your eligibility and your personal reference code. This reference code will keep your record with IRCC and will pre-populate the forms with your details when you create your profile on CIC. Personal reference code is valid only for 60 days. See more.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -115,20 +115,20 @@ You can also use the Come to Canada tool to confirm your eligibility and your pe
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Ri-Ch-hDp"/>
-                <constraint firstItem="c31-xl-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="DvJ-MR-qxr"/>
+                <constraint firstItem="c31-xl-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="DvJ-MR-qxr"/>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ELh-Bh-Bsp"/>
                 <constraint firstAttribute="bottom" secondItem="EGZ-YJ-LFK" secondAttribute="bottom" constant="23" id="Fe7-yE-Mxw"/>
                 <constraint firstItem="c31-xl-bqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kfy-wm-EZ6"/>
-                <constraint firstAttribute="bottom" secondItem="UWx-7s-Q5A" secondAttribute="bottom" id="QAk-04-Jb4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGZ-YJ-LFK" secondAttribute="trailing" constant="18" id="QP0-zi-kd8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="EGZ-YJ-LFK" secondAttribute="top" id="VjS-9h-wfU"/>
+                <constraint firstItem="UWx-7s-Q5A" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="aAm-Vt-TOp"/>
                 <constraint firstItem="EGZ-YJ-LFK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="cie-0C-2gh"/>
-                <constraint firstItem="UWx-7s-Q5A" firstAttribute="top" secondItem="c31-xl-bqI" secondAttribute="bottom" constant="15" id="gVo-iG-gQD"/>
+                <constraint firstItem="UWx-7s-Q5A" firstAttribute="top" secondItem="c31-xl-bqI" secondAttribute="bottom" constant="10" id="gVo-iG-gQD"/>
                 <constraint firstItem="gEX-FY-SKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="ijl-SS-B2u"/>
-                <constraint firstItem="gEX-FY-SKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="s1w-3k-Kmt"/>
+                <constraint firstItem="gEX-FY-SKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="s1w-3k-Kmt"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

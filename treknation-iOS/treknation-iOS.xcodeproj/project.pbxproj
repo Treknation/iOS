@@ -58,8 +58,16 @@
 		2A7CBB3E24FBEFB4008FE3F6 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBB3C24FBEFB4008FE3F6 /* WebViewViewController.swift */; };
 		2A7CBB3F24FBEFB4008FE3F6 /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBB3D24FBEFB4008FE3F6 /* WebViewViewController.xib */; };
 		2A7CBB4224FBF505008FE3F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CBB4124FBF505008FE3F6 /* WebKit.framework */; };
+		2A7CBB4524FC6A08008FE3F6 /* convertTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4324FC6A08008FE3F6 /* convertTestViewController.swift */; };
+		2A7CBB4624FC6A08008FE3F6 /* convertTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4424FC6A08008FE3F6 /* convertTestViewController.xib */; };
+		2A7CBB4A24FC6A43008FE3F6 /* languageCostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4824FC6A43008FE3F6 /* languageCostsViewController.swift */; };
+		2A7CBB4B24FC6A43008FE3F6 /* languageCostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4924FC6A43008FE3F6 /* languageCostsViewController.xib */; };
 		2A963BC924D7A67B000E8C91 /* HomrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A963BC824D7A67B000E8C91 /* HomrTableViewCell.swift */; };
 		2AC2FDAE24E5DCFA005CF04E /* havania.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2FDAD24E5DCF9005CF04E /* havania.ttf */; };
+		2AF341EB2506AFF700330359 /* InCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF341E92506AFF700330359 /* InCanadaViewController.swift */; };
+		2AF341EC2506AFF700330359 /* InCanadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF341EA2506AFF700330359 /* InCanadaViewController.xib */; };
+		2AF341EF2506B01000330359 /* OutsideCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */; };
+		2AF341F02506B01000330359 /* OutsideCanadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,8 +145,16 @@
 		2A7CBB3C24FBEFB4008FE3F6 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		2A7CBB3D24FBEFB4008FE3F6 /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		2A7CBB4124FBF505008FE3F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2A7CBB4324FC6A08008FE3F6 /* convertTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertTestViewController.swift; sourceTree = "<group>"; };
+		2A7CBB4424FC6A08008FE3F6 /* convertTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = convertTestViewController.xib; sourceTree = "<group>"; };
+		2A7CBB4824FC6A43008FE3F6 /* languageCostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languageCostsViewController.swift; sourceTree = "<group>"; };
+		2A7CBB4924FC6A43008FE3F6 /* languageCostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = languageCostsViewController.xib; sourceTree = "<group>"; };
 		2A963BC824D7A67B000E8C91 /* HomrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomrTableViewCell.swift; sourceTree = "<group>"; };
 		2AC2FDAD24E5DCF9005CF04E /* havania.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = havania.ttf; sourceTree = "<group>"; };
+		2AF341E92506AFF700330359 /* InCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCanadaViewController.swift; sourceTree = "<group>"; };
+		2AF341EA2506AFF700330359 /* InCanadaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InCanadaViewController.xib; sourceTree = "<group>"; };
+		2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideCanadaViewController.swift; sourceTree = "<group>"; };
+		2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutsideCanadaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,17 +260,16 @@
 				2A7CBB1324F74E31008FE3F6 /* FSWViewController.xib */,
 				2A7CBB1724F74E42008FE3F6 /* FSTViewController.xib */,
 				2A7CBB1B24F75D72008FE3F6 /* CRSScoreViewController.xib */,
+				2A7CBB1F24F75F9B008FE3F6 /* EnterEEViewController.xib */,
+				2A7CBB2324F75FAD008FE3F6 /* ITAViewController.xib */,
+				2A7CBB2724F75FC7008FE3F6 /* DocumentChecklistViewController.xib */,
+				2A7CBB2B24F75FE4008FE3F6 /* EPRViewController.xib */,
+				2A7CBB2F24F75FFB008FE3F6 /* PPRViewController.xib */,
+				2A7CBB3324F76012008FE3F6 /* PrepareforLandingViewController.xib */,
 				2A7CBB3D24FBEFB4008FE3F6 /* WebViewViewController.xib */,
 				2A7CBB3924F8710E008FE3F6 /* DetailedViewController.xib */,
-				2A7CBB3324F76012008FE3F6 /* PrepareforLandingViewController.xib */,
-				2A7CBB2F24F75FFB008FE3F6 /* PPRViewController.xib */,
-				2A7CBB2B24F75FE4008FE3F6 /* EPRViewController.xib */,
-				2A7CBB2724F75FC7008FE3F6 /* DocumentChecklistViewController.xib */,
-				2A7CBB2324F75FAD008FE3F6 /* ITAViewController.xib */,
-				2A7CBB1F24F75F9B008FE3F6 /* EnterEEViewController.xib */,
 				2A482FC324B113E90070561C /* Main.storyboard */,
 				2A482FC824B113EB0070561C /* LaunchScreen.storyboard */,
-				2A4424D924E09B5700D7C832 /* LanguageTestViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +277,7 @@
 		2A482FEF24B114D80070561C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2A7CBB4724FC6A12008FE3F6 /* Language  */,
 				2A482FC124B113E90070561C /* ViewController.swift */,
 				2A4424CC24E09B0500D7C832 /* OverviewViewController.swift */,
 				2A4424D024E09B2B00D7C832 /* NOCViewController.swift */,
@@ -274,7 +290,6 @@
 				2A7CBB1624F74E42008FE3F6 /* FSTViewController.swift */,
 				2A7CBB3624F86D8D008FE3F6 /* MoreViewController.swift */,
 				2A963BC824D7A67B000E8C91 /* HomrTableViewCell.swift */,
-				2A4424D824E09B5700D7C832 /* LanguageTestViewController.swift */,
 				2A7CBB1A24F75D72008FE3F6 /* CRSScoreViewController.swift */,
 				2A7CBB1E24F75F9B008FE3F6 /* EnterEEViewController.swift */,
 				2A7CBB2224F75FAD008FE3F6 /* ITAViewController.swift */,
@@ -284,6 +299,10 @@
 				2A7CBB3224F76012008FE3F6 /* PrepareforLandingViewController.swift */,
 				2A7CBB3824F8710E008FE3F6 /* DetailedViewController.swift */,
 				2A7CBB3C24FBEFB4008FE3F6 /* WebViewViewController.swift */,
+				2AF341E92506AFF700330359 /* InCanadaViewController.swift */,
+				2AF341EA2506AFF700330359 /* InCanadaViewController.xib */,
+				2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */,
+				2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +313,19 @@
 				2A7CBB4124FBF505008FE3F6 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A7CBB4724FC6A12008FE3F6 /* Language  */ = {
+			isa = PBXGroup;
+			children = (
+				2A4424D824E09B5700D7C832 /* LanguageTestViewController.swift */,
+				2A4424D924E09B5700D7C832 /* LanguageTestViewController.xib */,
+				2A7CBB4324FC6A08008FE3F6 /* convertTestViewController.swift */,
+				2A7CBB4424FC6A08008FE3F6 /* convertTestViewController.xib */,
+				2A7CBB4824FC6A43008FE3F6 /* languageCostsViewController.swift */,
+				2A7CBB4924FC6A43008FE3F6 /* languageCostsViewController.xib */,
+			);
+			path = "Language ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +437,7 @@
 				2A7CBB1924F74E42008FE3F6 /* FSTViewController.xib in Resources */,
 				2A7CBB2924F75FC7008FE3F6 /* DocumentChecklistViewController.xib in Resources */,
 				2A7CBB2D24F75FE4008FE3F6 /* EPRViewController.xib in Resources */,
+				2AF341EC2506AFF700330359 /* InCanadaViewController.xib in Resources */,
 				2A7CBB3B24F8710E008FE3F6 /* DetailedViewController.xib in Resources */,
 				2A7CBB3124F75FFB008FE3F6 /* PPRViewController.xib in Resources */,
 				2A7CBB1124F74E1E008FE3F6 /* CECViewController.xib in Resources */,
@@ -415,11 +448,14 @@
 				2A4424DF24E09BAF00D7C832 /* EligibilityViewController.xib in Resources */,
 				2A7CBB1524F74E31008FE3F6 /* FSWViewController.xib in Resources */,
 				2A7CBB2124F75F9B008FE3F6 /* EnterEEViewController.xib in Resources */,
+				2AF341F02506B01000330359 /* OutsideCanadaViewController.xib in Resources */,
 				2A4424DB24E09B5700D7C832 /* LanguageTestViewController.xib in Resources */,
 				2A4424D724E09B4000D7C832 /* ECAViewController.xib in Resources */,
 				2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */,
 				2A7CBB3F24FBEFB4008FE3F6 /* WebViewViewController.xib in Resources */,
+				2A7CBB4B24FC6A43008FE3F6 /* languageCostsViewController.xib in Resources */,
 				2AC2FDAE24E5DCFA005CF04E /* havania.ttf in Resources */,
+				2A7CBB4624FC6A08008FE3F6 /* convertTestViewController.xib in Resources */,
 				2A4424D324E09B2B00D7C832 /* NOCViewController.xib in Resources */,
 				2A7CBB2524F75FAD008FE3F6 /* ITAViewController.xib in Resources */,
 				2A7CBB1D24F75D72008FE3F6 /* CRSScoreViewController.xib in Resources */,
@@ -450,6 +486,7 @@
 			files = (
 				2A7CBB2824F75FC7008FE3F6 /* DocumentChecklistViewController.swift in Sources */,
 				2A482FC224B113E90070561C /* ViewController.swift in Sources */,
+				2AF341EF2506B01000330359 /* OutsideCanadaViewController.swift in Sources */,
 				2A7CBB1C24F75D72008FE3F6 /* CRSScoreViewController.swift in Sources */,
 				2A7CBB1424F74E31008FE3F6 /* FSWViewController.swift in Sources */,
 				2A4424D224E09B2B00D7C832 /* NOCViewController.swift in Sources */,
@@ -461,6 +498,7 @@
 				2A4424DE24E09BAF00D7C832 /* EligibilityViewController.swift in Sources */,
 				2A4424CE24E09B0500D7C832 /* OverviewViewController.swift in Sources */,
 				2A7CBB2024F75F9B008FE3F6 /* EnterEEViewController.swift in Sources */,
+				2A7CBB4A24FC6A43008FE3F6 /* languageCostsViewController.swift in Sources */,
 				2A482FBE24B113E90070561C /* AppDelegate.swift in Sources */,
 				2A482FC024B113E90070561C /* SceneDelegate.swift in Sources */,
 				2A4424DA24E09B5700D7C832 /* LanguageTestViewController.swift in Sources */,
@@ -469,9 +507,11 @@
 				2A7CBB3A24F8710E008FE3F6 /* DetailedViewController.swift in Sources */,
 				2A963BC924D7A67B000E8C91 /* HomrTableViewCell.swift in Sources */,
 				2A7CBB3424F76012008FE3F6 /* PrepareforLandingViewController.swift in Sources */,
+				2AF341EB2506AFF700330359 /* InCanadaViewController.swift in Sources */,
 				2A7CBB1824F74E42008FE3F6 /* FSTViewController.swift in Sources */,
 				2A7CBB3024F75FFB008FE3F6 /* PPRViewController.swift in Sources */,
 				2A7CBB3724F86D8D008FE3F6 /* MoreViewController.swift in Sources */,
+				2A7CBB4524FC6A08008FE3F6 /* convertTestViewController.swift in Sources */,
 				2A7CBB2424F75FAD008FE3F6 /* ITAViewController.swift in Sources */,
 				2A4424D624E09B4000D7C832 /* ECAViewController.swift in Sources */,
 			);

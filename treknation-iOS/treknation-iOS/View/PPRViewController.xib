@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPRViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="4B3-1f-dSk" id="gCC-i6-KXp"/>
+                <outlet property="detailedLabel" destination="ngp-RR-9vy" id="29i-0Y-llL"/>
+                <outlet property="isCompletedBtn" destination="Jwy-j6-VAD" id="Tv6-bp-fz0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,20 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="1693"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-1f-dSk">
-                    <rect key="frame" x="20" y="37" width="374" height="853"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B3-1f-dSk">
+                    <rect key="frame" x="15" y="44" width="385" height="1615"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AOR to PPR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-p0-I9y">
-                    <rect key="frame" x="154" y="54" width="106" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AOR to PPR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-p0-I9y">
+                    <rect key="frame" x="154.5" y="61" width="105" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knP-AP-MKw">
-                    <rect key="frame" x="32" y="54" width="20" height="22"/>
+                    <rect key="frame" x="32" y="59" width="20" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="8hg-ar-6ja"/>
                         <constraint firstAttribute="height" constant="22" id="uop-PE-OD9"/>
@@ -41,14 +42,14 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-9Q-ujE">
-                    <rect key="frame" x="-1" y="90" width="415" height="1607"/>
+                    <rect key="frame" x="-1" y="91" width="415" height="1573"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia4-ku-GF9" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="415" height="1350"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ngp-RR-9vy">
-                                    <rect key="frame" x="42" y="14" width="346" height="1146"/>
-                                    <mutableString key="text">After you submit your e-APR you get an AOR which is a confirmation that your application was received by IRCC and they have created a file with your application number. After you submit your application, you can use this Webform if you need to report important changes to your application such as:
+                                    <rect key="frame" x="42" y="10" width="346" height="1038.5"/>
+                                    <string key="text">After you submit your e-APR you get an AOR which is a confirmation that your application was received by IRCC and they have created a file with your application number. After you submit your application, you can use this Webform if you need to report important changes to your application such as:
 
 • Changes in address, telephone number, email or other contact information
 • Births or deaths in your immediate family                   • Marriages or divorces
@@ -85,13 +86,13 @@ If your application is approved then you would need to send your passport to IRC
 • Confirmation of Permanent Residence (COPR)
 • A permanent resident visa (if you're from a country that requires a visa)
 
-Your COPR will have information about who you are, as well as your photograph. Your COPR is valid for a limited time so use it before it expires.</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
+Your COPR will have information about who you are, as well as your photograph. Your COPR is valid for a limited time so use it before it expires.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-j6-VAD">
-                                    <rect key="frame" x="37" y="1192" width="340" height="36"/>
+                                    <rect key="frame" x="37" y="1080.5" width="340" height="36"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="kC0-Yy-UuQ"/>
@@ -108,7 +109,7 @@ Your COPR will have information about who you are, as well as your photograph. Y
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1350" id="00q-9G-zQn"/>
-                                <constraint firstItem="ngp-RR-9vy" firstAttribute="top" secondItem="Ia4-ku-GF9" secondAttribute="top" constant="14" id="S9e-Dk-gat"/>
+                                <constraint firstItem="ngp-RR-9vy" firstAttribute="top" secondItem="Ia4-ku-GF9" secondAttribute="top" constant="10" id="S9e-Dk-gat"/>
                                 <constraint firstItem="ngp-RR-9vy" firstAttribute="leading" secondItem="Ia4-ku-GF9" secondAttribute="leading" constant="42" id="Ykg-Rc-HRd"/>
                                 <constraint firstAttribute="trailing" secondItem="ngp-RR-9vy" secondAttribute="trailing" constant="27" id="aZQ-sm-QUn"/>
                                 <constraint firstItem="Jwy-j6-VAD" firstAttribute="leading" secondItem="Ia4-ku-GF9" secondAttribute="leading" constant="37" id="hka-lj-Ta6"/>
@@ -127,12 +128,18 @@ Your COPR will have information about who you are, as well as your photograph. Y
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="knP-AP-MKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="IVN-r8-4z9"/>
-                <constraint firstAttribute="bottom" secondItem="Thd-9Q-ujE" secondAttribute="bottom" constant="-4" id="Vxw-IG-0fU"/>
+                <constraint firstItem="Thd-9Q-ujE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="5ia-eN-cmd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4B3-1f-dSk" secondAttribute="trailing" constant="14" id="91z-iQ-7OK"/>
+                <constraint firstItem="knP-AP-MKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="IVN-r8-4z9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4B3-1f-dSk" secondAttribute="bottom" id="Kby-dN-kId"/>
+                <constraint firstItem="4B3-1f-dSk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="T42-f5-avs"/>
+                <constraint firstItem="4B3-1f-dSk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vh2-6R-sIn"/>
+                <constraint firstItem="iBT-p0-I9y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="afn-Ry-O4J"/>
+                <constraint firstItem="iBT-p0-I9y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bU5-Xh-P6h"/>
                 <constraint firstItem="knP-AP-MKw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="gvg-Cd-vG3"/>
-                <constraint firstItem="Thd-9Q-ujE" firstAttribute="top" secondItem="knP-AP-MKw" secondAttribute="bottom" constant="14" id="k9o-DX-yzu"/>
+                <constraint firstItem="Thd-9Q-ujE" firstAttribute="top" secondItem="knP-AP-MKw" secondAttribute="bottom" constant="10" id="k9o-DX-yzu"/>
                 <constraint firstItem="Thd-9Q-ujE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nqW-wJ-YbA"/>
                 <constraint firstItem="Thd-9Q-ujE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="o3R-qE-JCb"/>
             </constraints>

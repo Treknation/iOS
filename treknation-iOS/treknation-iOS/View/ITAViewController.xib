@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITAViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="3yY-n1-w3s" id="l8M-rO-gxb"/>
+                <outlet property="isCompletedBtn" destination="Zbm-HH-DDD" id="Ag3-V3-Xe7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +20,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-n1-w3s">
-                    <rect key="frame" x="20" y="15" width="374" height="1042"/>
+                    <rect key="frame" x="15" y="44" width="384" height="1016"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Your ITA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-kS-jLX">
-                    <rect key="frame" x="142.5" y="37" width="129" height="20"/>
+                    <rect key="frame" x="131.5" y="58" width="151.5" height="23"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="129" id="quN-wh-Tot"/>
+                        <constraint firstAttribute="width" constant="151.5" id="Jdj-MT-eN5"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xg8-gD-y2Q">
-                    <rect key="frame" x="32" y="37" width="20" height="22"/>
+                    <rect key="frame" x="32" y="59" width="20" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="jLf-pM-sQd"/>
                         <constraint firstAttribute="width" constant="20" id="uDK-hO-XsJ"/>
@@ -42,18 +44,18 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8C-cx-Z5P">
-                    <rect key="frame" x="-1" y="71" width="415" height="1003"/>
+                    <rect key="frame" x="-1" y="91" width="415" height="969"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIX-JL-SAI" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="415" height="1100"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-HH-DDD">
-                                    <rect key="frame" x="37" y="1035" width="340" height="36"/>
+                                    <rect key="frame" x="37" y="923.5" width="340" height="36"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="iyo-xp-nIz"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <state key="normal" title="Mark as Complete">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -61,9 +63,11 @@
                                         <action selector="markAsComplete:" destination="-1" eventType="touchUpInside" id="k4i-K3-mk3"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cec-Ql-kpn">
-                                    <rect key="frame" x="37" y="8" width="340" height="1012"/>
-                                    <mutableString key="text">CIC conducts EE draws twice a month. Regardless of the program, you are applying for, you will get a CRS score. The score ranks you in the applicant pool using the CRS score with other candidates. The Ministry of Citizenship and Immigration decides the cut-off of each draw.
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cec-Ql-kpn">
+                                    <rect key="frame" x="37" y="8" width="340" height="895.5"/>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <mutableString key="content">CIC conducts EE draws twice a month. Regardless of the program, you are applying for, you will get a CRS score. The score ranks you in the applicant pool using the CRS score with other candidates. The Ministry of Citizenship and Immigration decides the cut-off of each draw.
 
 If your CRS score is greater than or equal to the cut-off, you will get an Invitation to Apply (ITA). You can see the ITA in the corresponding section of the Express Entry profile. Once you receive the ITA you will be eligible to apply for Permanent Residence
 
@@ -76,17 +80,62 @@ If you are eligible for more than one program you will be invited for one progra
 
 Once you receive the ITA you can either:
 
-• Accept it - If you choose to accept it you will have 60 days to apply for your Permanent Residence
+• </mutableString>
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Accept it">
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content"> - If you choose to accept it you will have 60 days to apply for your Permanent Residence
 
-• Decline it - If you choose to decline your profile will be moved back to the application pool
+• </string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Decline it">
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <font key="NSOriginalFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content"> - If you choose to decline your profile will be moved back to the application pool
 
-• Do no respond - If you do not respond your profile will expire and you will no longer be eligible for future draws
+• </string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Do no respond ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <font key="NSOriginalFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">- If you do not respond your profile will expire and you will no longer be eligible for future draws
 
 If you accept the ITA you will need to -
 Fill out a form similar to ones in the Express Entry profile. Instructions to fill out the form are mentioned in the ITA pdf file received in the messages section of your profile. You will be asked for additional details. For e.g. Provide Address and Travel history for the past 10 years or from your 18th birthday. You would need to provide a Letter of Explanation if necessary.
 Once you submit the form a personalized document checklist will be created which you can cover in the next steps.</mutableString>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <nil key="textColor"/>
+                                            <attributes>
+                                                <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -98,7 +147,7 @@ Once you submit the form a personalized document checklist will be created which
                                 <constraint firstItem="Cec-Ql-kpn" firstAttribute="top" secondItem="iIX-JL-SAI" secondAttribute="top" constant="8" id="pnj-Xa-tca"/>
                                 <constraint firstAttribute="height" constant="1100" id="voZ-Xu-ZO1"/>
                                 <constraint firstAttribute="trailing" secondItem="Zbm-HH-DDD" secondAttribute="trailing" constant="38" id="xcm-yR-fo8"/>
-                                <constraint firstItem="Zbm-HH-DDD" firstAttribute="top" secondItem="Cec-Ql-kpn" secondAttribute="bottom" constant="15" id="yuj-8M-g1z"/>
+                                <constraint firstItem="Zbm-HH-DDD" firstAttribute="top" secondItem="Cec-Ql-kpn" secondAttribute="bottom" constant="20" id="yuj-8M-g1z"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -112,19 +161,19 @@ Once you submit the form a personalized document checklist will be created which
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="3yY-n1-w3s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="8QK-hU-xwc"/>
-                <constraint firstItem="3yY-n1-w3s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8pX-CL-YY8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3yY-n1-w3s" secondAttribute="trailing" constant="20" id="DPB-dY-wgY"/>
+                <constraint firstItem="D8C-cx-Z5P" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="04e-yL-mzq"/>
+                <constraint firstItem="3yY-n1-w3s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="8pX-CL-YY8"/>
+                <constraint firstItem="Euh-kS-jLX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="Cl0-hm-NPX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3yY-n1-w3s" secondAttribute="trailing" constant="15" id="DPB-dY-wgY"/>
+                <constraint firstItem="Xg8-gD-y2Q" firstAttribute="top" secondItem="3yY-n1-w3s" secondAttribute="top" constant="15" id="HVW-gw-aN9"/>
                 <constraint firstItem="D8C-cx-Z5P" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NzI-2C-XKW"/>
+                <constraint firstItem="3yY-n1-w3s" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="Rq3-mK-asl"/>
                 <constraint firstItem="Xg8-gD-y2Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="YGS-XD-jOI"/>
-                <constraint firstItem="D8C-cx-Z5P" firstAttribute="top" secondItem="Xg8-gD-y2Q" secondAttribute="bottom" constant="12" id="Z73-RP-Ew5"/>
-                <constraint firstAttribute="bottom" secondItem="3yY-n1-w3s" secondAttribute="bottom" constant="32" id="eXr-bS-6Tn"/>
-                <constraint firstItem="Euh-kS-jLX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="g4R-fd-LdY"/>
-                <constraint firstAttribute="bottom" secondItem="D8C-cx-Z5P" secondAttribute="bottom" constant="15" id="i1g-AS-Q7n"/>
+                <constraint firstItem="D8C-cx-Z5P" firstAttribute="top" secondItem="Xg8-gD-y2Q" secondAttribute="bottom" constant="10" id="Z73-RP-Ew5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="3yY-n1-w3s" secondAttribute="top" id="lxa-Lq-ah3"/>
                 <constraint firstItem="Euh-kS-jLX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vUE-BZ-amw"/>
-                <constraint firstItem="Xg8-gD-y2Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="wBn-Iw-Z6m"/>
                 <constraint firstItem="D8C-cx-Z5P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="yAf-Yd-vMI"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

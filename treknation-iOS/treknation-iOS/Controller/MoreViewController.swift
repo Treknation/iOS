@@ -29,6 +29,8 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
+        cell.textLabel?.textColor = UIColor(red: 20/256, green: 61/256, blue: 89/256, alpha: 1.0)
         if indexPath.section == 0 {
             cell.textLabel?.text = "About Us"
 
@@ -52,14 +54,15 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
         let overviewVC = DetailedViewController()
         if indexPath.section == 0 {
             self.navigationController?.pushViewController(overviewVC, animated: true)
-            overviewVC.setTitle(title: "About US")
+            overviewVC.setTitle(title: "About Us")
             overviewVC.setDescription(description: Constant.AppDetailsConstants.aboutUs)
            } else if indexPath.section == 1 {
             self.sendEmail()
            } else if indexPath.section == 2 {
             self.navigationController?.pushViewController(overviewVC, animated: true)
             overviewVC.setTitle(title: "Disclamer")
-            overviewVC.setDescription(description: Constant.AppDetailsConstants.disclamerPolicy)
+            overviewVC.setDescription(description:
+                Constant.AppDetailsConstants.disclamerPolicy)
            } else if indexPath.section == 3 {
 
            }
@@ -68,6 +71,13 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 60
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
     
         @IBAction func sendEmail() {
             // Modify following variables with your text / recipient

@@ -85,7 +85,16 @@ class Constant: NSObject {
         
         static let aorWebForm = "http://www.cic.gc.ca/english/contacts/web-form.asp"
         static let submitProfile = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile.html"
+        static let inCanadaAppointment = "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/contact-ircc/offices/canada-appointment-only.html"
         
+        static let inCanadaWebForm = "https://services3.cic.gc.ca/ecas/?app=coanotify&lang=en"
+        
+        static let preArrival = "http://www.cic.gc.ca/english/newcomers/before-services.asp"
+        static let education = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html"
+        static let certifications = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html#provinces"
+        static let livingAndFinding = "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/new-life-canada.html"
+        static let cbsaLink = "http://www.cbsa-asfc.gc.ca/menu-eng.html"
+        static let moneyAmount = "http://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
     }
 
 }

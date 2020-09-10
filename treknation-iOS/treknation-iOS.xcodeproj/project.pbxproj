@@ -12,6 +12,7 @@
 		2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A26793824EE629700E709F9 /* CPTViewController.xib */; };
 		2A26793D24EE62B500E709F9 /* submitEEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26793B24EE62B500E709F9 /* submitEEViewController.swift */; };
 		2A26793E24EE62B500E709F9 /* submitEEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A26793C24EE62B500E709F9 /* submitEEViewController.xib */; };
+		2A35D3CC2509BD2A00F5A42A /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 2A35D3CB2509BD2A00F5A42A /* Classes */; };
 		2A4424CE24E09B0500D7C832 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4424CC24E09B0500D7C832 /* OverviewViewController.swift */; };
 		2A4424CF24E09B0500D7C832 /* OverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4424CD24E09B0500D7C832 /* OverviewViewController.xib */; };
 		2A4424D224E09B2B00D7C832 /* NOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4424D024E09B2B00D7C832 /* NOCViewController.swift */; };
@@ -93,6 +94,7 @@
 		2A26793824EE629700E709F9 /* CPTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPTViewController.xib; sourceTree = "<group>"; };
 		2A26793B24EE62B500E709F9 /* submitEEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submitEEViewController.swift; sourceTree = "<group>"; };
 		2A26793C24EE62B500E709F9 /* submitEEViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = submitEEViewController.xib; sourceTree = "<group>"; };
+		2A35D3CB2509BD2A00F5A42A /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		2A4424CC24E09B0500D7C832 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		2A4424CD24E09B0500D7C832 /* OverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewViewController.xib; sourceTree = "<group>"; };
 		2A4424D024E09B2B00D7C832 /* NOCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOCViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		2A482FBC24B113E90070561C /* treknation-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2A35D3CB2509BD2A00F5A42A /* Classes */,
 				2A482FEF24B114D80070561C /* Controller */,
 				2A482FEE24B114D20070561C /* View */,
 				2A482FED24B114CA0070561C /* Model */,
@@ -445,6 +448,7 @@
 				2A482FC524B113E90070561C /* Main.storyboard in Resources */,
 				2A26793E24EE62B500E709F9 /* submitEEViewController.xib in Resources */,
 				2A7CBB3524F76012008FE3F6 /* PrepareforLandingViewController.xib in Resources */,
+				2A35D3CC2509BD2A00F5A42A /* Classes in Resources */,
 				2A4424DF24E09BAF00D7C832 /* EligibilityViewController.xib in Resources */,
 				2A7CBB1524F74E31008FE3F6 /* FSWViewController.xib in Resources */,
 				2A7CBB2124F75F9B008FE3F6 /* EnterEEViewController.xib in Resources */,

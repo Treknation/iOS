@@ -25,15 +25,15 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSO-JN-QOe">
-                    <rect key="frame" x="167" y="63" width="80" height="21"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <rect key="frame" x="165" y="63" width="84.5" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dC-0p-Xdx">
-                    <rect key="frame" x="28" y="102" width="346" height="251"/>
-                    <mutableString key="text">TrekNation was born out a necessity by a slew of problems faced by its founder as they were going through the immigration process. We engaged overpriced consultants for thousands of dollars but most of the leg work was asked to be done by us. We scoured the internet for a simple step by step process to understand the process but we ended up reading mighty long pages without any natural flow and eventually ended up confused. So we came up with the idea to help our users navigate through the hurdles of the immigration process through a self serve mobile app which would guide the users through a step by step process. </mutableString>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <rect key="frame" x="40" y="104" width="334" height="325"/>
+                    <string key="text">TrekNation was born out a necessity by a slew of problems faced by its founder as they were going through the immigration process. We engaged overpriced consultants for thousands of dollars but most of the leg work was asked to be done by us. We scoured the internet for a simple step by step process to understand the process but we ended up reading mighty long pages without any natural flow and eventually ended up confused. So we came up with the idea to help our users navigate through the hurdles of the immigration process through a self serve mobile app which would guide the users through a step by step process. </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -57,7 +57,7 @@
                 <constraint firstItem="6H0-ow-Sx6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="DLd-6R-eBS"/>
                 <constraint firstItem="Tnc-xy-e8y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="DPf-e4-Kmi"/>
                 <constraint firstItem="6H0-ow-Sx6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="E3U-u8-hDD"/>
-                <constraint firstItem="1dC-0p-Xdx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="Ggl-3M-TUa"/>
+                <constraint firstItem="1dC-0p-Xdx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Ggl-3M-TUa"/>
                 <constraint firstItem="Tnc-xy-e8y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rab-Th-FK1"/>
                 <constraint firstItem="Tnc-xy-e8y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S3z-Av-EGM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tnc-xy-e8y" secondAttribute="trailing" constant="14" id="ZR8-Gw-s8C"/>

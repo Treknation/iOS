@@ -20,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sX3-bx-5jd">
-                    <rect key="frame" x="15" y="44" width="385" height="823"/>
+                    <rect key="frame" x="15" y="44" width="385" height="832"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-MI-NaV">
-                    <rect key="frame" x="2" y="88" width="415" height="808"/>
+                    <rect key="frame" x="2" y="88" width="415" height="788"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZV-FF-rf3" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="415" height="798"/>
@@ -40,7 +40,7 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="HOA-6E-PeF">
                                     <rect key="frame" x="32" y="55" width="350" height="394"/>
-                                    <mutableString key="text">IRCC contact you and let you know what to do next.
+                                    <string key="text">IRCC contact you and let you know what to do next.
 You’ll need to have a short interview with an officer. You have two options for your interview:
 • Make an appointment at one of our offices in Canada (best option)
 • Go to a Canadian “port of entry” (border crossing), and present proof that you have the funds to support yourself and your family and your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if applicable).
@@ -50,7 +50,7 @@ During the interview the officer will:
 • Ask you a few questions to make sure you still meet the terms to immigrate to Canada
 • Confirm your Canadian mailing address, so we can mail your permanent resident card (PR card)
 
-If you change your address within 180 days of getting your status, you must tell IRCC using the Webform.</mutableString>
+If you change your address within 180 days of getting your status, you must tell IRCC using the Webform.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -104,14 +104,16 @@ If you change your address within 180 days of getting your status, you must tell
                 <constraint firstItem="fqv-MI-NaV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="3" id="6YG-Yh-wn6"/>
                 <constraint firstItem="sX3-bx-5jd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9pe-aU-O4W"/>
                 <constraint firstItem="5Ud-Sl-5xZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="BC4-Ta-c5j"/>
-                <constraint firstItem="sX3-bx-5jd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="Ewn-ck-Rid"/>
+                <constraint firstItem="sX3-bx-5jd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="Ewn-ck-Rid"/>
                 <constraint firstItem="fqv-MI-NaV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="2" id="M6A-Py-8Zr"/>
                 <constraint firstItem="sX3-bx-5jd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="NH8-vm-FhH"/>
                 <constraint firstItem="5Ud-Sl-5xZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Qqg-lw-f4z"/>
-                <constraint firstItem="fqv-MI-NaV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="RZy-k9-RhT"/>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="34" id="RZy-k9-RhT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sX3-bx-5jd" secondAttribute="trailing" constant="14" id="T2x-zD-hHr"/>
                 <constraint firstItem="fqv-MI-NaV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="U36-Yb-kk6"/>
                 <constraint firstItem="bUY-1u-Zao" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="acg-IZ-zWc"/>
+                <constraint firstItem="sX3-bx-5jd" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="eMD-4v-6Yf"/>
+                <constraint firstItem="fqv-MI-NaV" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="fPK-aZ-kzI"/>
                 <constraint firstItem="bUY-1u-Zao" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vbJ-fK-2uQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

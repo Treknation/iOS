@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-3f-Sab">
-                    <rect key="frame" x="21" y="44" width="374" height="842"/>
+                    <rect key="frame" x="21" y="44" width="374" height="832"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The following guidelines provide you detailed instructions depending on whether you are outside Canada or inside Canada." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Asn-WD-cfr">
                             <rect key="frame" x="17" y="59" width="341" height="54"/>
@@ -140,9 +140,10 @@
                 <constraint firstItem="tAZ-Dr-UyF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Qwk-Mf-9k9"/>
                 <constraint firstItem="6oK-8o-2LC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WXo-rb-ZnR"/>
                 <constraint firstItem="4vj-3f-Sab" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="XyU-Yv-wp9"/>
+                <constraint firstItem="4vj-3f-Sab" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="24" id="bSA-9b-V5V"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4vj-3f-Sab" secondAttribute="trailing" constant="19" id="dyV-vc-GcZ"/>
                 <constraint firstItem="6oK-8o-2LC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="gK9-Qs-093"/>
-                <constraint firstItem="4vj-3f-Sab" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="24" id="lMr-Vf-bHP"/>
+                <constraint firstItem="4vj-3f-Sab" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="lMr-Vf-bHP"/>
                 <constraint firstItem="4vj-3f-Sab" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vdB-uB-i6l"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

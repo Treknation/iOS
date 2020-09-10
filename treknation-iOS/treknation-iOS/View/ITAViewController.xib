@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-n1-w3s">
-                    <rect key="frame" x="15" y="44" width="384" height="1016"/>
+                    <rect key="frame" x="15" y="44" width="384" height="1025"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Your ITA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-kS-jLX">
@@ -44,7 +44,7 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8C-cx-Z5P">
-                    <rect key="frame" x="-1" y="91" width="415" height="969"/>
+                    <rect key="frame" x="-1" y="91" width="415" height="978"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIX-JL-SAI" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="415" height="1100"/>
@@ -67,7 +67,7 @@
                                     <rect key="frame" x="37" y="8" width="340" height="895.5"/>
                                     <attributedString key="attributedText">
                                         <fragment>
-                                            <mutableString key="content">CIC conducts EE draws twice a month. Regardless of the program, you are applying for, you will get a CRS score. The score ranks you in the applicant pool using the CRS score with other candidates. The Ministry of Citizenship and Immigration decides the cut-off of each draw.
+                                            <string key="content">CIC conducts EE draws twice a month. Regardless of the program, you are applying for, you will get a CRS score. The score ranks you in the applicant pool using the CRS score with other candidates. The Ministry of Citizenship and Immigration decides the cut-off of each draw.
 
 If your CRS score is greater than or equal to the cut-off, you will get an Invitation to Apply (ITA). You can see the ITA in the corresponding section of the Express Entry profile. Once you receive the ITA you will be eligible to apply for Permanent Residence
 
@@ -80,7 +80,7 @@ If you are eligible for more than one program you will be invited for one progra
 
 Once you receive the ITA you can either:
 
-• </mutableString>
+• </string>
                                             <attributes>
                                                 <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" metaFont="system" size="15"/>
@@ -125,11 +125,11 @@ Once you receive the ITA you can either:
                                             </attributes>
                                         </fragment>
                                         <fragment>
-                                            <mutableString key="content">- If you do not respond your profile will expire and you will no longer be eligible for future draws
+                                            <string key="content">- If you do not respond your profile will expire and you will no longer be eligible for future draws
 
 If you accept the ITA you will need to -
 Fill out a form similar to ones in the Express Entry profile. Instructions to fill out the form are mentioned in the ITA pdf file received in the messages section of your profile. You will be asked for additional details. For e.g. Provide Address and Travel history for the past 10 years or from your 18th birthday. You would need to provide a Letter of Explanation if necessary.
-Once you submit the form a personalized document checklist will be created which you can cover in the next steps.</mutableString>
+Once you submit the form a personalized document checklist will be created which you can cover in the next steps.</string>
                                             <attributes>
                                                 <color key="NSColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" metaFont="system" size="15"/>
@@ -163,15 +163,17 @@ Once you submit the form a personalized document checklist will be created which
             </subviews>
             <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="D8C-cx-Z5P" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="04e-yL-mzq"/>
+                <constraint firstItem="D8C-cx-Z5P" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="04e-yL-mzq"/>
+                <constraint firstItem="3yY-n1-w3s" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="45m-fk-OqR"/>
                 <constraint firstItem="3yY-n1-w3s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="8pX-CL-YY8"/>
                 <constraint firstItem="Euh-kS-jLX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="Cl0-hm-NPX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3yY-n1-w3s" secondAttribute="trailing" constant="15" id="DPB-dY-wgY"/>
                 <constraint firstItem="Xg8-gD-y2Q" firstAttribute="top" secondItem="3yY-n1-w3s" secondAttribute="top" constant="15" id="HVW-gw-aN9"/>
                 <constraint firstItem="D8C-cx-Z5P" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="NzI-2C-XKW"/>
-                <constraint firstItem="3yY-n1-w3s" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="Rq3-mK-asl"/>
+                <constraint firstItem="3yY-n1-w3s" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="Rq3-mK-asl"/>
                 <constraint firstItem="Xg8-gD-y2Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="YGS-XD-jOI"/>
                 <constraint firstItem="D8C-cx-Z5P" firstAttribute="top" secondItem="Xg8-gD-y2Q" secondAttribute="bottom" constant="10" id="Z73-RP-Ew5"/>
+                <constraint firstItem="D8C-cx-Z5P" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="bND-Md-KX9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="3yY-n1-w3s" secondAttribute="top" id="lxa-Lq-ah3"/>
                 <constraint firstItem="Euh-kS-jLX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vUE-BZ-amw"/>
                 <constraint firstItem="D8C-cx-Z5P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-1" id="yAf-Yd-vMI"/>

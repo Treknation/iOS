@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90j-vb-nkh">
-                    <rect key="frame" x="15" y="44" width="384" height="1587"/>
+                    <rect key="frame" x="15" y="44" width="384" height="1601"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Checklist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPp-ul-4n0">
@@ -45,14 +45,14 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfY-9K-K3Z">
-                    <rect key="frame" x="0.0" y="91" width="415" height="1540"/>
+                    <rect key="frame" x="0.0" y="91" width="415" height="1554"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahA-0K-hcr" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="415" height="1300"/>
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="1340"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tZ-7D-teR">
                                     <rect key="frame" x="38" y="8" width="341" height="1128"/>
-                                    <mutableString key="text">Once you fill out the post ITA application forms a personalized document checklist is created for you. Since you only have 60 days to gather all documents and to submit them we recommend starting the process ASAP so that you can avoid delays.
+                                    <string key="text">Once you fill out the post ITA application forms a personalized document checklist is created for you. Since you only have 60 days to gather all documents and to submit them we recommend starting the process ASAP so that you can avoid delays.
 
 The document checklist is mostly made up of the following section. You would need to upload documents in each of these sections. You would need to make sure that the size of the file is no larger than 4 MB. The file formats you can upload are .tiff, .jpg, .png, .doc, .docx and .pdf.
  
@@ -88,7 +88,7 @@ If a certified translator completed your translation:
 • The document must be stamped with the translator’s certification or registration number
 • You can indicate that you’re not providing an affidavit because a certified translator completed the translation (write a letter and scan it with your translated document)
 
-If you feel like a document you are submitting might raise the slightest question from an immigration officer, you should add a Letter of Explanation (LoE) (sample in the link) to your documents. For example, if it concerns your passport section, then add your LoE to the PDF file that you will upload to the passport section.</mutableString>
+If you feel like a document you are submitting might raise the slightest question from an immigration officer, you should add a Letter of Explanation (LoE) (sample in the link) to your documents. For example, if it concerns your passport section, then add your LoE to the PDF file that you will upload to the passport section.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -115,7 +115,7 @@ If you feel like a document you are submitting might raise the slightest questio
                                 <constraint firstItem="pN2-6u-3jq" firstAttribute="leading" secondItem="ahA-0K-hcr" secondAttribute="leading" constant="37" id="ZJv-nn-vh3"/>
                                 <constraint firstItem="pN2-6u-3jq" firstAttribute="top" secondItem="9tZ-7D-teR" secondAttribute="bottom" constant="27" id="fTO-mj-ZRX"/>
                                 <constraint firstAttribute="trailing" secondItem="pN2-6u-3jq" secondAttribute="trailing" constant="38" id="oSj-aW-Xgp"/>
-                                <constraint firstAttribute="height" constant="1300" id="tAG-UY-qPQ"/>
+                                <constraint firstAttribute="height" constant="1340" id="tAG-UY-qPQ"/>
                                 <constraint firstAttribute="trailing" secondItem="9tZ-7D-teR" secondAttribute="trailing" constant="36" id="ywe-hu-6Ni"/>
                             </constraints>
                         </view>
@@ -134,8 +134,10 @@ If you feel like a document you are submitting might raise the slightest questio
             <constraints>
                 <constraint firstItem="90j-vb-nkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="4Rv-Ps-10H"/>
                 <constraint firstItem="QfY-9K-K3Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AdF-vZ-7bF"/>
-                <constraint firstItem="QfY-9K-K3Z" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="OB5-Sv-1At"/>
+                <constraint firstItem="QfY-9K-K3Z" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="OB5-Sv-1At"/>
                 <constraint firstItem="T1x-rW-fXD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="QBs-CH-W8Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QfY-9K-K3Z" secondAttribute="bottom" priority="500" id="R8W-yJ-myg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="90j-vb-nkh" secondAttribute="bottom" priority="500" id="WCM-l3-7FE"/>
                 <constraint firstItem="QfY-9K-K3Z" firstAttribute="top" secondItem="T1x-rW-fXD" secondAttribute="bottom" constant="10" id="c8M-1i-0CZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="90j-vb-nkh" secondAttribute="trailing" constant="15" id="e0p-YH-O0a"/>
                 <constraint firstItem="RPp-ul-4n0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="sfP-YE-vf5"/>
@@ -143,7 +145,7 @@ If you feel like a document you are submitting might raise the slightest questio
                 <constraint firstAttribute="trailing" secondItem="QfY-9K-K3Z" secondAttribute="trailing" constant="-1" id="uCD-uz-ARd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="90j-vb-nkh" secondAttribute="top" id="wlg-TI-orb"/>
                 <constraint firstItem="T1x-rW-fXD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="xG0-VI-rXL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="90j-vb-nkh" secondAttribute="bottom" id="xRf-j8-eZI"/>
+                <constraint firstAttribute="bottom" secondItem="90j-vb-nkh" secondAttribute="bottom" constant="20" id="xRf-j8-eZI"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

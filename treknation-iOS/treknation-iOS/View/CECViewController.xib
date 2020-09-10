@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96I-XH-pGC">
-                    <rect key="frame" x="15" y="44" width="386" height="823"/>
+                    <rect key="frame" x="15" y="44" width="386" height="832"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-57-Vih">
@@ -32,10 +32,10 @@
                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-hj-Cxw">
-                    <rect key="frame" x="134" y="58" width="146" height="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Eligibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-hj-Cxw">
+                    <rect key="frame" x="122" y="58" width="170" height="23"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="146" id="DmL-4P-R9v"/>
+                        <constraint firstAttribute="width" constant="170" id="DmL-4P-R9v"/>
                         <constraint firstAttribute="height" constant="23" id="jww-ne-3iy"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
@@ -82,17 +82,17 @@ There is no minimum education requirement for CEC but if you have a degree, dipl
                 <constraint firstItem="xfT-57-Vih" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="9rL-ys-nT1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="96I-XH-pGC" secondAttribute="trailing" constant="13" id="F5C-7O-scu"/>
                 <constraint firstItem="xfT-57-Vih" firstAttribute="top" secondItem="2Un-NB-Z7P" secondAttribute="bottom" constant="25" id="JFv-TW-OfP"/>
-                <constraint firstItem="tlW-hj-Cxw" firstAttribute="leading" secondItem="2Un-NB-Z7P" secondAttribute="trailing" constant="82" id="K0V-nf-o7V"/>
                 <constraint firstItem="a05-CV-EAV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="KJf-eM-r6U"/>
                 <constraint firstItem="2Un-NB-Z7P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="OM0-Yo-9qj"/>
                 <constraint firstItem="96I-XH-pGC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="P98-bt-7YF"/>
                 <constraint firstItem="2Un-NB-Z7P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="UGA-i3-Eg7"/>
                 <constraint firstItem="a05-CV-EAV" firstAttribute="top" secondItem="xfT-57-Vih" secondAttribute="bottom" constant="17" id="Z8X-j6-PYR"/>
                 <constraint firstItem="tlW-hj-Cxw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="c0v-SN-MSp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tlW-hj-Cxw" secondAttribute="trailing" constant="134" id="gPe-dA-1ir"/>
-                <constraint firstItem="96I-XH-pGC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="j1v-RE-AW1"/>
+                <constraint firstItem="96I-XH-pGC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="e8N-Tm-BNX"/>
+                <constraint firstItem="96I-XH-pGC" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="j1v-RE-AW1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a05-CV-EAV" secondAttribute="trailing" constant="20" id="k44-PX-MtB"/>
                 <constraint firstItem="96I-XH-pGC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qBv-ag-t3z"/>
+                <constraint firstItem="tlW-hj-Cxw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vHM-R4-ALg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>

@@ -15,6 +15,7 @@ class OverviewViewController: UIViewController {
     @IBOutlet weak var isCompletedBtn: UIButton!
     @IBOutlet weak var hyperlinkLBL: UILabel!
 
+    @IBOutlet weak var bottomLayout: NSLayoutConstraint!
     var appData: AppData!
     
     override func viewDidLoad() {

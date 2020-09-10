@@ -61,6 +61,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let tempAppData = appData[indexPath.section]
         var height:CGFloat = CGFloat()
+        if tempAppData.isComplete{
+            return 50
+        }
         if tempAppData.isOpen {
             height = UITableView.automaticDimension
         }
@@ -136,7 +139,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
         homeTableView.reloadData()
-
     }
     
     

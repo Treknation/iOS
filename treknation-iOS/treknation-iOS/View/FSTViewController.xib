@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -44,7 +44,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWx-7s-Q5A">
-                    <rect key="frame" x="0.0" y="95" width="414" height="1304"/>
+                    <rect key="frame" x="0.0" y="95" width="414" height="1313"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOk-16-J0i" userLabel="Content View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1198"/>
@@ -118,15 +118,17 @@ You can also use the Come to Canada tool to confirm your eligibility and your pe
             <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Ri-Ch-hDp"/>
+                <constraint firstItem="EGZ-YJ-LFK" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="11" id="4mZ-C2-bkh"/>
                 <constraint firstItem="c31-xl-bqI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="DvJ-MR-qxr"/>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ELh-Bh-Bsp"/>
                 <constraint firstAttribute="bottom" secondItem="EGZ-YJ-LFK" secondAttribute="bottom" constant="23" id="Fe7-yE-Mxw"/>
                 <constraint firstItem="c31-xl-bqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kfy-wm-EZ6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGZ-YJ-LFK" secondAttribute="trailing" constant="18" id="QP0-zi-kd8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="EGZ-YJ-LFK" secondAttribute="top" id="VjS-9h-wfU"/>
-                <constraint firstItem="UWx-7s-Q5A" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="5" id="aAm-Vt-TOp"/>
+                <constraint firstItem="UWx-7s-Q5A" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="6" id="aAm-Vt-TOp"/>
                 <constraint firstItem="EGZ-YJ-LFK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="cie-0C-2gh"/>
                 <constraint firstItem="UWx-7s-Q5A" firstAttribute="top" secondItem="c31-xl-bqI" secondAttribute="bottom" constant="10" id="gVo-iG-gQD"/>
+                <constraint firstItem="UWx-7s-Q5A" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-20" id="gx2-oy-68U"/>
                 <constraint firstItem="gEX-FY-SKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="ijl-SS-B2u"/>
                 <constraint firstItem="gEX-FY-SKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="s1w-3k-Kmt"/>
             </constraints>

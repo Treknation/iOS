@@ -64,9 +64,13 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
             overviewVC.setDescription(description:
                 Constant.AppDetailsConstants.disclamerPolicy)
            } else if indexPath.section == 3 {
-
+            let privacyPolicy = PrivacyPolicyViewController()
+            self.navigationController?.pushViewController(privacyPolicy, animated: true)
            }
            else {
+            let contactVC = ContactCICViewController()
+            self.navigationController?.pushViewController(contactVC, animated: true)
+
            }
     
     }

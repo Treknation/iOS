@@ -78,7 +78,7 @@ class Constant: NSObject {
         static let checklistPhotocopy = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_photocopy"
         static let checklistAffidavit = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#affidavit"
         static let checklistTranslator = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_translator"
-        static let checklistLOE = "https://www.justforcanada.com/letter-of-explanation-loe.html"
+        static let checklistLOE = "https://docs.google.com/document/d/1-31XMpXjR80ttZ9SGGSeJtBJqwI3LGLW/edit"
         
         static let feelist = "https://www.cic.gc.ca/english/information/fees/fees.asp#rprf"
         static let webform = "http://www.cic.gc.ca/english/contacts/web-form.asp"
@@ -95,6 +95,9 @@ class Constant: NSObject {
         static let livingAndFinding = "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/new-life-canada.html"
         static let cbsaLink = "http://www.cbsa-asfc.gc.ca/menu-eng.html"
         static let moneyAmount = "http://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
+        static let contactWebForm = "https://www.cic.gc.ca/english/contacts/web-form.asp"
+        
+        static let googlePlay = "https://policies.google.com/privacy"
     }
 
 }

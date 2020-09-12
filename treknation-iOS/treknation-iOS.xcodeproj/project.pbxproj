@@ -63,6 +63,10 @@
 		2A7CBB4624FC6A08008FE3F6 /* convertTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4424FC6A08008FE3F6 /* convertTestViewController.xib */; };
 		2A7CBB4A24FC6A43008FE3F6 /* languageCostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4824FC6A43008FE3F6 /* languageCostsViewController.swift */; };
 		2A7CBB4B24FC6A43008FE3F6 /* languageCostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7CBB4924FC6A43008FE3F6 /* languageCostsViewController.xib */; };
+		2A8D4E52250C59BE00F96F1B /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D4E50250C59BE00F96F1B /* PrivacyPolicyViewController.swift */; };
+		2A8D4E53250C59BE00F96F1B /* PrivacyPolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D4E51250C59BE00F96F1B /* PrivacyPolicyViewController.xib */; };
+		2A8D4E56250C59D400F96F1B /* ContactCICViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D4E54250C59D400F96F1B /* ContactCICViewController.swift */; };
+		2A8D4E57250C59D400F96F1B /* ContactCICViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8D4E55250C59D400F96F1B /* ContactCICViewController.xib */; };
 		2A963BC924D7A67B000E8C91 /* HomrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A963BC824D7A67B000E8C91 /* HomrTableViewCell.swift */; };
 		2AC2FDAE24E5DCFA005CF04E /* havania.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2FDAD24E5DCF9005CF04E /* havania.ttf */; };
 		2AF341EB2506AFF700330359 /* InCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF341E92506AFF700330359 /* InCanadaViewController.swift */; };
@@ -151,6 +155,10 @@
 		2A7CBB4424FC6A08008FE3F6 /* convertTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = convertTestViewController.xib; sourceTree = "<group>"; };
 		2A7CBB4824FC6A43008FE3F6 /* languageCostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languageCostsViewController.swift; sourceTree = "<group>"; };
 		2A7CBB4924FC6A43008FE3F6 /* languageCostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = languageCostsViewController.xib; sourceTree = "<group>"; };
+		2A8D4E50250C59BE00F96F1B /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		2A8D4E51250C59BE00F96F1B /* PrivacyPolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyPolicyViewController.xib; sourceTree = "<group>"; };
+		2A8D4E54250C59D400F96F1B /* ContactCICViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCICViewController.swift; sourceTree = "<group>"; };
+		2A8D4E55250C59D400F96F1B /* ContactCICViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCICViewController.xib; sourceTree = "<group>"; };
 		2A963BC824D7A67B000E8C91 /* HomrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomrTableViewCell.swift; sourceTree = "<group>"; };
 		2AC2FDAD24E5DCF9005CF04E /* havania.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = havania.ttf; sourceTree = "<group>"; };
 		2AF341E92506AFF700330359 /* InCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCanadaViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +261,9 @@
 		2A482FEE24B114D20070561C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A8D4E55250C59D400F96F1B /* ContactCICViewController.xib */,
+				2AF341EA2506AFF700330359 /* InCanadaViewController.xib */,
+				2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */,
 				2A4424CD24E09B0500D7C832 /* OverviewViewController.xib */,
 				2A4424D124E09B2B00D7C832 /* NOCViewController.xib */,
 				2A4424D524E09B4000D7C832 /* ECAViewController.xib */,
@@ -303,9 +314,10 @@
 				2A7CBB3824F8710E008FE3F6 /* DetailedViewController.swift */,
 				2A7CBB3C24FBEFB4008FE3F6 /* WebViewViewController.swift */,
 				2AF341E92506AFF700330359 /* InCanadaViewController.swift */,
-				2AF341EA2506AFF700330359 /* InCanadaViewController.xib */,
 				2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */,
-				2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */,
+				2A8D4E50250C59BE00F96F1B /* PrivacyPolicyViewController.swift */,
+				2A8D4E51250C59BE00F96F1B /* PrivacyPolicyViewController.xib */,
+				2A8D4E54250C59D400F96F1B /* ContactCICViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -452,7 +464,9 @@
 				2A4424DF24E09BAF00D7C832 /* EligibilityViewController.xib in Resources */,
 				2A7CBB1524F74E31008FE3F6 /* FSWViewController.xib in Resources */,
 				2A7CBB2124F75F9B008FE3F6 /* EnterEEViewController.xib in Resources */,
+				2A8D4E53250C59BE00F96F1B /* PrivacyPolicyViewController.xib in Resources */,
 				2AF341F02506B01000330359 /* OutsideCanadaViewController.xib in Resources */,
+				2A8D4E57250C59D400F96F1B /* ContactCICViewController.xib in Resources */,
 				2A4424DB24E09B5700D7C832 /* LanguageTestViewController.xib in Resources */,
 				2A4424D724E09B4000D7C832 /* ECAViewController.xib in Resources */,
 				2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */,
@@ -507,10 +521,12 @@
 				2A482FC024B113E90070561C /* SceneDelegate.swift in Sources */,
 				2A4424DA24E09B5700D7C832 /* LanguageTestViewController.swift in Sources */,
 				2A26793924EE629700E709F9 /* CPTViewController.swift in Sources */,
+				2A8D4E56250C59D400F96F1B /* ContactCICViewController.swift in Sources */,
 				2A482FF324B115490070561C /* AppData.swift in Sources */,
 				2A7CBB3A24F8710E008FE3F6 /* DetailedViewController.swift in Sources */,
 				2A963BC924D7A67B000E8C91 /* HomrTableViewCell.swift in Sources */,
 				2A7CBB3424F76012008FE3F6 /* PrepareforLandingViewController.swift in Sources */,
+				2A8D4E52250C59BE00F96F1B /* PrivacyPolicyViewController.swift in Sources */,
 				2AF341EB2506AFF700330359 /* InCanadaViewController.swift in Sources */,
 				2A7CBB1824F74E42008FE3F6 /* FSTViewController.swift in Sources */,
 				2A7CBB3024F75FFB008FE3F6 /* PPRViewController.swift in Sources */,

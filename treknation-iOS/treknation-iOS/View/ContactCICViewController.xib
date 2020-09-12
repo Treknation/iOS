@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactCICViewController" customModule="treknation_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="HBG-6v-DMa" id="e4a-3V-9OH"/>
+                <outlet property="detailedLabel" destination="Yf9-R7-LPw" id="aDZ-fd-bPU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-6v-DMa">
+                    <rect key="frame" x="15" y="44" width="384" height="837"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-pG-fFr">
+                            <rect key="frame" x="18" y="66" width="349" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dad-G3-MMU">
+                            <rect key="frame" x="18" y="116" width="354" height="90"/>
+                            <string key="text">You can get in touch with CIC by calling the above provided number. If you are calling from outside Canada, you may require international calling services enabled. You can also try using apps like TextNow, if you are not inside Canada.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-Rl-xOz">
+                            <rect key="frame" x="18" y="86" width="186" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="+1 888 242 2100"/>
+                            <connections>
+                                <action selector="callCIC:" destination="-1" eventType="touchUpInside" id="svj-cU-YTG"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WebForm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4b-rs-xBp">
+                            <rect key="frame" x="18" y="243" width="349" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the following link to fill out a webform for enquiries and for updating any change in your information - Webform" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-R7-LPw">
+                            <rect key="frame" x="18" y="271" width="349" height="57.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXJ-ep-HK8">
+                            <rect key="frame" x="7" y="11" width="28" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="7JS-Kb-AhI"/>
+                                <constraint firstAttribute="width" constant="28" id="h7G-cO-5YR"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QPJ-pG-fFr" secondAttribute="trailing" constant="17" id="C0v-HB-E0X"/>
+                        <constraint firstItem="6IL-Rl-xOz" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="18" id="D4r-QH-s1V"/>
+                        <constraint firstItem="QPJ-pG-fFr" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="18" id="FQD-hI-ud7"/>
+                        <constraint firstItem="Yf9-R7-LPw" firstAttribute="top" secondItem="S4b-rs-xBp" secondAttribute="bottom" constant="8" id="FUB-BT-v4s"/>
+                        <constraint firstItem="S4b-rs-xBp" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="18" id="JUV-w4-prp"/>
+                        <constraint firstAttribute="trailing" secondItem="6IL-Rl-xOz" secondAttribute="trailing" constant="180" id="L7S-6e-CeL"/>
+                        <constraint firstItem="QPJ-pG-fFr" firstAttribute="top" secondItem="MXJ-ep-HK8" secondAttribute="bottom" constant="33" id="NNu-5G-QUp"/>
+                        <constraint firstItem="6IL-Rl-xOz" firstAttribute="top" secondItem="QPJ-pG-fFr" secondAttribute="bottom" id="Tpf-HS-qBT"/>
+                        <constraint firstAttribute="trailing" secondItem="dad-G3-MMU" secondAttribute="trailing" constant="12" id="TxP-3H-7uR"/>
+                        <constraint firstItem="dad-G3-MMU" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="18" id="WWK-aT-hJI"/>
+                        <constraint firstItem="MXJ-ep-HK8" firstAttribute="top" secondItem="HBG-6v-DMa" secondAttribute="top" constant="11" id="YYd-aB-0bY"/>
+                        <constraint firstItem="S4b-rs-xBp" firstAttribute="top" secondItem="dad-G3-MMU" secondAttribute="bottom" constant="37" id="aO5-5P-jwf"/>
+                        <constraint firstItem="dad-G3-MMU" firstAttribute="top" secondItem="QPJ-pG-fFr" secondAttribute="bottom" constant="30" id="cLF-ZJ-8cw"/>
+                        <constraint firstAttribute="trailing" secondItem="Yf9-R7-LPw" secondAttribute="trailing" constant="17" id="d5l-do-tt5"/>
+                        <constraint firstItem="Yf9-R7-LPw" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="18" id="eOW-eB-VNK"/>
+                        <constraint firstItem="MXJ-ep-HK8" firstAttribute="leading" secondItem="HBG-6v-DMa" secondAttribute="leading" constant="7" id="fJ8-tD-elA"/>
+                        <constraint firstAttribute="trailing" secondItem="S4b-rs-xBp" secondAttribute="trailing" constant="17" id="gKe-PU-fD8"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact CIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-0e-klE">
+                    <rect key="frame" x="152" y="57" width="110" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HBG-6v-DMa" secondAttribute="bottom" constant="15" id="187-IU-53K"/>
+                <constraint firstItem="R5D-0e-klE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="13" id="Owp-vo-P21"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HBG-6v-DMa" secondAttribute="trailing" constant="15" id="SMB-DG-oGC"/>
+                <constraint firstItem="HBG-6v-DMa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="XU0-Q3-SbH"/>
+                <constraint firstItem="R5D-0e-klE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jXC-Zn-raU"/>
+                <constraint firstItem="HBG-6v-DMa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="khB-T3-7T6"/>
+                <constraint firstItem="HBG-6v-DMa" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="pNa-x0-EUv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-139" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>

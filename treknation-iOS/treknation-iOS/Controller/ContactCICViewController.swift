@@ -12,7 +12,7 @@ class ContactCICViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var detailedLabel: UILabel!
-    
+    @IBOutlet weak var formLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
@@ -36,12 +36,12 @@ class ContactCICViewController: UIViewController {
           .kern: 0.05
         ])
         attributedString.addAttribute(.link, value: 1, range: NSRange(location: 109, length: 7))
-        self.detailedLabel.attributedText = attributedString
+        //self.formLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
         gesture.numberOfTapsRequired = 1
-        detailedLabel.addGestureRecognizer(gesture)
-        detailedLabel.isUserInteractionEnabled = true
-        detailedLabel.lineBreakMode = .byWordWrapping
+        //formLabel.addGestureRecognizer(gesture)
+        formLabel.isUserInteractionEnabled = true
+        formLabel.lineBreakMode = .byWordWrapping
     }
    
     @IBAction func callCIC(_ sender: Any) {

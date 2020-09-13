@@ -24,6 +24,7 @@ class DetailedViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.titleLabel.text = self.titleText
         self.descriptionLabel.text = self.descriptionText
+        self.tabBarController?.tabBar.isHidden = true
 
     }
 

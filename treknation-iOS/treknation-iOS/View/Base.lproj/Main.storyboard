@@ -160,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sEz-jc-bhB">
-                                <rect key="frame" x="0.0" y="99" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="564"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ceO-IJ-np7">
@@ -187,17 +187,23 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrekNation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fig-Ia-Pia">
-                                <rect key="frame" x="49" y="50" width="179" height="41"/>
+                                <rect key="frame" x="49" y="50" width="135" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="npL-Nq-O9r"/>
-                                    <constraint firstAttribute="width" constant="179" id="yGR-Ng-Ma4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HavaniaRegular" family="Havania" pointSize="33"/>
                                 <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© TrekNation Technologies Ltd." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hen-bX-myx">
-                                <rect key="frame" x="0.0" y="781" width="414" height="31"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="31"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K5U-ah-9Z6">
+                                <rect key="frame" x="0.0" y="756" width="414" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -209,7 +215,8 @@
                             <constraint firstItem="sEz-jc-bhB" firstAttribute="trailing" secondItem="5PE-fm-sCb" secondAttribute="trailing" id="0b1-Dp-1vi"/>
                             <constraint firstItem="sEz-jc-bhB" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="55" id="MfJ-wf-Zl9"/>
                             <constraint firstItem="fig-Ia-Pia" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="6" id="UBx-oe-IaL"/>
-                            <constraint firstItem="5PE-fm-sCb" firstAttribute="bottom" secondItem="sEz-jc-bhB" secondAttribute="bottom" constant="40" id="WMS-iN-mb4"/>
+                            <constraint firstItem="5PE-fm-sCb" firstAttribute="bottom" secondItem="sEz-jc-bhB" secondAttribute="bottom" constant="150" id="WMS-iN-mb4"/>
+                            <constraint firstItem="5PE-fm-sCb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fig-Ia-Pia" secondAttribute="trailing" symbolic="YES" id="Wq3-UA-XHN"/>
                             <constraint firstItem="KPD-e3-NGg" firstAttribute="top" secondItem="5PE-fm-sCb" secondAttribute="top" constant="14" id="bti-BY-62f"/>
                             <constraint firstItem="KPD-e3-NGg" firstAttribute="leading" secondItem="5PE-fm-sCb" secondAttribute="leading" constant="12" id="d15-cJ-xP3"/>
                             <constraint firstItem="sEz-jc-bhB" firstAttribute="leading" secondItem="5PE-fm-sCb" secondAttribute="leading" id="oEZ-P1-aHR"/>
@@ -219,6 +226,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="QAC-TH-aN9"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="homeTableView" destination="sEz-jc-bhB" id="Jiv-Jj-1rS"/>
                     </connections>

@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var appData: [AppData] = []
+
     @IBOutlet weak var homeTableView: UITableView!
     func numberOfSections(in tableView: UITableView) -> Int {
         return appData.count
@@ -23,7 +24,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let tempAppData = appData[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppData") as! HomrTableViewCell
+        
+        cell.layer.shadowOffset = CGSize(width: 1, height: 1)
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowRadius = 5
 
+        cell.layer.shadowOpacity = 0.40
+        cell.layer.masksToBounds = false;
+        cell.clipsToBounds = false;
+        
         cell.title.text = tempAppData.title
         cell.detailedOverview.text = tempAppData.overview
         cell.expandBtn.tag = indexPath.section
@@ -46,6 +55,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         return cell
     }
+    
+
     
     @objc func didExpand(button: UIButton) {
         let section = button.tag
@@ -129,11 +140,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    var appData: [AppData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         appData = createAppData()
+
+//        let defaults = UserDefaults.standard
+//
+//        let array = defaults.array(forKey: "AppData")  as? [AppData]
+//        if array != nil {
+//            appData = array!
+//        }else{
+//            defaults.set(appData, forKey: "AppData")
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

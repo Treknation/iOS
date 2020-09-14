@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="convertTestViewController" customModule="treknation_iOS" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="7FT-tf-pLY" id="3pc-d3-N2k"/>
+                <outlet property="detailLabel" destination="BRA-8l-00G" id="F81-vF-hHX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

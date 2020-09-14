@@ -67,10 +67,10 @@ class Constant: NSObject {
         
         static let fstSecondLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/come-canada-tool-immigration-express-entry.html"
         
-        static let IELTSLink = "http://www.ielts.org/"
-        static let CELPIP = "http://www.celpiptest.ca/"
+        static let IELTSLink = "https://www.ielts.org/"
+        static let CELPIP = "https://www.celpip.ca/"
         static let tefCanada = "https://www.lefrancaisdesaffaires.fr/tests-diplomes/test-evaluation-francais-tef/tef-canada/"
-        static let tcfCanada = "http://www.ciep.fr/tcf-canada"
+        static let tcfCanada = "https://www.ciep.fr/tcf-canada"
         static let crsOverview = "https://www.cic.gc.ca/english/immigrate/skilled/crs-tool.asp"
         static let crsLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/works.html"
         static let cgKeyPage = "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html"
@@ -93,11 +93,13 @@ class Constant: NSObject {
         static let education = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html"
         static let certifications = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html#provinces"
         static let livingAndFinding = "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/new-life-canada.html"
-        static let cbsaLink = "http://www.cbsa-asfc.gc.ca/menu-eng.html"
-        static let moneyAmount = "http://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
+        static let cbsaLink = "https://www.cbsa-asfc.gc.ca/menu-eng.html"
+        static let moneyAmount = "https://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html"
         static let contactWebForm = "https://www.cic.gc.ca/english/contacts/web-form.asp"
         
         static let googlePlay = "https://policies.google.com/privacy"
+        
+        static let converResultsLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html"
     }
 
 }

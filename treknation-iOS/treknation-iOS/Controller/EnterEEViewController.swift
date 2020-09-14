@@ -43,7 +43,7 @@ class EnterEEViewController: UIViewController {
         ], range: NSRange(location: 0, length: 5))
         
         let conditionRange = (attributedString.string as NSString).range(of: "this page")
-        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: conditionRange)
+        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 48, length: 4))
 
         
         self.detailedLabel.attributedText = attributedString

@@ -20,14 +20,22 @@ class FSWViewController: UIViewController {
         self.backgroundView.layer.shadowOpacity = 1
         self.backgroundView.layer.shadowOffset = .zero
         self.backgroundView.layer.shadowRadius = 3
+        let boldFont = UIFont.boldSystemFont(ofSize: 15.0)
+
         
-        
-        
-        let attributedString = NSMutableAttributedString(string: "You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.\n\n• Work Experience\n\t• Skilled work experience of at least 1- \tyear continuous full time within the last 10  years in NOC job groups 0, A, or B which is  paid.\n\t• Full-time at 1 job: 30 hours/week for 12  months = 1 year full time (1,560 hours)\n\t• Equal amount in part-time: 15 hours/week  for 24 months = 1 year full time (1,560 hours)\n\t• Full-time at more than 1 job: 30 hours/week \tfor 12 months at more than 1 job = 1-year full \ttime (1,560 hours)\n\n• Language \nGet a minimum score of CLB 7 in all 4 abilities of ECB in either English or French language\n\n• Education\n\t• If you went to school in Canada, you must  submit certificate, diploma or degree from a \tCanadian high school or post-secondary  institution\n\t• If you have foreign education, you must  submit an ECA verified certificate, diploma or \tdegree\n\n• No plans to live in Quebec\n\n• You must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.\n\n\nYou can check your points by visiting this link.", attributes: [
+        let attributedString = NSMutableAttributedString(string: "You would need to score a minimum of 67 points out of 100 to qualify for FSW. These points are different from your CRS points. The points will be calculated based on how you meet the below minimum requirements.\n\nWork Experience\n• Skilled work experience of at least 1- year continuous full time within the last 10 years in NOC job groups 0, A, or B which is paid.\n• Full-time at 1 job: 30 hours/week for 12 months = 1 year full time (1,560 hours).\n• Equal amount in part-time: 15 hours/week for 24 months = 1 year full time (1,560 hours).\n• Full-time at more than 1 job: 30 hours/week for 12 months at more than 1 job = 1-year full time (1,560 hours).\n\nLanguage \nGet a minimum score of CLB 7 in all 4 abilities of ECB in either English or French language\n\nEducation\n• If you went to school in Canada, you must submit certificate, diploma or degree from a Canadian high school or post-secondary institution\n• If you have foreign education, you must submit an ECA verified certificate, diploma or degree\n\nNo plans to live in Quebec\n\nProof Of Funds\nYou must show you have enough funds for you and your family to settle in Canada unless you are able to legally work in Canada and have a valid job offer. See more.\n\nYou can check your points by visiting this link.", attributes: [
           .font: UIFont.systemFont(ofSize: 15),
           .foregroundColor: UIColor(red: 80.0 / 255.0, green: 83.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
+        attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 212, length: 15))
+        attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 653, length: 8))
+        attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 756, length: 9))
+        attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1003, length: 42))
+        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1200, length: 8))
+        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1254, length: 4))
+        
+        
         let conditionRange = (attributedString.string as NSString).range(of: "See more")
         let cancellationRange = (attributedString.string as NSString).range(of: "link.")
         attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: conditionRange)

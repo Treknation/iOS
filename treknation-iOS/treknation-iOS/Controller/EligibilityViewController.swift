@@ -13,6 +13,9 @@ class EligibilityViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var isCompletedBtn: UIButton!
 
+    @IBOutlet weak var cecBtn: UIButton!
+    @IBOutlet weak var fstBtn: UIButton!
+    @IBOutlet weak var fswBtn: UIButton!
     func setAppData(data : AppData) {
         appData = data
     }
@@ -28,6 +31,27 @@ class EligibilityViewController: UIViewController {
         self.backgroundView.layer.shadowOpacity = 1
         self.backgroundView.layer.shadowOffset = .zero
         self.backgroundView.layer.shadowRadius = 3
+        
+        
+        
+        self.cecBtn.layer.cornerRadius = 6
+        self.cecBtn.layer.shadowColor = UIColor.lightGray.cgColor
+        self.cecBtn.layer.shadowOpacity = 1
+        self.cecBtn.layer.shadowOffset = .zero
+        self.cecBtn.layer.shadowRadius = 2
+        
+        self.fstBtn.layer.cornerRadius = 6
+        self.fstBtn.layer.shadowColor = UIColor.lightGray.cgColor
+        self.fstBtn.layer.shadowOpacity = 1
+        self.fstBtn.layer.shadowOffset = .zero
+        self.fstBtn.layer.shadowRadius = 2
+        
+        self.fswBtn.layer.cornerRadius = 6
+         self.fswBtn.layer.shadowColor = UIColor.lightGray.cgColor
+         self.fswBtn.layer.shadowOpacity = 1
+         self.fswBtn.layer.shadowOffset = .zero
+         self.fswBtn.layer.shadowRadius = 2
+        
     }
 
     

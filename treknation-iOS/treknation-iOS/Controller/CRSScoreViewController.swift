@@ -95,7 +95,7 @@ class CRSScoreViewController: UIViewController {
                {
                    return
                }
-        let conditionRange = (text as NSString).range(of: "link.")
+        let conditionRange = (text as NSString).range(of: "provinces at this link.")
 
            if sender.didTapAttributedTextInLabel(label: self.detailLabel, inRange: conditionRange){
                 let webView = WebViewViewController()

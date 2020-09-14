@@ -12,6 +12,8 @@ class PrepareforLandingViewController: UIViewController {
     var appData: AppData!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var isCompletedBtn: UIButton!
+    @IBOutlet weak var inCanadaBtn: UIButton!
+    @IBOutlet weak var outsideCanadaBtn: UIButton!
 
     func setAppData(data : AppData) {
         appData = data
@@ -29,6 +31,18 @@ class PrepareforLandingViewController: UIViewController {
         self.backgroundView.layer.shadowOpacity = 1
         self.backgroundView.layer.shadowOffset = .zero
         self.backgroundView.layer.shadowRadius = 3
+        
+        self.inCanadaBtn.layer.cornerRadius = 6
+        self.inCanadaBtn.layer.shadowColor = UIColor.lightGray.cgColor
+        self.inCanadaBtn.layer.shadowOpacity = 1
+        self.inCanadaBtn.layer.shadowOffset = .zero
+        self.inCanadaBtn.layer.shadowRadius = 2
+        
+        self.outsideCanadaBtn.layer.cornerRadius = 6
+        self.outsideCanadaBtn.layer.shadowColor = UIColor.lightGray.cgColor
+        self.outsideCanadaBtn.layer.shadowOpacity = 1
+        self.outsideCanadaBtn.layer.shadowOffset = .zero
+        self.outsideCanadaBtn.layer.shadowRadius = 2
     }
 
     @IBAction func back(_ sender: Any) {

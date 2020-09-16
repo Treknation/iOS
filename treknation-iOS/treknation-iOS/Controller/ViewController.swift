@@ -19,38 +19,50 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+//
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        let shadowView = UIView()
+//        let gradient = CAGradientLayer()
+//        gradient.frame.size = CGSize(width: tableView.bounds.width-20, height: 5)
+//
+//        let stopColor = UIColor.gray.cgColor
+//        let startColor = UIColor.white.cgColor
+//
+//        gradient.colors = [stopColor, startColor]
+//        gradient.locations = [0.0,0.8]
+//
+//        shadowView.layer.addSublayer(gradient)
+//
+//        return shadowView
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let tempAppData = appData[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppData") as! HomrTableViewCell
-        
-        cell.layer.shadowOffset = CGSize(width: 1, height: 1)
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 5
 
-        cell.layer.shadowOpacity = 0.40
-        cell.layer.masksToBounds = false;
-        cell.clipsToBounds = false;
-        
+        //cell.addShadow(backgroundColor: .white, cornerRadius: 13, shadowRadius: 5, shadowOpacity: 0.1, shadowPathInset: (dx: 16, dy: 6), shadowPathOffset: (dx: 0, dy: 2))
         cell.title.text = tempAppData.title
         cell.detailedOverview.text = tempAppData.overview
         cell.expandBtn.tag = indexPath.section
         if tempAppData.isComplete {
-            cell.contentView.backgroundColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
+            cell.cellView.backgroundColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
             cell.expandBtn.setImage(UIImage(named: "complete.png"), for: .normal)
             cell.expandBtn.isUserInteractionEnabled = false
             cell.title.textColor = UIColor.white
+            cell.dividerView.isHidden = true
         }
         else{
-            cell.contentView.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+            cell.cellView.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
             cell.expandBtn.addTarget(self, action: #selector(self.didExpand), for: .touchUpInside)
             cell.title.textColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
 
             if tempAppData.isOpen {
                 cell.expandBtn.setImage(UIImage(named: "close.png"), for: .normal)
+                cell.dividerView.isHidden = false
             }else{
                 cell.expandBtn.setImage(UIImage(named: "open.png"), for: .normal)
+                cell.dividerView.isHidden = true
             }
         }
         return cell
@@ -73,13 +85,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let tempAppData = appData[indexPath.section]
         var height:CGFloat = CGFloat()
         if tempAppData.isComplete{
-            return 50
+            return 60
         }
         if tempAppData.isOpen {
             height = UITableView.automaticDimension
         }
         else{
-            height = 50
+            height = 60
         }
         return height
     }
@@ -143,15 +155,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        appData = createAppData()
+        self.homeTableView.backgroundColor = UIColor.clear
+        self.homeTableView.backgroundView = nil;
 
-//        let defaults = UserDefaults.standard
+        do{
+            if let decoded = UserDefaults.standard.data(forKey: "AppData") {
+                if let decodedTeams = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) {
+                       appData = decodedTeams as! [AppData]
+                   }
+            } else {
+                 appData = createAppData()
+                   let defaults = UserDefaults.standard
+                   let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: appData, requiringSecureCoding: false)
+                      defaults.set(encodedData, forKey: "AppData")
+                      defaults.synchronize()
+               }
+           }catch (let error){
+               #if DEBUG
+                   print("Failed to convert UIColor to Data : \(error.localizedDescription)")
+               #endif
+           }
+        
+        
+//        let decoded  = defaults.data(forKey: "AppData")
+//        let decodedTeams =  try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded!) as! [AppData]
 //
-//        let array = defaults.array(forKey: "AppData")  as? [AppData]
-//        if array != nil {
-//            appData = array!
+//        if decodedTeams.count == 0  {
 //        }else{
-//            defaults.set(appData, forKey: "AppData")
+//            let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: appData, requiringSecureCoding: false)
+//             defaults.set(encodedData, forKey: "AppData")
+//             defaults.synchronize()
 //        }
     }
     

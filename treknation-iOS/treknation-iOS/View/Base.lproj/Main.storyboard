@@ -20,9 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="15" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="1tW-rs-sWA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="1tW-rs-sWA">
                                 <rect key="frame" x="0.0" y="91" width="414" height="722"/>
-                                <color key="backgroundColor" red="0.078431372549019607" green="0.23921568627450979" blue="0.34901960784313724" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppData" rowHeight="150" id="41E-bC-P9O" customClass="HomrTableViewCell" customModule="treknation_iOS" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="150"/>
@@ -31,8 +30,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvU-xy-1Zk" customClass="ShadowView" customModule="treknation_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="2" y="2" width="370" height="143"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg8-4L-KpH">
-                                                    <rect key="frame" x="20" y="15" width="282" height="21"/>
+                                                    <rect key="frame" x="20" y="17" width="283" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="DEc-lH-eTb"/>
                                                     </constraints>
@@ -41,7 +44,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZ2-V6-T7c">
-                                                    <rect key="frame" x="310" y="2" width="53" height="45"/>
+                                                    <rect key="frame" x="311" y="4" width="53" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="53" id="GSU-11-TEA"/>
                                                         <constraint firstAttribute="height" constant="45" id="nvW-7P-121"/>
@@ -56,31 +59,38 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-mS-FeK">
-                                                    <rect key="frame" x="20" y="58" width="343" height="77"/>
+                                                    <rect key="frame" x="20" y="58" width="343" height="75"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="iOD-mS-FeK" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="top" constant="58" id="1ry-Qz-ZcS"/>
-                                                <constraint firstItem="wg8-4L-KpH" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="topMargin" constant="4" id="5XB-RA-dbe"/>
+                                                <constraint firstItem="wg8-4L-KpH" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="topMargin" constant="6" id="5XB-RA-dbe"/>
                                                 <constraint firstItem="wg8-4L-KpH" firstAttribute="leading" secondItem="b87-h4-kxh" secondAttribute="leadingMargin" id="6mF-JL-RR0"/>
                                                 <constraint firstItem="pgH-WP-7mC" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="top" constant="50" id="CFV-BU-IdI"/>
+                                                <constraint firstAttribute="bottom" secondItem="FvU-xy-1Zk" secondAttribute="bottom" constant="5" id="HGS-Vg-puk"/>
                                                 <constraint firstItem="pgH-WP-7mC" firstAttribute="trailing" secondItem="b87-h4-kxh" secondAttribute="trailingMargin" id="LpU-qh-8rq"/>
                                                 <constraint firstItem="iOD-mS-FeK" firstAttribute="leading" secondItem="b87-h4-kxh" secondAttribute="leading" constant="20" id="O4R-v4-NtC"/>
-                                                <constraint firstItem="GZ2-V6-T7c" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="top" constant="2" id="XKP-3x-w7C"/>
+                                                <constraint firstItem="FvU-xy-1Zk" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="top" constant="2" id="RFd-Xq-4MT"/>
+                                                <constraint firstItem="GZ2-V6-T7c" firstAttribute="top" secondItem="b87-h4-kxh" secondAttribute="top" constant="4" id="XKP-3x-w7C"/>
                                                 <constraint firstItem="pgH-WP-7mC" firstAttribute="leading" secondItem="b87-h4-kxh" secondAttribute="leadingMargin" id="avI-Wi-Hfn"/>
-                                                <constraint firstAttribute="bottom" secondItem="iOD-mS-FeK" secondAttribute="bottom" constant="15" id="iun-u4-ggL"/>
+                                                <constraint firstAttribute="bottom" secondItem="iOD-mS-FeK" secondAttribute="bottom" constant="17" id="iun-u4-ggL"/>
+                                                <constraint firstAttribute="trailing" secondItem="FvU-xy-1Zk" secondAttribute="trailing" constant="2" id="naM-34-quF"/>
                                                 <constraint firstAttribute="trailing" secondItem="iOD-mS-FeK" secondAttribute="trailing" constant="11" id="oe8-ii-agz"/>
                                                 <constraint firstItem="GZ2-V6-T7c" firstAttribute="leading" secondItem="wg8-4L-KpH" secondAttribute="trailing" constant="8" id="p9r-2L-2sJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="GZ2-V6-T7c" secondAttribute="trailing" constant="11" id="wUx-G5-AHN"/>
+                                                <constraint firstItem="FvU-xy-1Zk" firstAttribute="leading" secondItem="b87-h4-kxh" secondAttribute="leading" constant="2" id="qnz-cq-bFV"/>
+                                                <constraint firstAttribute="trailing" secondItem="GZ2-V6-T7c" secondAttribute="trailing" constant="10" id="wUx-G5-AHN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                         <connections>
+                                            <outlet property="cellView" destination="FvU-xy-1Zk" id="hZ1-aE-RRj"/>
                                             <outlet property="detailedOverview" destination="iOD-mS-FeK" id="ZYB-Kr-qAy"/>
+                                            <outlet property="dividerView" destination="pgH-WP-7mC" id="uDk-k5-4aK"/>
                                             <outlet property="expandBtn" destination="GZ2-V6-T7c" id="c8s-dj-X2p"/>
                                             <outlet property="title" destination="wg8-4L-KpH" id="lH4-9Q-bwO"/>
                                         </connections>

@@ -37,8 +37,14 @@ class ECAViewController: UIViewController {
         self.processingTimeBtn.layer.shadowOffset = .zero
         self.processingTimeBtn.layer.shadowRadius = 2
         
-        // Do any additional setup after loading the view.
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
+        
     }
+    
     func setAppData(data : AppData) {
         appData = data
     }

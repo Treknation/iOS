@@ -50,6 +50,11 @@ class EPRViewController: UIViewController {
         detailedLabel.isUserInteractionEnabled = true
         detailedLabel.lineBreakMode = .byWordWrapping
     
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {

@@ -42,6 +42,12 @@ class OverviewViewController: UIViewController {
         hyperlinkLBL.addGestureRecognizer(gesture)
         hyperlinkLBL.isUserInteractionEnabled = true
         hyperlinkLBL.lineBreakMode = .byWordWrapping
+        
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
     }
 
     

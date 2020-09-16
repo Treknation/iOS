@@ -43,6 +43,12 @@ class PrepareforLandingViewController: UIViewController {
         self.outsideCanadaBtn.layer.shadowOpacity = 1
         self.outsideCanadaBtn.layer.shadowOffset = .zero
         self.outsideCanadaBtn.layer.shadowRadius = 2
+        
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
     }
 
     @IBAction func back(_ sender: Any) {

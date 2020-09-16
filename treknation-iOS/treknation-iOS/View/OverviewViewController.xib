@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverviewViewController" customModule="treknation_iOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverviewViewController" customModule="TrekNation" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="reF-Lg-VjJ" id="OSL-iB-bOp"/>
                 <outlet property="hyperlinkLBL" destination="EkO-KX-nbT" id="HfR-Pr-BAe"/>
@@ -48,34 +48,34 @@
                     <rect key="frame" x="0.0" y="45" width="414" height="1006"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAe-RV-90I" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="5" width="414" height="880"/>
+                            <rect key="frame" x="0.0" y="5" width="414" height="1080"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does Express Entry Work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MC-ji-kjU">
-                                    <rect key="frame" x="29" y="12" width="341" height="20"/>
+                                    <rect key="frame" x="29" y="140" width="341" height="20"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much does Express Entry cost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USy-TQ-SLc">
-                                    <rect key="frame" x="29" y="391" width="341" height="19.5"/>
+                                    <rect key="frame" x="29" y="519" width="341" height="19.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long does it take?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyx-k9-X3B">
-                                    <rect key="frame" x="29" y="572" width="268" height="20"/>
+                                    <rect key="frame" x="29" y="700" width="268" height="20"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Express Entry works by submitting an online profile for determining eligibility for the one of the below programs:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cnb-wI-FzS" customClass="AutoFitLabel">
-                                    <rect key="frame" x="29" y="34" width="357" height="54"/>
+                                    <rect key="frame" x="29" y="162" width="357" height="54"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980392156865" green="0.28627450980392155" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1Z-KC-ytz">
-                                    <rect key="frame" x="29" y="91" width="330" height="54"/>
+                                    <rect key="frame" x="29" y="219" width="330" height="54"/>
                                     <string key="text">	• 	Federal Skilled Worker (FSW) 
 	• 	Canadian Experience Class (CEC)
 	• 	Federal Skilled Trades (FST)</string>
@@ -84,34 +84,34 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0DJ-fc-Tzh">
-                                    <rect key="frame" x="29" y="153" width="357" height="54"/>
+                                    <rect key="frame" x="29" y="281" width="357" height="54"/>
                                     <string key="text">2. You can enter details about your age, education, work experience and language score to gain CRS(Comprehensive Ranking System) score.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. You are then placed in the Express Entry pool and ranked relative to each other based on your CRS score. " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckr-uB-LwY">
-                                    <rect key="frame" x="29" y="212" width="357" height="54"/>
+                                    <rect key="frame" x="29" y="340" width="357" height="54"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cau-pJ-NXB">
-                                    <rect key="frame" x="29" y="271" width="357" height="90"/>
+                                    <rect key="frame" x="29" y="399" width="357" height="90"/>
                                     <string key="text">4. You will be invited to apply for the permanent residence if your score is above the cut off score for that draw. This invitation is also called Invitation to Apply(ITA). A draw is conducted generally twice a month.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjh-9E-4Uf">
-                                    <rect key="frame" x="29" y="415.5" width="357" height="143.5"/>
+                                    <rect key="frame" x="29" y="543.5" width="357" height="143.5"/>
                                     <string key="text">Express Entry generally costs $1325 CAD. There is an additional cost of $1325 CAD if your application has a spouse. There is also a fee of $225 CAD per dependent child in the application. This is just the fee charged by IRCC and there are other costs as well associated with education verification, language test, medical test and police verification which you will find in relevant sections.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJb-5R-3gy">
-                                    <rect key="frame" x="40" y="759.5" width="334" height="34"/>
+                                    <rect key="frame" x="40" y="887.5" width="334" height="34"/>
                                     <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="34" id="ycF-tW-8Ny"/>
@@ -125,7 +125,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EkO-KX-nbT">
-                                    <rect key="frame" x="29" y="593" width="357" height="143.5"/>
+                                    <rect key="frame" x="29" y="721" width="357" height="143.5"/>
                                     <string key="text">It usually takes 6 months after you receive your ITA.  
 
 It may take additional time for other processes such as educational document verification, police verification, medical test and language test. These processes can take up to an additional 9 weeks. We suggest you visit this link and check your processing time - here.</string>
@@ -133,17 +133,33 @@ It may take additional time for other processes such as educational document ver
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-AE-UWn">
+                                    <rect key="frame" x="29" y="34" width="357" height="90"/>
+                                    <string key="text">Express Entry (EE) is an online immigration system which allows people to submit a profile and be considered as a skilled immigrant. Candidates with the highest rankings are invited to apply for permanent residency.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Express Entry?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-bI-FUh">
+                                    <rect key="frame" x="29" y="10" width="341" height="20"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="LY1-AE-UWn" firstAttribute="top" secondItem="L4w-bI-FUh" secondAttribute="bottom" constant="4" id="06c-oU-A9q"/>
                                 <constraint firstAttribute="trailing" secondItem="cau-pJ-NXB" secondAttribute="trailing" constant="28" id="12Y-Ry-O8h"/>
                                 <constraint firstAttribute="trailing" secondItem="USy-TQ-SLc" secondAttribute="trailing" constant="44" id="2a1-Xa-UAx"/>
+                                <constraint firstAttribute="trailing" secondItem="LY1-AE-UWn" secondAttribute="trailing" constant="28" id="4ex-DH-ZM7"/>
                                 <constraint firstItem="nyx-k9-X3B" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="7Hq-jO-J8j"/>
+                                <constraint firstItem="L4w-bI-FUh" firstAttribute="top" secondItem="xAe-RV-90I" secondAttribute="top" constant="10" id="7z8-Dx-u9z"/>
                                 <constraint firstAttribute="trailing" secondItem="nyx-k9-X3B" secondAttribute="trailing" constant="117" id="8jE-fF-znk"/>
                                 <constraint firstAttribute="trailing" secondItem="Gjh-9E-4Uf" secondAttribute="trailing" constant="28" id="9py-ED-Mna"/>
                                 <constraint firstItem="Gjh-9E-4Uf" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="BUi-AH-tJ4"/>
                                 <constraint firstItem="ckr-uB-LwY" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="Gb1-Wo-LMy"/>
-                                <constraint firstAttribute="height" constant="880" id="HP1-rz-DRX"/>
+                                <constraint firstAttribute="height" constant="1080" id="HP1-rz-DRX"/>
                                 <constraint firstItem="cau-pJ-NXB" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="J3o-84-tVd"/>
                                 <constraint firstItem="L1Z-KC-ytz" firstAttribute="top" secondItem="Cnb-wI-FzS" secondAttribute="bottom" constant="3" id="LdL-jF-2hb"/>
                                 <constraint firstItem="USy-TQ-SLc" firstAttribute="top" secondItem="cau-pJ-NXB" secondAttribute="bottom" constant="30" id="MMB-tL-TWt"/>
@@ -154,6 +170,7 @@ It may take additional time for other processes such as educational document ver
                                 <constraint firstItem="0DJ-fc-Tzh" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="VwX-AL-jes"/>
                                 <constraint firstItem="nyx-k9-X3B" firstAttribute="top" secondItem="Gjh-9E-4Uf" secondAttribute="bottom" constant="13" id="XZc-Q8-dSt"/>
                                 <constraint firstItem="Gjh-9E-4Uf" firstAttribute="top" secondItem="USy-TQ-SLc" secondAttribute="bottom" constant="5" id="XjJ-Uz-xCg"/>
+                                <constraint firstItem="L4w-bI-FUh" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="YWp-o6-nZy"/>
                                 <constraint firstItem="EkO-KX-nbT" firstAttribute="top" secondItem="nyx-k9-X3B" secondAttribute="bottom" constant="1" id="ZeC-pQ-XKY"/>
                                 <constraint firstItem="Cnb-wI-FzS" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="ai8-Yq-zgw"/>
                                 <constraint firstAttribute="trailing" secondItem="2MC-ji-kjU" secondAttribute="trailing" constant="44" id="ar9-SV-vOe"/>
@@ -163,11 +180,13 @@ It may take additional time for other processes such as educational document ver
                                 <constraint firstItem="FJb-5R-3gy" firstAttribute="top" secondItem="EkO-KX-nbT" secondAttribute="bottom" constant="23" id="g22-o2-CaN"/>
                                 <constraint firstItem="FJb-5R-3gy" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="40" id="hON-yu-crH"/>
                                 <constraint firstItem="L1Z-KC-ytz" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="iav-aq-e67"/>
-                                <constraint firstItem="2MC-ji-kjU" firstAttribute="top" secondItem="xAe-RV-90I" secondAttribute="top" constant="12" id="oZt-DL-HST"/>
+                                <constraint firstAttribute="trailing" secondItem="L4w-bI-FUh" secondAttribute="trailing" constant="44" id="jTL-Mp-GLP"/>
+                                <constraint firstItem="2MC-ji-kjU" firstAttribute="top" secondItem="xAe-RV-90I" secondAttribute="top" constant="140" id="oZt-DL-HST"/>
                                 <constraint firstAttribute="trailing" secondItem="ckr-uB-LwY" secondAttribute="trailing" constant="28" id="s9p-zE-V81"/>
                                 <constraint firstAttribute="trailing" secondItem="L1Z-KC-ytz" secondAttribute="trailing" constant="55" id="sHH-pv-LbZ"/>
                                 <constraint firstAttribute="trailing" secondItem="Cnb-wI-FzS" secondAttribute="trailing" constant="28" id="szD-iS-XCE"/>
                                 <constraint firstItem="Cnb-wI-FzS" firstAttribute="top" secondItem="2MC-ji-kjU" secondAttribute="bottom" constant="2" id="v1A-FW-SLi"/>
+                                <constraint firstItem="LY1-AE-UWn" firstAttribute="leading" secondItem="xAe-RV-90I" secondAttribute="leading" constant="29" id="v8t-XQ-Hfy"/>
                                 <constraint firstAttribute="trailing" secondItem="EkO-KX-nbT" secondAttribute="trailing" constant="28" id="vv8-cq-pcN"/>
                                 <constraint firstAttribute="trailing" secondItem="FJb-5R-3gy" secondAttribute="trailing" constant="40" id="w4g-kI-Czn"/>
                                 <constraint firstAttribute="trailing" secondItem="0DJ-fc-Tzh" secondAttribute="trailing" constant="28" id="wR7-Af-75c"/>
@@ -203,7 +222,7 @@ It may take additional time for other processes such as educational document ver
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="128.98550724637681" y="191.18303571428569"/>
+            <point key="canvasLocation" x="128" y="191.1544227886057"/>
         </view>
     </objects>
     <resources>

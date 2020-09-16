@@ -55,7 +55,13 @@ class NOCViewController: UIViewController {
         self.backgroundView.layer.shadowOpacity = 1
         self.backgroundView.layer.shadowOffset = .zero
         self.backgroundView.layer.shadowRadius = 3
+       
         
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
     }
 
     func setAppData(data : AppData) {

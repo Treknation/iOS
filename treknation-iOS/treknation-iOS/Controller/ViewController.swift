@@ -157,6 +157,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.homeTableView.backgroundColor = UIColor.clear
         self.homeTableView.backgroundView = nil;
+        appData = createAppData()
 
         do{
             if let decoded = UserDefaults.standard.data(forKey: "AppData") {

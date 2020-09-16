@@ -109,7 +109,7 @@
 		2A4424D924E09B5700D7C832 /* LanguageTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTestViewController.xib; sourceTree = "<group>"; };
 		2A4424DC24E09BAF00D7C832 /* EligibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityViewController.swift; sourceTree = "<group>"; };
 		2A4424DD24E09BAF00D7C832 /* EligibilityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EligibilityViewController.xib; sourceTree = "<group>"; };
-		2A482FBA24B113E90070561C /* treknation-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "treknation-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A482FBA24B113E90070561C /* TrekNation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekNation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A482FBD24B113E90070561C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A482FBF24B113E90070561C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2A482FC124B113E90070561C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		2A482FBB24B113E90070561C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A482FBA24B113E90070561C /* treknation-iOS.app */,
+				2A482FBA24B113E90070561C /* TrekNation.app */,
 				2A482FD024B113EB0070561C /* treknation-iOSTests.xctest */,
 				2A482FDB24B113EB0070561C /* treknation-iOSUITests.xctest */,
 			);
@@ -360,7 +360,7 @@
 			);
 			name = "treknation-iOS";
 			productName = "treknation-iOS";
-			productReference = 2A482FBA24B113E90070561C /* treknation-iOS.app */;
+			productReference = 2A482FBA24B113E90070561C /* TrekNation.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2A482FCF24B113EB0070561C /* treknation-iOSTests */ = {
@@ -713,7 +713,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "treknation.treknation-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -730,7 +730,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "treknation.treknation-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

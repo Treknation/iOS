@@ -52,6 +52,11 @@ class EligibilityViewController: UIViewController {
          self.fswBtn.layer.shadowOffset = .zero
          self.fswBtn.layer.shadowRadius = 2
         
+        if appData.isComplete {
+            self.isCompletedBtn.setTitle("Completed", for: .normal)
+        } else {
+            self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
     }
 
     

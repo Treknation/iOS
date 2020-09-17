@@ -75,9 +75,9 @@ class Constant: NSObject {
         static let crsLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/works.html"
         static let cgKeyPage = "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html"
         static let documentProofOffunds = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"
-        static let checklistPhotocopy = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_photocopy"
-        static let checklistAffidavit = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#affidavit"
-        static let checklistTranslator = "http://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_translator"
+        static let checklistPhotocopy = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_photocopy"
+        static let checklistAffidavit = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#affidavit"
+        static let checklistTranslator = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_translator"
         static let checklistLOE = "https://docs.google.com/document/d/1-31XMpXjR80ttZ9SGGSeJtBJqwI3LGLW/edit"
         
         static let feelist = "https://www.cic.gc.ca/english/information/fees/fees.asp#rprf"

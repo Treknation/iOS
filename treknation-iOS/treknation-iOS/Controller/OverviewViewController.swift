@@ -48,6 +48,10 @@ class OverviewViewController: UIViewController {
         } else {
             self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
         }
+        
+        
+        
+        
     }
 
     
@@ -79,6 +83,7 @@ class OverviewViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
             self.appData.isComplete = true
             self.navigationController?.popViewController(animated: true)
+            UserDefaults.standard.setValue(true, forKey: self.appData.title)
         }))
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
         self.present(alert, animated: true)

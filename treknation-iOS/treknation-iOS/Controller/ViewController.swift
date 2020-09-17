@@ -45,6 +45,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.title.text = tempAppData.title
         cell.detailedOverview.text = tempAppData.overview
         cell.expandBtn.tag = indexPath.section
+        tempAppData.isComplete = (UserDefaults.standard.value(forKey: tempAppData.title) != nil)
+
+        
         if tempAppData.isComplete {
             cell.cellView.backgroundColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
             cell.expandBtn.setImage(UIImage(named: "complete.png"), for: .normal)
@@ -158,24 +161,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.homeTableView.backgroundColor = UIColor.clear
         self.homeTableView.backgroundView = nil;
         appData = createAppData()
-
-        do{
-            if let decoded = UserDefaults.standard.data(forKey: "AppData") {
-                if let decodedTeams = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) {
-                       appData = decodedTeams as! [AppData]
-                   }
-            } else {
-                 appData = createAppData()
-                   let defaults = UserDefaults.standard
-                   let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: appData, requiringSecureCoding: false)
-                      defaults.set(encodedData, forKey: "AppData")
-                      defaults.synchronize()
-               }
-           }catch (let error){
-               #if DEBUG
-                   print("Failed to convert UIColor to Data : \(error.localizedDescription)")
-               #endif
-           }
+//
+//        do{
+//            if let decoded = UserDefaults.standard.data(forKey: "AppData") {
+//                if let decodedTeams = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) {
+//                       appData = decodedTeams as! [AppData]
+//                   }
+//            } else {
+//                 appData = createAppData()
+//                   let defaults = UserDefaults.standard
+//                   let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: appData, requiringSecureCoding: false)
+//                      defaults.set(encodedData, forKey: "AppData")
+//                      defaults.synchronize()
+//               }
+//           }catch (let error){
+//               #if DEBUG
+//                   print("Failed to convert UIColor to Data : \(error.localizedDescription)")
+//               #endif
+//           }
         
         
 //        let decoded  = defaults.data(forKey: "AppData")

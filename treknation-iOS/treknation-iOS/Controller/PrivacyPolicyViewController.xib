@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyPolicyViewController" customModule="treknation_iOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyPolicyViewController" customModule="TrekNation" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="xNN-Wa-2Gi" id="18Q-NR-nAk"/>
                 <outlet property="detailedLabel" destination="iIx-nl-tzn" id="sWw-CN-1d2"/>
@@ -16,15 +17,15 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="915"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="2482"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-Wa-2Gi">
-                    <rect key="frame" x="15" y="44" width="384" height="851"/>
+                    <rect key="frame" x="15" y="44" width="384" height="2418"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKM-Tj-Vhc">
-                    <rect key="frame" x="143.5" y="55" width="127.5" height="23"/>
+                    <rect key="frame" x="144" y="55" width="126.5" height="23"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                     <color key="textColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -32,9 +33,13 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQq-uz-wIo">
                     <rect key="frame" x="25" y="55" width="20" height="22"/>
                     <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="20" id="0OO-1l-CTM"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="NpN-kR-wG8"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="P4a-Pz-Gt3"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="ROd-XT-f8Q"/>
                         <constraint firstAttribute="width" constant="20" id="fx8-AI-9rQ"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="g4R-vV-3Te"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="20" id="lhR-MU-IjS"/>
                         <constraint firstAttribute="height" constant="22" id="nCL-vj-WZ5"/>
                     </constraints>
                     <state key="normal" image="back"/>
@@ -43,14 +48,14 @@
                     </connections>
                 </button>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGC-rH-yvu">
-                    <rect key="frame" x="0.0" y="85" width="415" height="810"/>
+                    <rect key="frame" x="0.0" y="92" width="415" height="2366"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCo-BA-wZm" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="415" height="1928"/>
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="2555"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="iIx-nl-tzn">
-                                    <rect key="frame" x="22" y="8" width="370" height="2363"/>
-                                    <mutableString key="text">Privacy Policy
+                                    <rect key="frame" x="22" y="8" width="373" height="2345"/>
+                                    <string key="text">Privacy Policy
 
 TrekNation Technologies built the TrekNation app as a Free app. This SERVICE is provided by TrekNation Technologies at no cost and is intended for use as is.
 
@@ -111,53 +116,51 @@ This policy is effective as of 2020-09-07
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@treknation.ca </mutableString>
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@treknation.ca </string>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
-                                    <mutableString key="userLabel">After you submit your e-APR you get an AOR which is a confirmation that your application was received by IRCC and they have created a file with your application number. After you submit your application, you can use this Webform if you need to report important changes to your application such as:  • Changes in address, telephone number, email or other contact information • Births or deaths in your immediate family                   • Marriages or divorces • Adoptions • Changes to your job or job offer • A new educational credential • Updated language test results  IRCC will communicate with you through your online account to:  • Tell you to give your biometrics and medical • Confirm that they have reviewed your application • Send you updates on the status of your application • Ask you for more documents, if necessary • Set up an interview, if necessary • Tell you what you need to do and what will happen next  IRCC will decide on your application depending on:  • Whether you meet the eligibility criteria for the program • Whether you’re admissible to Canada, based on the results of your  • Medical exam  • Police certificates  • Background checks  If your application is Rejected and you would like to be considered for future rounds, then:  • Fill out and submit a new Express Entry profile • Meet the eligibility criteria • Be accepted into the pool again  If your application is approved then you would need to send your passport to IRCC, who will then mail you a:  • Confirmation of Permanent Residence (COPR) • A permanent resident visa (if you're from a country that requires a visa)  Your COPR will have information about who you are, as well as your photograph. Your COPR is valid for a limited time so use it before it expires.</mutableString>
+                                    <string key="userLabel">After you submit your e-APR you get an AOR which is a confirmation that your application was received by IRCC and they have created a file with your application number. After you submit your application, you can use this Webform if you need to report important changes to your application such as:  • Changes in address, telephone number, email or other contact information • Births or deaths in your immediate family                   • Marriages or divorces • Adoptions • Changes to your job or job offer • A new educational credential • Updated language test results  IRCC will communicate with you through your online account to:  • Tell you to give your biometrics and medical • Confirm that they have reviewed your application • Send you updates on the status of your application • Ask you for more documents, if necessary • Set up an interview, if necessary • Tell you what you need to do and what will happen next  IRCC will decide on your application depending on:  • Whether you meet the eligibility criteria for the program • Whether you’re admissible to Canada, based on the results of your  • Medical exam  • Police certificates  • Background checks  If your application is Rejected and you would like to be considered for future rounds, then:  • Fill out and submit a new Express Entry profile • Meet the eligibility criteria • Be accepted into the pool again  If your application is approved then you would need to send your passport to IRCC, who will then mail you a:  • Confirmation of Permanent Residence (COPR) • A permanent resident visa (if you're from a country that requires a visa)  Your COPR will have information about who you are, as well as your photograph. Your COPR is valid for a limited time so use it before it expires.</string>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="iIx-nl-tzn" firstAttribute="leading" secondItem="HCo-BA-wZm" secondAttribute="leading" constant="22" id="Lzz-rl-AgJ"/>
-                                <constraint firstAttribute="height" constant="1928" id="a7T-bd-vWx"/>
-                                <constraint firstItem="iIx-nl-tzn" firstAttribute="top" secondItem="HCo-BA-wZm" secondAttribute="top" constant="8" id="tJF-sV-LJt"/>
-                                <constraint firstAttribute="trailing" secondItem="iIx-nl-tzn" secondAttribute="trailing" constant="23" id="yLI-e2-Uv4"/>
+                                <constraint firstItem="iIx-nl-tzn" firstAttribute="top" secondItem="HCo-BA-wZm" secondAttribute="top" constant="8" id="1oG-3Z-uJ7"/>
+                                <constraint firstAttribute="height" constant="2555" id="9c9-gy-a8I"/>
+                                <constraint firstItem="iIx-nl-tzn" firstAttribute="leading" secondItem="HCo-BA-wZm" secondAttribute="leading" constant="22" id="CH9-WU-NGv"/>
+                                <constraint firstAttribute="trailing" secondItem="iIx-nl-tzn" secondAttribute="trailing" constant="20" symbolic="YES" id="vA8-Pm-fdS"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="HCo-BA-wZm" secondAttribute="trailing" id="Ojv-gH-Gwv"/>
-                        <constraint firstItem="HCo-BA-wZm" firstAttribute="top" secondItem="EGC-rH-yvu" secondAttribute="top" id="WKk-ar-dkJ"/>
-                        <constraint firstItem="HCo-BA-wZm" firstAttribute="width" secondItem="EGC-rH-yvu" secondAttribute="width" id="gvQ-6Q-6kE"/>
-                        <constraint firstAttribute="bottom" secondItem="HCo-BA-wZm" secondAttribute="bottom" constant="-1118" id="rEJ-bN-Zbz"/>
-                        <constraint firstItem="HCo-BA-wZm" firstAttribute="leading" secondItem="EGC-rH-yvu" secondAttribute="leading" id="vtK-fh-KDu"/>
+                        <constraint firstAttribute="bottom" secondItem="HCo-BA-wZm" secondAttribute="bottom" id="OCB-HS-xXH"/>
+                        <constraint firstItem="HCo-BA-wZm" firstAttribute="top" secondItem="EGC-rH-yvu" secondAttribute="top" id="OTu-EN-eow"/>
+                        <constraint firstItem="HCo-BA-wZm" firstAttribute="leading" secondItem="EGC-rH-yvu" secondAttribute="leading" id="Xea-7q-25R"/>
+                        <constraint firstAttribute="trailing" secondItem="HCo-BA-wZm" secondAttribute="trailing" id="a5X-Z4-UfS"/>
+                        <constraint firstItem="HCo-BA-wZm" firstAttribute="width" secondItem="EGC-rH-yvu" secondAttribute="width" id="jYw-4A-R6D"/>
                     </constraints>
                 </scrollView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="xNN-Wa-2Gi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0Dk-1Z-r5E"/>
-                <constraint firstItem="zKM-Tj-Vhc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="4A5-Qj-wp9"/>
-                <constraint firstItem="PQq-uz-wIo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="8TC-Dq-QzN"/>
-                <constraint firstItem="EGC-rH-yvu" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="5" id="8d6-zS-6bI"/>
-                <constraint firstItem="xNN-Wa-2Gi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="BG1-f9-0QX"/>
-                <constraint firstItem="PQq-uz-wIo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="EEP-Ra-LZ7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNN-Wa-2Gi" secondAttribute="trailing" constant="15" id="JGo-qD-APR"/>
-                <constraint firstItem="zKM-Tj-Vhc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JiO-tn-Ivh"/>
-                <constraint firstItem="EGC-rH-yvu" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1.00242" id="QiB-5Y-Hqg"/>
-                <constraint firstItem="xNN-Wa-2Gi" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" id="WqI-e4-SsJ"/>
-                <constraint firstAttribute="bottom" secondItem="EGC-rH-yvu" secondAttribute="bottom" constant="20" id="aBo-t7-04a"/>
-                <constraint firstItem="EGC-rH-yvu" firstAttribute="top" secondItem="zKM-Tj-Vhc" secondAttribute="bottom" constant="7" id="dbN-jS-khx"/>
-                <constraint firstAttribute="bottom" secondItem="xNN-Wa-2Gi" secondAttribute="bottom" constant="20" id="mZG-u9-Ldc"/>
-                <constraint firstItem="EGC-rH-yvu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vZj-jT-oMa"/>
-                <constraint firstAttribute="trailing" secondItem="EGC-rH-yvu" secondAttribute="trailing" constant="-1" id="wHU-5c-YCL"/>
+                <constraint firstItem="EGC-rH-yvu" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" priority="500" constant="10" id="2Lr-BX-Wn9"/>
+                <constraint firstItem="EGC-rH-yvu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7oV-xj-fsZ"/>
+                <constraint firstItem="EGC-rH-yvu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="1" id="A2t-8Y-LhH"/>
+                <constraint firstItem="zKM-Tj-Vhc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="CTB-x6-fht"/>
+                <constraint firstItem="PQq-uz-wIo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="JTu-ri-o4r"/>
+                <constraint firstAttribute="bottom" secondItem="xNN-Wa-2Gi" secondAttribute="bottom" constant="20" id="LSx-L7-z8p"/>
+                <constraint firstItem="PQq-uz-wIo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="LYc-y4-YYl"/>
+                <constraint firstItem="xNN-Wa-2Gi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZZn-rN-iwZ"/>
+                <constraint firstItem="zKM-Tj-Vhc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iaF-Un-UPL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNN-Wa-2Gi" secondAttribute="trailing" constant="15" id="mzY-XN-IH4"/>
+                <constraint firstItem="EGC-rH-yvu" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-24" id="oIo-5J-H9d"/>
+                <constraint firstItem="xNN-Wa-2Gi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="sg0-93-kIb"/>
+                <constraint firstItem="EGC-rH-yvu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="yQW-J5-vGc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="124.6376811594203" y="88.727678571428569"/>
+            <point key="canvasLocation" x="124.6376811594203" y="612.72321428571422"/>
         </view>
     </objects>
     <resources>

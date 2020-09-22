@@ -38,7 +38,7 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
             cell.textLabel?.text = "Feedback"
 
         } else if indexPath.section == 2 {
-            cell.textLabel?.text = "Disclamer"
+            cell.textLabel?.text = "Disclaimer"
 
         } else if indexPath.section == 3 {
             cell.textLabel?.text = "Privacy Policy"

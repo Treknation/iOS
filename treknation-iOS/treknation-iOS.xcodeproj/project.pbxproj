@@ -712,7 +712,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "treknation.treknation-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.treknation;
 				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -729,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "treknation.treknation-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.treknation;
 				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

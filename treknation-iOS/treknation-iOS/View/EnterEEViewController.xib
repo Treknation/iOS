@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterEEViewController" customModule="treknation_iOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterEEViewController" customModule="TrekNation" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="6yh-AS-gK9" id="dlw-jM-VJa"/>
                 <outlet property="detailedLabel" destination="F8U-mO-JBv" id="rmO-UK-qFM"/>
@@ -24,7 +24,7 @@
                     <rect key="frame" x="20" y="44" width="374" height="832"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywv-iE-z4H">
-                            <rect key="frame" x="17" y="601.5" width="340" height="36"/>
+                            <rect key="frame" x="17" y="545.5" width="340" height="36"/>
                             <color key="backgroundColor" red="0.078431372550000003" green="0.23921568630000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="YcL-Zj-oQw"/>
@@ -45,9 +45,8 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-pz-7hg">
-                    <rect key="frame" x="35" y="103" width="344" height="179.5"/>
+                    <rect key="frame" x="35" y="103" width="344" height="161.5"/>
                     <string key="text">Please make sure you have completed the below steps before proceeding to create your profile:
-
 1. ECA from Step 2
 2. Language Test details from Step 3
 3. Personal preference code from the Eligibility form in Step 4
@@ -78,7 +77,7 @@ In order to create an express entry profile, you would need to create a GC Key a
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-mO-JBv">
-                    <rect key="frame" x="32" y="297.5" width="344" height="322.5"/>
+                    <rect key="frame" x="32" y="279.5" width="344" height="284.5"/>
                     <string key="text">Steps
 
 • Create GC key account by going to this page(Please do not choose sign in with partner account) . Please remember the 4 security questions and answers thoroughly since you will be asked each time you log in.
@@ -89,7 +88,7 @@ In order to create an express entry profile, you would need to create a GC Key a
 
 
 Note: You have 60 days to fill up and submit your profile.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.27450980390000002" green="0.28627450980000002" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

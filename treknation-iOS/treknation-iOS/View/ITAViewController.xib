@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITAViewController" customModule="treknation_iOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ITAViewController" customModule="TrekNation" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundView" destination="3yY-n1-w3s" id="l8M-rO-gxb"/>
                 <outlet property="isCompletedBtn" destination="Zbm-HH-DDD" id="Ag3-V3-Xe7"/>
@@ -23,7 +23,7 @@
                     <rect key="frame" x="15" y="44" width="384" height="1025"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Your ITA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-kS-jLX">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Your ITA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Euh-kS-jLX">
                     <rect key="frame" x="131.5" y="58" width="151.5" height="23"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="151.5" id="Jdj-MT-eN5"/>

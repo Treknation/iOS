@@ -48,10 +48,7 @@ class OverviewViewController: UIViewController {
         } else {
             self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
         }
-        
-        
-        
-        
+ 
     }
 
     

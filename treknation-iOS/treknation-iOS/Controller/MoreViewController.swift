@@ -72,7 +72,7 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
             self.navigationController?.pushViewController(contactVC, animated: true)
 
            }
-    
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

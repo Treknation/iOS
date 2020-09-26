@@ -59,6 +59,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.cellView.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
             cell.expandBtn.addTarget(self, action: #selector(self.didExpand), for: .touchUpInside)
             cell.title.textColor = UIColor.init(red: 20/255, green: 61/255, blue: 89/255, alpha: 1)
+            cell.expandBtn.isUserInteractionEnabled = true
 
             if tempAppData.isOpen {
                 cell.expandBtn.setImage(UIImage(named: "close.png"), for: .normal)

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A03186924EB407C00C1E719 /* FontFit in Resources */ = {isa = PBXBuildFile; fileRef = 2A03186824EB407C00C1E719 /* FontFit */; };
 		2A26793924EE629700E709F9 /* CPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26793724EE629700E709F9 /* CPTViewController.swift */; };
 		2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A26793824EE629700E709F9 /* CPTViewController.xib */; };
 		2A26793D24EE62B500E709F9 /* submitEEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26793B24EE62B500E709F9 /* submitEEViewController.swift */; };
@@ -93,7 +92,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A03186824EB407C00C1E719 /* FontFit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FontFit; sourceTree = "<group>"; };
 		2A26793724EE629700E709F9 /* CPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTViewController.swift; sourceTree = "<group>"; };
 		2A26793824EE629700E709F9 /* CPTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPTViewController.xib; sourceTree = "<group>"; };
 		2A26793B24EE62B500E709F9 /* submitEEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submitEEViewController.swift; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 		2A482FED24B114CA0070561C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2A03186824EB407C00C1E719 /* FontFit */,
 				2AC2FDAD24E5DCF9005CF04E /* havania.ttf */,
 				2A482FF024B115160070561C /* Constants.swift */,
 				2A482FF224B115490070561C /* AppData.swift */,
@@ -477,7 +474,6 @@
 				2A4424D324E09B2B00D7C832 /* NOCViewController.xib in Resources */,
 				2A7CBB2524F75FAD008FE3F6 /* ITAViewController.xib in Resources */,
 				2A7CBB1D24F75D72008FE3F6 /* CRSScoreViewController.xib in Resources */,
-				2A03186924EB407C00C1E719 /* FontFit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,13 +703,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.treknation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -725,13 +722,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.treknation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

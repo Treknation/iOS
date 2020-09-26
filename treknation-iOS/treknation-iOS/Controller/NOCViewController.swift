@@ -21,7 +21,7 @@ class NOCViewController: UIViewController {
         super.viewDidLoad()
         self.scrollView.contentSize = CGSize(width: 320, height: 960)
         let font = UIFont.systemFont(ofSize: 15)
-        let boldFont = UIFont.boldSystemFont(ofSize: 16.0)
+        let boldFont = UIFont.boldSystemFont(ofSize: 15.0)
 
  let attributedString = NSMutableAttributedString(string: "For immigration purposes, the main job groups are:\n\n• Skill Type 0: Management jobs, such as restaurant managers, mine managers, shore captains (fishing), etc. \n\n• Skill Type A: Professional jobs that usually call for a degree from a university, such as doctors, dentists, architects, etc.\n\n• Skill Type B: Technical jobs and skilled trades that usually call for a college diploma or training as an apprentice, such as chefs, plumbers, electricians, etc.\n\n• Skill Type C: Intermediate jobs that usually call for high school and/or job-specific training, such as industrial butchers, long-haul truck drivers, food and beverage servers, etc. \n\n• Skill Type D: Labour jobs that usually give on-the-job training, such as fruit pickers, cleaning staff, oil field workers, etc. \n\nIf you are applying for Express Entry, your job and the work you have done in the past must be Skill Type 0 or level A or B.\n\nYou can use this site for finding your correct NOC code.\n\nAnother option would be to use the Job Bank website. Find a job opening that matches your current job (or any previous job) and whose job duties match yours. On the job opening page, you can find the corresponding NOC code in the \"Job Market Information\" page.", attributes: [
    .font: font,
@@ -36,8 +36,8 @@ class NOCViewController: UIViewController {
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 642, length: 15))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 869, length: 29))
         
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 912, length: 4))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 993, length: 8))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 912, length: 4))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 993, length: 8))
         
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

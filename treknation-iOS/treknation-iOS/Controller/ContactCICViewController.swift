@@ -39,11 +39,11 @@ class ContactCICViewController: UIViewController {
 //        ], range: NSRange(location: 0, length: 12))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 0, length: 12))
 
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 13, length: 15))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 13, length: 15))
         
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 267, length: 7))
         
-        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 385, length: 7))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 385, length: 7))
         
         self.cicLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

@@ -48,8 +48,8 @@ class FSTViewController: UIViewController {
         attributedString.addAttribute(.font, value: boldFont, range: quebecplans)
         attributedString.addAttribute(.font, value: boldFont, range: funds)
 
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: seemore)
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: seelink)
+        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: seemore)
+        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: seelink)
 
 //        attributedString.addAttributes([.font: boldFont, .foregroundColor: UIColor(red: 112.0 / 255.0, green: 116.0 / 255.0, blue: 119.0 / 255.0, alpha: 1.0)
 //        ], range: quebecplans)

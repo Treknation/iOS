@@ -34,7 +34,7 @@ class OverviewViewController: UIViewController {
           .foregroundColor: UIColor(red: 70.0 / 255.0, green: 73.0 / 255.0, blue: 76.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
-        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 319, length: 4))
+        attributedString.addAttribute(NSAttributedString.Key.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 319, length: 4))
 
         hyperlinkLBL.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

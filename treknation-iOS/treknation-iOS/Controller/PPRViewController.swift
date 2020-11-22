@@ -38,8 +38,8 @@ class PPRViewController: UIViewController {
           .foregroundColor: UIColor(red: 112.0 / 255.0, green: 116.0 / 255.0, blue: 119.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 221, length: 7))
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 3.0 / 255.0, green: 157.0 / 255.0, blue: 215.0 / 255.0, alpha: 1.0), range: NSRange(location: 1273, length: 34))
+        attributedString.addAttribute(.link, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 221, length: 7))
+        attributedString.addAttribute(.link, value: UIColor(red: 3.0 / 255.0, green: 157.0 / 255.0, blue: 215.0 / 255.0, alpha: 1.0), range: NSRange(location: 1273, length: 34))
         
         self.detailedLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

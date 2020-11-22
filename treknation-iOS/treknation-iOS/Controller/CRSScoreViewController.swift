@@ -40,14 +40,14 @@ class CRSScoreViewController: UIViewController {
         .foregroundColor: UIColor(red: 80.0 / 255.0, green: 83.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0),
         .kern: 0.05
       ])
-      attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 243, length: 9))
+      attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 243, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 312, length: 20))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 916, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1464, length: 30))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1760, length: 6))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2076, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2244, length: 27))
-      attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2515, length: 4))
+      attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2515, length: 4))
         
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

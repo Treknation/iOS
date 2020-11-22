@@ -39,9 +39,9 @@ class EPRViewController: UIViewController {
           .foregroundColor: UIColor(red: 123.0 / 255.0, green: 127.0 / 255.0, blue: 130.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 1.0 / 255.0, green: 185.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0), range: NSRange(location: 1378, length: 4))
+        attributedString.addAttribute(.link, value: UIColor(red: 1.0 / 255.0, green: 185.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0), range: NSRange(location: 1378, length: 4))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1385, length: 7))
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 1672, length: 7))
+        attributedString.addAttribute(.link, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 1672, length: 7))
         
         self.detailedLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))

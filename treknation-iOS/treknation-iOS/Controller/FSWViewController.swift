@@ -32,8 +32,8 @@ class FSWViewController: UIViewController {
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 653, length: 8))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 756, length: 9))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1003, length: 42))
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1200, length: 8))
-        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1254, length: 4))
+        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1200, length: 8))
+        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 1254, length: 4))
         
         
         let conditionRange = (attributedString.string as NSString).range(of: "See more")

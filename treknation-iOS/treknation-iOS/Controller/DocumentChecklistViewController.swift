@@ -41,6 +41,7 @@ class DocumentChecklistViewController: UIViewController {
         ])
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 530, length: 24))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 777, length: 19))
+        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 770, length: 4))
         attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 837, length: 14))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 853, length: 29))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1012, length: 4))
@@ -72,11 +73,16 @@ class DocumentChecklistViewController: UIViewController {
                      webView.setLinkURL(link: Constant.URLConstants.documentProofOffunds)
                     self.navigationController?.pushViewController(webView, animated: true)
 
-                 }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1151, length: 19)){
+                 }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 770, length: 4)){
                      let webView = WebViewViewController()
-                      webView.setLinkURL(link: Constant.URLConstants.checklistPhotocopy)
+                      webView.setLinkURL(link: Constant.URLConstants.passportDetails)
                      self.navigationController?.pushViewController(webView, animated: true)
-                 } else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1201, length: 9)){
+                 }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1151, length: 19)){
+                    let webView = WebViewViewController()
+                     webView.setLinkURL(link: Constant.URLConstants.checklistPhotocopy)
+                    self.navigationController?.pushViewController(webView, animated: true)
+                }
+                 else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1201, length: 9)){
                      let webView = WebViewViewController()
                       webView.setLinkURL(link: Constant.URLConstants.checklistAffidavit)
                      self.navigationController?.pushViewController(webView, animated: true)

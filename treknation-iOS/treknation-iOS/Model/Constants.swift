@@ -76,6 +76,7 @@ class Constant: NSObject {
         static let cgKeyPage = "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html"
         static let documentProofOffunds = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"
         static let checklistPhotocopy = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_photocopy"
+        static let passportDetails = "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/apply-renew-replace/photo.html"
         static let checklistAffidavit = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#affidavit"
         static let checklistTranslator = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_translator"
         static let checklistLOE = "https://docs.google.com/document/d/1-31XMpXjR80ttZ9SGGSeJtBJqwI3LGLW/edit"

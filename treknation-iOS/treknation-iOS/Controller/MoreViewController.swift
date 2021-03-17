@@ -9,11 +9,11 @@
 import UIKit
 import MessageUI
 
-class MoreViewController: UIViewController , UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
+class MoreViewController: TNBaseViewController , UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var homeTableView: UITableView!
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +43,9 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
         } else if indexPath.section == 3 {
             cell.textLabel?.text = "Privacy Policy"
 
-        }
-        else {
+        } else if indexPath.section == 4 {
+            cell.textLabel?.text = "Common mistakes to Avoid"
+        } else {
             cell.textLabel?.text = "CIC Contact Info"
         }
            return cell
@@ -66,8 +67,10 @@ class MoreViewController: UIViewController , UITableViewDataSource, UITableViewD
            } else if indexPath.section == 3 {
             let privacyPolicy = PrivacyPolicyViewController()
             self.navigationController?.pushViewController(privacyPolicy, animated: true)
-           }
-           else {
+        } else if indexPath.section == 4 {
+            let commonMistakes = CommonMistakesToAvoidViewController()
+            self.navigationController?.pushViewController(commonMistakes, animated: true)
+        } else {
             let contactVC = ContactCICViewController()
             self.navigationController?.pushViewController(contactVC, animated: true)
 

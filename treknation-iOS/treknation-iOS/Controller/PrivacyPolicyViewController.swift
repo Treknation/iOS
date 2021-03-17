@@ -36,7 +36,7 @@ class PrivacyPolicyViewController: UIViewController, MFMailComposeViewController
         ])
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 0, length: 14))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 823, length: 30))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 1259, length: 20))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 1259, length: 20))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1281, length: 8))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1732, length: 7))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2347, length: 17))
@@ -45,7 +45,7 @@ class PrivacyPolicyViewController: UIViewController, MFMailComposeViewController
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 3622, length: 18))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 4099, length: 30))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 4381, length: 10))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 4493, length: 21))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 4493, length: 21))
         self.detailedLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
         gesture.numberOfTapsRequired = 1

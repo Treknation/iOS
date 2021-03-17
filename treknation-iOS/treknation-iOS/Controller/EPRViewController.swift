@@ -39,9 +39,9 @@ class EPRViewController: UIViewController {
           .foregroundColor: UIColor(red: 123.0 / 255.0, green: 127.0 / 255.0, blue: 130.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
-        attributedString.addAttribute(.link, value: UIColor(red: 1.0 / 255.0, green: 185.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0), range: NSRange(location: 1378, length: 4))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 1.0 / 255.0, green: 185.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0), range: NSRange(location: 1378, length: 4))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1385, length: 7))
-        attributedString.addAttribute(.link, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 1672, length: 7))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 4.0 / 255.0, green: 146.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0), range: NSRange(location: 1672, length: 7))
         
         self.detailedLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -77,16 +77,18 @@ class EPRViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func markAsComplete(_ sender: Any) {
-           appData.isComplete = true
-           let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
-           alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-               self.navigationController?.popViewController(animated: true)
-            UserDefaults.standard.setValue(true, forKey: self.appData.title)
-
-           }))
-           alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-           self.present(alert, animated: true)
-       }
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
+            appData.isComplete = true
+            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                self.navigationController?.popViewController(animated: true)
+                UserDefaults.standard.setValue(true, forKey: self.appData.title)
+                
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
 
     /*
     // MARK: - Navigation

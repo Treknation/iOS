@@ -32,7 +32,7 @@ class EnterEEViewController: UIViewController {
         self.backgroundView.layer.shadowRadius = 3
         
         
-        let attributedString = NSMutableAttributedString(string: "Steps\n• Create GC key account by going to this page(Please do not choose sign in with partner account) . Please remember the 4 security questions and answers thoroughly since you will be asked each time you log in.\n• Once you create a GC key account click on an Express Entry button to begin filling your profile.\n• Enter personal preference code. This should pre-fill some of the details. Fill in the rest of personal details.\n\nNote: You have 60 days to fill up and submit your profile.", attributes: [
+        let attributedString = NSMutableAttributedString(string: "Steps\n• Create GC key account by going to this page(Please do not choose sign in with partner account) . Please remember the 4 security questions and answers thoroughly since you will be asked each time you log in.\n• Once you create a GC key account click on an Express Entry button to begin filling your profile.\n• Enter personal preference code. This should pre-fill some of the details. Fill in the rest of personal.\n\nNote: You have 60 days to fill up and submit your profile.", attributes: [
           .font: UIFont.systemFont(ofSize: 15),
           .foregroundColor: UIColor(red: 90.0 / 255.0, green: 93.0 / 255.0, blue: 97.0 / 255.0, alpha: 1.0),
           .kern: 0.05
@@ -43,7 +43,7 @@ class EnterEEViewController: UIViewController {
         ], range: NSRange(location: 0, length: 5))
         
         let conditionRange = (attributedString.string as NSString).range(of: "this page")
-        attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 47, length: 4))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 47, length: 4))
 
         
         self.detailedLabel.attributedText = attributedString
@@ -84,15 +84,17 @@ class EnterEEViewController: UIViewController {
     }
     
     @IBAction func markAsComplete(_ sender: Any) {
-           appData.isComplete = true
-           let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
-           alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-               self.navigationController?.popViewController(animated: true)
-            UserDefaults.standard.setValue(true, forKey: self.appData.title)
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
+               appData.isComplete = true
+               let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+               alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                   self.navigationController?.popViewController(animated: true)
+                UserDefaults.standard.setValue(true, forKey: self.appData.title)
 
-           }))
-           alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-           self.present(alert, animated: true)
+               }))
+               alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+               self.present(alert, animated: true)
+        }
        }
     /*
     // MARK: - Navigation

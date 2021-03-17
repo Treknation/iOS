@@ -56,6 +56,7 @@ class PrepareforLandingViewController: UIViewController {
     }
     
     @IBAction func markAsComplete(_ sender: Any) {
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
            appData.isComplete = true
            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
@@ -65,6 +66,7 @@ class PrepareforLandingViewController: UIViewController {
            }))
            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
            self.present(alert, animated: true)
+        }
     }
     
     

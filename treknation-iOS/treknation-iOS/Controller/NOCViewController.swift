@@ -36,8 +36,8 @@ class NOCViewController: UIViewController {
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 642, length: 15))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 869, length: 29))
         
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 912, length: 4))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 993, length: 8))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 912, length: 4))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 993, length: 8))
         
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -93,14 +93,16 @@ class NOCViewController: UIViewController {
     }
     
     @IBAction func markAsComplete(_ sender: Any) {
-        let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-            self.appData.isComplete = true
-            self.navigationController?.popViewController(animated: true)
-            UserDefaults.standard.setValue(true, forKey: self.appData.title)
-        }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
+            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                self.appData.isComplete = true
+                self.navigationController?.popViewController(animated: true)
+                UserDefaults.standard.setValue(true, forKey: self.appData.title)
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
     @IBAction func back(_ sender: Any) {

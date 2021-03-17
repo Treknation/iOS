@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5FDE70064ED74D6373E6FF /* Pods_treknation_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399AF965082C6DACEE5F0DC9 /* Pods_treknation_iOSTests.framework */; };
 		2A26793924EE629700E709F9 /* CPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26793724EE629700E709F9 /* CPTViewController.swift */; };
 		2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A26793824EE629700E709F9 /* CPTViewController.xib */; };
 		2A26793D24EE62B500E709F9 /* submitEEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A26793B24EE62B500E709F9 /* submitEEViewController.swift */; };
@@ -72,6 +73,68 @@
 		2AF341EC2506AFF700330359 /* InCanadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF341EA2506AFF700330359 /* InCanadaViewController.xib */; };
 		2AF341EF2506B01000330359 /* OutsideCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */; };
 		2AF341F02506B01000330359 /* OutsideCanadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */; };
+		4313E6A425C9CAA200E02F8B /* EducationHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313E6A225C9CAA200E02F8B /* EducationHeaderTableViewCell.swift */; };
+		4313E6A525C9CAA200E02F8B /* EducationHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4313E6A325C9CAA200E02F8B /* EducationHeaderTableViewCell.xib */; };
+		431C91F425B3445B006842C4 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C91F225B3445B006842C4 /* AgeSelectionViewController.swift */; };
+		431C91F525B3445B006842C4 /* AgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431C91F325B3445B006842C4 /* AgeSelectionViewController.xib */; };
+		431C91FA25B362B1006842C4 /* CRSCalculator_single.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431C91F825B362B1006842C4 /* CRSCalculator_single.plist */; };
+		431C91FB25B362B1006842C4 /* CRSCalculator_married.plist in Resources */ = {isa = PBXBuildFile; fileRef = 431C91F925B362B1006842C4 /* CRSCalculator_married.plist */; };
+		432F4C6625A9DF0C00708FC2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F4C6425A9DF0C00708FC2 /* DashboardViewController.swift */; };
+		432F4C6725A9DF0C00708FC2 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432F4C6525A9DF0C00708FC2 /* DashboardViewController.xib */; };
+		432F4C6925A9DF7200708FC2 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F4C6825A9DF7100708FC2 /* AppContext.swift */; };
+		432F4C6C25AA258B00708FC2 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432F4C6A25AA258B00708FC2 /* ListTableViewCell.swift */; };
+		432F4C6D25AA258B00708FC2 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432F4C6B25AA258B00708FC2 /* ListTableViewCell.xib */; };
+		4377105625CA784700F6C808 /* LanguageProgressBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377105425CA784700F6C808 /* LanguageProgressBarTableViewCell.swift */; };
+		4377105725CA784700F6C808 /* LanguageProgressBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4377105525CA784700F6C808 /* LanguageProgressBarTableViewCell.xib */; };
+		4385C77825DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385C77625DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.swift */; };
+		4385C77925DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4385C77725DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.xib */; };
+		4385C77C25DADBC700E47AE9 /* MistakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4385C77A25DADBC700E47AE9 /* MistakeTableViewCell.swift */; };
+		4385C77D25DADBC700E47AE9 /* MistakeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4385C77B25DADBC700E47AE9 /* MistakeTableViewCell.xib */; };
+		438F720225B5F1190049A62F /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F720025B5F1190049A62F /* EducationViewController.swift */; };
+		438F720325B5F1190049A62F /* EducationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438F720125B5F1190049A62F /* EducationViewController.xib */; };
+		438F720625B5FD1D0049A62F /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F720425B5FD1D0049A62F /* EducationTableViewCell.swift */; };
+		438F720725B5FD1D0049A62F /* EducationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438F720525B5FD1D0049A62F /* EducationTableViewCell.xib */; };
+		43C7E8E225B7214900C43C32 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7E8E025B7214900C43C32 /* ExperienceViewController.swift */; };
+		43C7E8E325B7214900C43C32 /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C7E8E125B7214900C43C32 /* ExperienceViewController.xib */; };
+		43C7E8E625B7215D00C43C32 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7E8E425B7215D00C43C32 /* LanguageViewController.swift */; };
+		43C7E8E725B7215D00C43C32 /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C7E8E525B7215D00C43C32 /* LanguageViewController.xib */; };
+		43C7E8EA25B7218400C43C32 /* AdditionalPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7E8E825B7218400C43C32 /* AdditionalPointsViewController.swift */; };
+		43C7E8EB25B7218400C43C32 /* AdditionalPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C7E8E925B7218400C43C32 /* AdditionalPointsViewController.xib */; };
+		43D1ADB525AB3EA90026FCFD /* TabbarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1ADB425AB3EA80026FCFD /* TabbarControllerExtension.swift */; };
+		43E2201C25CC073B0066DE12 /* SaveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2201A25CC073B0066DE12 /* SaveButtonTableViewCell.swift */; };
+		43E2201D25CC073B0066DE12 /* SaveButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E2201B25CC073B0066DE12 /* SaveButtonTableViewCell.xib */; };
+		79A58F8D210ED1110E6C10BE /* Pods_treknation_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86F1D87D1DC9C4B3FCCE3B6 /* Pods_treknation_iOSUITests.framework */; };
+		DCB63C53EB1EB0445F8B507C /* Pods_treknation_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5CB8AF628B8C6B9A6CCE76 /* Pods_treknation_iOS.framework */; };
+		E80D0341259DD172005D5F8A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E80D0340259DD171005D5F8A /* Podfile */; };
+		E80DA58E25A81D8900DDF85E /* TNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80DA58D25A81D8900DDF85E /* TNBaseViewController.swift */; };
+		E8265D1A25A4685100370C6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8265D1925A4685100370C6D /* GoogleService-Info.plist */; };
+		E86CB768259DB284005DAA41 /* OnBoardingStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CB766259DB284005DAA41 /* OnBoardingStageViewController.swift */; };
+		E86CB769259DB284005DAA41 /* OnBoardingStageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86CB767259DB284005DAA41 /* OnBoardingStageViewController.xib */; };
+		E86CB76C259DB344005DAA41 /* OnBoardingPersonlizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86CB76A259DB344005DAA41 /* OnBoardingPersonlizedViewController.swift */; };
+		E86CB76D259DB344005DAA41 /* OnBoardingPersonlizedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86CB76B259DB344005DAA41 /* OnBoardingPersonlizedViewController.xib */; };
+		E8A5DD7F259B2FB700AED332 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A5DD7E259B2FB700AED332 /* OnBoardingViewController.swift */; };
+		E8E27E2625A1A01D00A6639A /* Commissioner_VF_1.001.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E27E2525A1A01D00A6639A /* Commissioner_VF_1.001.ttf */; };
+		E8E27E2825A1AB4900A6639A /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E27E2725A1AB4900A6639A /* SourceSansPro-Regular.ttf */; };
+		E8E27E2E25A1D38700A6639A /* AfterSpalshOnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E27E2C25A1D38700A6639A /* AfterSpalshOnBoardingViewController.swift */; };
+		E8E27E2F25A1D38700A6639A /* AfterSpalshOnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E27E2D25A1D38700A6639A /* AfterSpalshOnBoardingViewController.xib */; };
+		E8E27E3125A1D88F00A6639A /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E27E3025A1D88F00A6639A /* SourceSansPro-SemiBold.ttf */; };
+		E8E7C318259C7BC00044AAE6 /* OnBoardingStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E7C316259C7BC00044AAE6 /* OnBoardingStartViewController.swift */; };
+		E8E7C319259C7BC00044AAE6 /* OnBoardingStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E7C317259C7BC00044AAE6 /* OnBoardingStartViewController.xib */; };
+		E8F26B4825A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F26B4625A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.swift */; };
+		E8F26B4925A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F26B4725A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.xib */; };
+		E8F26B4C25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F26B4A25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.swift */; };
+		E8F26B4D25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F26B4B25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.xib */; };
+		F118C97025CC55DC0081C642 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = F118C96F25CC55DC0081C642 /* gif.gif */; };
+		F185A0E925B0B3A4000AB37F /* EEDrawMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185A0E725B0B3A4000AB37F /* EEDrawMainViewController.swift */; };
+		F185A0EA25B0B3A4000AB37F /* EEDrawMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F185A0E825B0B3A4000AB37F /* EEDrawMainViewController.xib */; };
+		F185A0ED25B0B4C3000AB37F /* EEDrawTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185A0EB25B0B4C3000AB37F /* EEDrawTableViewCell.swift */; };
+		F185A0EE25B0B4C3000AB37F /* EEDrawTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F185A0EC25B0B4C3000AB37F /* EEDrawTableViewCell.xib */; };
+		F18D15C725AF4DE200343EC2 /* CRSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18D15C525AF4DE200343EC2 /* CRSMainViewController.swift */; };
+		F18D15C825AF4DE200343EC2 /* CRSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18D15C625AF4DE200343EC2 /* CRSMainViewController.xib */; };
+		F18D15CB25AF501B00343EC2 /* CRSInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18D15C925AF501B00343EC2 /* CRSInfoTableViewCell.swift */; };
+		F18D15CC25AF501B00343EC2 /* CRSInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18D15CA25AF501B00343EC2 /* CRSInfoTableViewCell.xib */; };
+		F1CBC17825B2E60000660953 /* LatestBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBC17625B2E60000660953 /* LatestBlogViewController.swift */; };
+		F1CBC17925B2E60000660953 /* LatestBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CBC17725B2E60000660953 /* LatestBlogViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +226,76 @@
 		2AF341EA2506AFF700330359 /* InCanadaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InCanadaViewController.xib; sourceTree = "<group>"; };
 		2AF341ED2506B01000330359 /* OutsideCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideCanadaViewController.swift; sourceTree = "<group>"; };
 		2AF341EE2506B01000330359 /* OutsideCanadaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutsideCanadaViewController.xib; sourceTree = "<group>"; };
+		399AF965082C6DACEE5F0DC9 /* Pods_treknation_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treknation_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4170F79D656D55E005072615 /* Pods-treknation-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-treknation-iOSUITests/Pods-treknation-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4313E6A225C9CAA200E02F8B /* EducationHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4313E6A325C9CAA200E02F8B /* EducationHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		431C91F225B3445B006842C4 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
+		431C91F325B3445B006842C4 /* AgeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeSelectionViewController.xib; sourceTree = "<group>"; };
+		431C91F825B362B1006842C4 /* CRSCalculator_single.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CRSCalculator_single.plist; sourceTree = "<group>"; };
+		431C91F925B362B1006842C4 /* CRSCalculator_married.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CRSCalculator_married.plist; sourceTree = "<group>"; };
+		432F4C6425A9DF0C00708FC2 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		432F4C6525A9DF0C00708FC2 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		432F4C6825A9DF7100708FC2 /* AppContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		432F4C6A25AA258B00708FC2 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		432F4C6B25AA258B00708FC2 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		4377105425CA784700F6C808 /* LanguageProgressBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageProgressBarTableViewCell.swift; sourceTree = "<group>"; };
+		4377105525CA784700F6C808 /* LanguageProgressBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageProgressBarTableViewCell.xib; sourceTree = "<group>"; };
+		4385C77625DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMistakesToAvoidViewController.swift; sourceTree = "<group>"; };
+		4385C77725DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonMistakesToAvoidViewController.xib; sourceTree = "<group>"; };
+		4385C77A25DADBC700E47AE9 /* MistakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistakeTableViewCell.swift; sourceTree = "<group>"; };
+		4385C77B25DADBC700E47AE9 /* MistakeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MistakeTableViewCell.xib; sourceTree = "<group>"; };
+		438F720025B5F1190049A62F /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		438F720125B5F1190049A62F /* EducationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationViewController.xib; sourceTree = "<group>"; };
+		438F720425B5FD1D0049A62F /* EducationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationTableViewCell.swift; sourceTree = "<group>"; };
+		438F720525B5FD1D0049A62F /* EducationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationTableViewCell.xib; sourceTree = "<group>"; };
+		43C7E8E025B7214900C43C32 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		43C7E8E125B7214900C43C32 /* ExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
+		43C7E8E425B7215D00C43C32 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		43C7E8E525B7215D00C43C32 /* LanguageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageViewController.xib; sourceTree = "<group>"; };
+		43C7E8E825B7218400C43C32 /* AdditionalPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalPointsViewController.swift; sourceTree = "<group>"; };
+		43C7E8E925B7218400C43C32 /* AdditionalPointsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalPointsViewController.xib; sourceTree = "<group>"; };
+		43D1ADB425AB3EA80026FCFD /* TabbarControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarControllerExtension.swift; sourceTree = "<group>"; };
+		43E2201A25CC073B0066DE12 /* SaveButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonTableViewCell.swift; sourceTree = "<group>"; };
+		43E2201B25CC073B0066DE12 /* SaveButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveButtonTableViewCell.xib; sourceTree = "<group>"; };
+		5C6D8BCBB74EACA780D1E6B0 /* Pods-treknation-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOS.debug.xcconfig"; path = "Target Support Files/Pods-treknation-iOS/Pods-treknation-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		656F621944FFDB6FE50633DF /* Pods-treknation-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-treknation-iOSTests/Pods-treknation-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		69120812041EBB49C765D77D /* Pods-treknation-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-treknation-iOSUITests/Pods-treknation-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5CB8AF628B8C6B9A6CCE76 /* Pods_treknation_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treknation_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5224D31579B97B78AA8249A /* Pods-treknation-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOS.release.xcconfig"; path = "Target Support Files/Pods-treknation-iOS/Pods-treknation-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CB2D55DC07D754EDF14E1795 /* Pods-treknation-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treknation-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-treknation-iOSTests/Pods-treknation-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D86F1D87D1DC9C4B3FCCE3B6 /* Pods_treknation_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treknation_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80D0340259DD171005D5F8A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E80DA58D25A81D8900DDF85E /* TNBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNBaseViewController.swift; sourceTree = "<group>"; };
+		E8265D1925A4685100370C6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E86CB766259DB284005DAA41 /* OnBoardingStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStageViewController.swift; sourceTree = "<group>"; };
+		E86CB767259DB284005DAA41 /* OnBoardingStageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingStageViewController.xib; sourceTree = "<group>"; };
+		E86CB76A259DB344005DAA41 /* OnBoardingPersonlizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonlizedViewController.swift; sourceTree = "<group>"; };
+		E86CB76B259DB344005DAA41 /* OnBoardingPersonlizedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingPersonlizedViewController.xib; sourceTree = "<group>"; };
+		E8A5DD7E259B2FB700AED332 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		E8E27E2525A1A01D00A6639A /* Commissioner_VF_1.001.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Commissioner_VF_1.001.ttf; sourceTree = "<group>"; };
+		E8E27E2725A1AB4900A6639A /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		E8E27E2C25A1D38700A6639A /* AfterSpalshOnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSpalshOnBoardingViewController.swift; sourceTree = "<group>"; };
+		E8E27E2D25A1D38700A6639A /* AfterSpalshOnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AfterSpalshOnBoardingViewController.xib; sourceTree = "<group>"; };
+		E8E27E3025A1D88F00A6639A /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		E8E7C316259C7BC00044AAE6 /* OnBoardingStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStartViewController.swift; sourceTree = "<group>"; };
+		E8E7C317259C7BC00044AAE6 /* OnBoardingStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingStartViewController.xib; sourceTree = "<group>"; };
+		E8F26B4625A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingInsideCanadaViewController.swift; sourceTree = "<group>"; };
+		E8F26B4725A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingInsideCanadaViewController.xib; sourceTree = "<group>"; };
+		E8F26B4A25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingIndividualOrFamilyViewController.swift; sourceTree = "<group>"; };
+		E8F26B4B25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingIndividualOrFamilyViewController.xib; sourceTree = "<group>"; };
+		F118C96F25CC55DC0081C642 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		F17CD35425CFC5050022323A /* TrekNation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrekNation.entitlements; sourceTree = "<group>"; };
+		F185A0E725B0B3A4000AB37F /* EEDrawMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEDrawMainViewController.swift; sourceTree = "<group>"; };
+		F185A0E825B0B3A4000AB37F /* EEDrawMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EEDrawMainViewController.xib; sourceTree = "<group>"; };
+		F185A0EB25B0B4C3000AB37F /* EEDrawTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEDrawTableViewCell.swift; sourceTree = "<group>"; };
+		F185A0EC25B0B4C3000AB37F /* EEDrawTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EEDrawTableViewCell.xib; sourceTree = "<group>"; };
+		F18D15C525AF4DE200343EC2 /* CRSMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSMainViewController.swift; sourceTree = "<group>"; };
+		F18D15C625AF4DE200343EC2 /* CRSMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSMainViewController.xib; sourceTree = "<group>"; };
+		F18D15C925AF501B00343EC2 /* CRSInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSInfoTableViewCell.swift; sourceTree = "<group>"; };
+		F18D15CA25AF501B00343EC2 /* CRSInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSInfoTableViewCell.xib; sourceTree = "<group>"; };
+		F1CBC17625B2E60000660953 /* LatestBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBlogViewController.swift; sourceTree = "<group>"; };
+		F1CBC17725B2E60000660953 /* LatestBlogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestBlogViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7CBB4224FBF505008FE3F6 /* WebKit.framework in Frameworks */,
+				DCB63C53EB1EB0445F8B507C /* Pods_treknation_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +312,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5FDE70064ED74D6373E6FF /* Pods_treknation_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,20 +320,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A58F8D210ED1110E6C10BE /* Pods_treknation_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C7304E0E90C6FFFCB64338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C6D8BCBB74EACA780D1E6B0 /* Pods-treknation-iOS.debug.xcconfig */,
+				B5224D31579B97B78AA8249A /* Pods-treknation-iOS.release.xcconfig */,
+				CB2D55DC07D754EDF14E1795 /* Pods-treknation-iOSTests.debug.xcconfig */,
+				656F621944FFDB6FE50633DF /* Pods-treknation-iOSTests.release.xcconfig */,
+				69120812041EBB49C765D77D /* Pods-treknation-iOSUITests.debug.xcconfig */,
+				4170F79D656D55E005072615 /* Pods-treknation-iOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2A482FB124B113E90070561C = {
 			isa = PBXGroup;
 			children = (
+				E80D0340259DD171005D5F8A /* Podfile */,
 				2A482FBC24B113E90070561C /* treknation-iOS */,
 				2A482FD324B113EB0070561C /* treknation-iOSTests */,
 				2A482FDE24B113EB0070561C /* treknation-iOSUITests */,
 				2A482FBB24B113E90070561C /* Products */,
 				2A7CBB4024FBF503008FE3F6 /* Frameworks */,
+				04C7304E0E90C6FFFCB64338 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +366,10 @@
 		2A482FBC24B113E90070561C /* treknation-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F17CD35425CFC5050022323A /* TrekNation.entitlements */,
+				F118C96F25CC55DC0081C642 /* gif.gif */,
+				E8265D1925A4685100370C6D /* GoogleService-Info.plist */,
+				E8E27E3225A1DBB300A6639A /* Model */,
 				2A35D3CB2509BD2A00F5A42A /* Classes */,
 				2A482FEF24B114D80070561C /* Controller */,
 				2A482FEE24B114D20070561C /* View */,
@@ -223,6 +378,8 @@
 				2A482FBF24B113E90070561C /* SceneDelegate.swift */,
 				2A482FC624B113EB0070561C /* Assets.xcassets */,
 				2A482FCB24B113EB0070561C /* Info.plist */,
+				431C91F925B362B1006842C4 /* CRSCalculator_married.plist */,
+				431C91F825B362B1006842C4 /* CRSCalculator_single.plist */,
 			);
 			path = "treknation-iOS";
 			sourceTree = "<group>";
@@ -248,6 +405,9 @@
 		2A482FED24B114CA0070561C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8E27E3025A1D88F00A6639A /* SourceSansPro-SemiBold.ttf */,
+				E8E27E2725A1AB4900A6639A /* SourceSansPro-Regular.ttf */,
+				E8E27E2525A1A01D00A6639A /* Commissioner_VF_1.001.ttf */,
 				2AC2FDAD24E5DCF9005CF04E /* havania.ttf */,
 				2A482FF024B115160070561C /* Constants.swift */,
 				2A482FF224B115490070561C /* AppData.swift */,
@@ -288,6 +448,7 @@
 		2A482FEF24B114D80070561C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E8A5DD7C259B2F2B00AED332 /* TrekNationNewFlow */,
 				2A7CBB4724FC6A12008FE3F6 /* Language  */,
 				2A482FC124B113E90070561C /* ViewController.swift */,
 				2A4424CC24E09B0500D7C832 /* OverviewViewController.swift */,
@@ -323,6 +484,9 @@
 			isa = PBXGroup;
 			children = (
 				2A7CBB4124FBF505008FE3F6 /* WebKit.framework */,
+				AA5CB8AF628B8C6B9A6CCE76 /* Pods_treknation_iOS.framework */,
+				399AF965082C6DACEE5F0DC9 /* Pods_treknation_iOSTests.framework */,
+				D86F1D87D1DC9C4B3FCCE3B6 /* Pods_treknation_iOSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -340,6 +504,120 @@
 			path = "Language ";
 			sourceTree = "<group>";
 		};
+		432F4C6325A9DEED00708FC2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				43D1ADB425AB3EA80026FCFD /* TabbarControllerExtension.swift */,
+				432F4C6425A9DF0C00708FC2 /* DashboardViewController.swift */,
+				432F4C6525A9DF0C00708FC2 /* DashboardViewController.xib */,
+				432F4C6A25AA258B00708FC2 /* ListTableViewCell.swift */,
+				432F4C6B25AA258B00708FC2 /* ListTableViewCell.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4385C77525DAD77D00E47AE9 /* CommonMistakes */ = {
+			isa = PBXGroup;
+			children = (
+				4385C77625DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.swift */,
+				4385C77725DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.xib */,
+				4385C77A25DADBC700E47AE9 /* MistakeTableViewCell.swift */,
+				4385C77B25DADBC700E47AE9 /* MistakeTableViewCell.xib */,
+			);
+			path = CommonMistakes;
+			sourceTree = "<group>";
+		};
+		E8A5DD7C259B2F2B00AED332 /* TrekNationNewFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4385C77525DAD77D00E47AE9 /* CommonMistakes */,
+				F1CBC17525B2E5BF00660953 /* LatestBlog */,
+				F179259125B0781400487492 /* EEDraw */,
+				F18D15C425AF4BA600343EC2 /* CRSCalculator */,
+				432F4C6825A9DF7100708FC2 /* AppContext.swift */,
+				432F4C6325A9DEED00708FC2 /* Dashboard */,
+				E8A5DD7D259B2FA000AED332 /* OnBoarding */,
+			);
+			path = TrekNationNewFlow;
+			sourceTree = "<group>";
+		};
+		E8A5DD7D259B2FA000AED332 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				E8A5DD7E259B2FB700AED332 /* OnBoardingViewController.swift */,
+				E8E7C316259C7BC00044AAE6 /* OnBoardingStartViewController.swift */,
+				E8E7C317259C7BC00044AAE6 /* OnBoardingStartViewController.xib */,
+				E86CB766259DB284005DAA41 /* OnBoardingStageViewController.swift */,
+				E86CB767259DB284005DAA41 /* OnBoardingStageViewController.xib */,
+				E86CB76A259DB344005DAA41 /* OnBoardingPersonlizedViewController.swift */,
+				E86CB76B259DB344005DAA41 /* OnBoardingPersonlizedViewController.xib */,
+				E8F26B4625A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.swift */,
+				E8F26B4725A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.xib */,
+				E8F26B4A25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.swift */,
+				E8F26B4B25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.xib */,
+				E8E27E2C25A1D38700A6639A /* AfterSpalshOnBoardingViewController.swift */,
+				E8E27E2D25A1D38700A6639A /* AfterSpalshOnBoardingViewController.xib */,
+				E80DA58D25A81D8900DDF85E /* TNBaseViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		E8E27E3225A1DBB300A6639A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		F179259125B0781400487492 /* EEDraw */ = {
+			isa = PBXGroup;
+			children = (
+				F185A0E725B0B3A4000AB37F /* EEDrawMainViewController.swift */,
+				F185A0E825B0B3A4000AB37F /* EEDrawMainViewController.xib */,
+				F185A0EB25B0B4C3000AB37F /* EEDrawTableViewCell.swift */,
+				F185A0EC25B0B4C3000AB37F /* EEDrawTableViewCell.xib */,
+			);
+			path = EEDraw;
+			sourceTree = "<group>";
+		};
+		F18D15C425AF4BA600343EC2 /* CRSCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				F18D15C525AF4DE200343EC2 /* CRSMainViewController.swift */,
+				F18D15C625AF4DE200343EC2 /* CRSMainViewController.xib */,
+				F18D15C925AF501B00343EC2 /* CRSInfoTableViewCell.swift */,
+				F18D15CA25AF501B00343EC2 /* CRSInfoTableViewCell.xib */,
+				431C91F225B3445B006842C4 /* AgeSelectionViewController.swift */,
+				431C91F325B3445B006842C4 /* AgeSelectionViewController.xib */,
+				438F720025B5F1190049A62F /* EducationViewController.swift */,
+				438F720125B5F1190049A62F /* EducationViewController.xib */,
+				438F720425B5FD1D0049A62F /* EducationTableViewCell.swift */,
+				438F720525B5FD1D0049A62F /* EducationTableViewCell.xib */,
+				43C7E8E025B7214900C43C32 /* ExperienceViewController.swift */,
+				43C7E8E125B7214900C43C32 /* ExperienceViewController.xib */,
+				43C7E8E425B7215D00C43C32 /* LanguageViewController.swift */,
+				43C7E8E525B7215D00C43C32 /* LanguageViewController.xib */,
+				43C7E8E825B7218400C43C32 /* AdditionalPointsViewController.swift */,
+				43C7E8E925B7218400C43C32 /* AdditionalPointsViewController.xib */,
+				4313E6A225C9CAA200E02F8B /* EducationHeaderTableViewCell.swift */,
+				4313E6A325C9CAA200E02F8B /* EducationHeaderTableViewCell.xib */,
+				4377105425CA784700F6C808 /* LanguageProgressBarTableViewCell.swift */,
+				4377105525CA784700F6C808 /* LanguageProgressBarTableViewCell.xib */,
+				43E2201A25CC073B0066DE12 /* SaveButtonTableViewCell.swift */,
+				43E2201B25CC073B0066DE12 /* SaveButtonTableViewCell.xib */,
+			);
+			path = CRSCalculator;
+			sourceTree = "<group>";
+		};
+		F1CBC17525B2E5BF00660953 /* LatestBlog */ = {
+			isa = PBXGroup;
+			children = (
+				F1CBC17625B2E60000660953 /* LatestBlogViewController.swift */,
+				F1CBC17725B2E60000660953 /* LatestBlogViewController.xib */,
+			);
+			path = LatestBlog;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,9 +625,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A482FE424B113EB0070561C /* Build configuration list for PBXNativeTarget "treknation-iOS" */;
 			buildPhases = (
+				2B12293FE77A52839DF4A93C /* [CP] Check Pods Manifest.lock */,
 				2A482FB624B113E90070561C /* Sources */,
 				2A482FB724B113E90070561C /* Frameworks */,
 				2A482FB824B113E90070561C /* Resources */,
+				14B2E02864893AF564B298F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +644,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A482FE724B113EB0070561C /* Build configuration list for PBXNativeTarget "treknation-iOSTests" */;
 			buildPhases = (
+				840CD3CC3D69355B8D270210 /* [CP] Check Pods Manifest.lock */,
 				2A482FCC24B113EB0070561C /* Sources */,
 				2A482FCD24B113EB0070561C /* Frameworks */,
 				2A482FCE24B113EB0070561C /* Resources */,
@@ -382,6 +663,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A482FEA24B113EB0070561C /* Build configuration list for PBXNativeTarget "treknation-iOSUITests" */;
 			buildPhases = (
+				855D5E2C54E56F58C60B45CD /* [CP] Check Pods Manifest.lock */,
 				2A482FD724B113EB0070561C /* Sources */,
 				2A482FD824B113EB0070561C /* Frameworks */,
 				2A482FD924B113EB0070561C /* Resources */,
@@ -444,12 +726,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4385C77925DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.xib in Resources */,
+				E80D0341259DD172005D5F8A /* Podfile in Resources */,
+				438F720725B5FD1D0049A62F /* EducationTableViewCell.xib in Resources */,
+				431C91F525B3445B006842C4 /* AgeSelectionViewController.xib in Resources */,
+				F1CBC17925B2E60000660953 /* LatestBlogViewController.xib in Resources */,
+				43E2201D25CC073B0066DE12 /* SaveButtonTableViewCell.xib in Resources */,
+				E8E27E2825A1AB4900A6639A /* SourceSansPro-Regular.ttf in Resources */,
+				E8E27E2625A1A01D00A6639A /* Commissioner_VF_1.001.ttf in Resources */,
 				2A482FCA24B113EB0070561C /* LaunchScreen.storyboard in Resources */,
 				2A4424CF24E09B0500D7C832 /* OverviewViewController.xib in Resources */,
+				F118C97025CC55DC0081C642 /* gif.gif in Resources */,
 				2A7CBB1924F74E42008FE3F6 /* FSTViewController.xib in Resources */,
+				43C7E8E725B7215D00C43C32 /* LanguageViewController.xib in Resources */,
 				2A7CBB2924F75FC7008FE3F6 /* DocumentChecklistViewController.xib in Resources */,
 				2A7CBB2D24F75FE4008FE3F6 /* EPRViewController.xib in Resources */,
 				2AF341EC2506AFF700330359 /* InCanadaViewController.xib in Resources */,
+				438F720325B5F1190049A62F /* EducationViewController.xib in Resources */,
+				4313E6A525C9CAA200E02F8B /* EducationHeaderTableViewCell.xib in Resources */,
 				2A7CBB3B24F8710E008FE3F6 /* DetailedViewController.xib in Resources */,
 				2A7CBB3124F75FFB008FE3F6 /* PPRViewController.xib in Resources */,
 				2A7CBB1124F74E1E008FE3F6 /* CECViewController.xib in Resources */,
@@ -457,22 +751,42 @@
 				2A482FC524B113E90070561C /* Main.storyboard in Resources */,
 				2A26793E24EE62B500E709F9 /* submitEEViewController.xib in Resources */,
 				2A7CBB3524F76012008FE3F6 /* PrepareforLandingViewController.xib in Resources */,
+				432F4C6D25AA258B00708FC2 /* ListTableViewCell.xib in Resources */,
 				2A35D3CC2509BD2A00F5A42A /* Classes in Resources */,
+				E8E27E3125A1D88F00A6639A /* SourceSansPro-SemiBold.ttf in Resources */,
+				F18D15C825AF4DE200343EC2 /* CRSMainViewController.xib in Resources */,
 				2A4424DF24E09BAF00D7C832 /* EligibilityViewController.xib in Resources */,
 				2A7CBB1524F74E31008FE3F6 /* FSWViewController.xib in Resources */,
 				2A7CBB2124F75F9B008FE3F6 /* EnterEEViewController.xib in Resources */,
+				E8E7C319259C7BC00044AAE6 /* OnBoardingStartViewController.xib in Resources */,
+				F18D15CC25AF501B00343EC2 /* CRSInfoTableViewCell.xib in Resources */,
 				2A8D4E53250C59BE00F96F1B /* PrivacyPolicyViewController.xib in Resources */,
 				2AF341F02506B01000330359 /* OutsideCanadaViewController.xib in Resources */,
+				E86CB76D259DB344005DAA41 /* OnBoardingPersonlizedViewController.xib in Resources */,
+				F185A0EA25B0B3A4000AB37F /* EEDrawMainViewController.xib in Resources */,
 				2A8D4E57250C59D400F96F1B /* ContactCICViewController.xib in Resources */,
+				43C7E8E325B7214900C43C32 /* ExperienceViewController.xib in Resources */,
 				2A4424DB24E09B5700D7C832 /* LanguageTestViewController.xib in Resources */,
 				2A4424D724E09B4000D7C832 /* ECAViewController.xib in Resources */,
+				431C91FA25B362B1006842C4 /* CRSCalculator_single.plist in Resources */,
 				2A26793A24EE629700E709F9 /* CPTViewController.xib in Resources */,
+				432F4C6725A9DF0C00708FC2 /* DashboardViewController.xib in Resources */,
+				F185A0EE25B0B4C3000AB37F /* EEDrawTableViewCell.xib in Resources */,
+				E86CB769259DB284005DAA41 /* OnBoardingStageViewController.xib in Resources */,
+				4377105725CA784700F6C808 /* LanguageProgressBarTableViewCell.xib in Resources */,
+				4385C77D25DADBC700E47AE9 /* MistakeTableViewCell.xib in Resources */,
 				2A7CBB3F24FBEFB4008FE3F6 /* WebViewViewController.xib in Resources */,
 				2A7CBB4B24FC6A43008FE3F6 /* languageCostsViewController.xib in Resources */,
+				E8F26B4D25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.xib in Resources */,
+				E8F26B4925A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.xib in Resources */,
 				2AC2FDAE24E5DCFA005CF04E /* havania.ttf in Resources */,
+				43C7E8EB25B7218400C43C32 /* AdditionalPointsViewController.xib in Resources */,
 				2A7CBB4624FC6A08008FE3F6 /* convertTestViewController.xib in Resources */,
 				2A4424D324E09B2B00D7C832 /* NOCViewController.xib in Resources */,
 				2A7CBB2524F75FAD008FE3F6 /* ITAViewController.xib in Resources */,
+				E8E27E2F25A1D38700A6639A /* AfterSpalshOnBoardingViewController.xib in Resources */,
+				E8265D1A25A4685100370C6D /* GoogleService-Info.plist in Resources */,
+				431C91FB25B362B1006842C4 /* CRSCalculator_married.plist in Resources */,
 				2A7CBB1D24F75D72008FE3F6 /* CRSScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +807,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14B2E02864893AF564B298F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treknation-iOS/Pods-treknation-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treknation-iOS/Pods-treknation-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-treknation-iOS/Pods-treknation-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B12293FE77A52839DF4A93C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treknation-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840CD3CC3D69355B8D270210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treknation-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855D5E2C54E56F58C60B45CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treknation-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A482FB624B113E90070561C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -500,36 +900,64 @@
 			files = (
 				2A7CBB2824F75FC7008FE3F6 /* DocumentChecklistViewController.swift in Sources */,
 				2A482FC224B113E90070561C /* ViewController.swift in Sources */,
+				43C7E8E625B7215D00C43C32 /* LanguageViewController.swift in Sources */,
 				2AF341EF2506B01000330359 /* OutsideCanadaViewController.swift in Sources */,
 				2A7CBB1C24F75D72008FE3F6 /* CRSScoreViewController.swift in Sources */,
+				438F720225B5F1190049A62F /* EducationViewController.swift in Sources */,
 				2A7CBB1424F74E31008FE3F6 /* FSWViewController.swift in Sources */,
+				E86CB76C259DB344005DAA41 /* OnBoardingPersonlizedViewController.swift in Sources */,
 				2A4424D224E09B2B00D7C832 /* NOCViewController.swift in Sources */,
 				2A7CBB1024F74E1E008FE3F6 /* CECViewController.swift in Sources */,
 				2A26793D24EE62B500E709F9 /* submitEEViewController.swift in Sources */,
 				2A482FF124B115160070561C /* Constants.swift in Sources */,
+				E8F26B4825A0D0F0003FF282 /* OnBoardingInsideCanadaViewController.swift in Sources */,
+				432F4C6625A9DF0C00708FC2 /* DashboardViewController.swift in Sources */,
+				4377105625CA784700F6C808 /* LanguageProgressBarTableViewCell.swift in Sources */,
 				2A7CBB3E24FBEFB4008FE3F6 /* WebViewViewController.swift in Sources */,
+				E8E7C318259C7BC00044AAE6 /* OnBoardingStartViewController.swift in Sources */,
+				F1CBC17825B2E60000660953 /* LatestBlogViewController.swift in Sources */,
+				4313E6A425C9CAA200E02F8B /* EducationHeaderTableViewCell.swift in Sources */,
 				2A7CBB2C24F75FE4008FE3F6 /* EPRViewController.swift in Sources */,
 				2A4424DE24E09BAF00D7C832 /* EligibilityViewController.swift in Sources */,
 				2A4424CE24E09B0500D7C832 /* OverviewViewController.swift in Sources */,
 				2A7CBB2024F75F9B008FE3F6 /* EnterEEViewController.swift in Sources */,
+				432F4C6C25AA258B00708FC2 /* ListTableViewCell.swift in Sources */,
 				2A7CBB4A24FC6A43008FE3F6 /* languageCostsViewController.swift in Sources */,
+				43D1ADB525AB3EA90026FCFD /* TabbarControllerExtension.swift in Sources */,
+				4385C77C25DADBC700E47AE9 /* MistakeTableViewCell.swift in Sources */,
+				4385C77825DAD7C200E47AE9 /* CommonMistakesToAvoidViewController.swift in Sources */,
+				43C7E8EA25B7218400C43C32 /* AdditionalPointsViewController.swift in Sources */,
 				2A482FBE24B113E90070561C /* AppDelegate.swift in Sources */,
 				2A482FC024B113E90070561C /* SceneDelegate.swift in Sources */,
 				2A4424DA24E09B5700D7C832 /* LanguageTestViewController.swift in Sources */,
 				2A26793924EE629700E709F9 /* CPTViewController.swift in Sources */,
 				2A8D4E56250C59D400F96F1B /* ContactCICViewController.swift in Sources */,
 				2A482FF324B115490070561C /* AppData.swift in Sources */,
+				E8A5DD7F259B2FB700AED332 /* OnBoardingViewController.swift in Sources */,
+				438F720625B5FD1D0049A62F /* EducationTableViewCell.swift in Sources */,
+				E8F26B4C25A0D4A7003FF282 /* OnBoardingIndividualOrFamilyViewController.swift in Sources */,
 				2A7CBB3A24F8710E008FE3F6 /* DetailedViewController.swift in Sources */,
+				F18D15C725AF4DE200343EC2 /* CRSMainViewController.swift in Sources */,
+				43E2201C25CC073B0066DE12 /* SaveButtonTableViewCell.swift in Sources */,
 				2A963BC924D7A67B000E8C91 /* HomrTableViewCell.swift in Sources */,
+				43C7E8E225B7214900C43C32 /* ExperienceViewController.swift in Sources */,
 				2A7CBB3424F76012008FE3F6 /* PrepareforLandingViewController.swift in Sources */,
 				2A8D4E52250C59BE00F96F1B /* PrivacyPolicyViewController.swift in Sources */,
+				432F4C6925A9DF7200708FC2 /* AppContext.swift in Sources */,
 				2AF341EB2506AFF700330359 /* InCanadaViewController.swift in Sources */,
 				2A7CBB1824F74E42008FE3F6 /* FSTViewController.swift in Sources */,
+				431C91F425B3445B006842C4 /* AgeSelectionViewController.swift in Sources */,
+				F185A0E925B0B3A4000AB37F /* EEDrawMainViewController.swift in Sources */,
+				E86CB768259DB284005DAA41 /* OnBoardingStageViewController.swift in Sources */,
 				2A7CBB3024F75FFB008FE3F6 /* PPRViewController.swift in Sources */,
+				E8E27E2E25A1D38700A6639A /* AfterSpalshOnBoardingViewController.swift in Sources */,
 				2A7CBB3724F86D8D008FE3F6 /* MoreViewController.swift in Sources */,
+				E80DA58E25A81D8900DDF85E /* TNBaseViewController.swift in Sources */,
+				F18D15CB25AF501B00343EC2 /* CRSInfoTableViewCell.swift in Sources */,
 				2A7CBB4524FC6A08008FE3F6 /* convertTestViewController.swift in Sources */,
 				2A7CBB2424F75FAD008FE3F6 /* ITAViewController.swift in Sources */,
 				2A4424D624E09B4000D7C832 /* ECAViewController.swift in Sources */,
+				F185A0ED25B0B4C3000AB37F /* EEDrawTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,10 +1128,13 @@
 		};
 		2A482FE524B113EB0070561C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6D8BCBB74EACA780D1E6B0 /* Pods-treknation-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
+				CODE_SIGN_ENTITLEMENTS = "treknation-iOS/TrekNation.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,6 +1143,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
+				PROVISIONING_PROFILE_SPECIFIER = TrekNationDistribution;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -719,10 +1151,13 @@
 		};
 		2A482FE624B113EB0070561C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5224D31579B97B78AA8249A /* Pods-treknation-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
+				CODE_SIGN_ENTITLEMENTS = "treknation-iOS/TrekNation.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -731,6 +1166,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
+				PROVISIONING_PROFILE_SPECIFIER = TrekNationDistribution;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -738,6 +1174,7 @@
 		};
 		2A482FE824B113EB0070561C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2D55DC07D754EDF14E1795 /* Pods-treknation-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -759,6 +1196,7 @@
 		};
 		2A482FE924B113EB0070561C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656F621944FFDB6FE50633DF /* Pods-treknation-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -780,6 +1218,7 @@
 		};
 		2A482FEB24B113EB0070561C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69120812041EBB49C765D77D /* Pods-treknation-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -799,6 +1238,7 @@
 		};
 		2A482FEC24B113EB0070561C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4170F79D656D55E005072615 /* Pods-treknation-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

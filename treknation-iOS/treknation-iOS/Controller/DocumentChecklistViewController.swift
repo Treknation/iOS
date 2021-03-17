@@ -41,15 +41,14 @@ class DocumentChecklistViewController: UIViewController {
         ])
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 530, length: 24))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 777, length: 19))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 770, length: 4))
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 837, length: 14))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 837, length: 14))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 853, length: 29))
         attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1012, length: 4))
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1151, length: 19))
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1201, length: 9))
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1275, length: 20))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1151, length: 19))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1201, length: 9))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1275, length: 20))
         //attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1303, length: 20))
-        attributedString.addAttribute(.link, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1746, length: 21))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 2.0 / 255.0, green: 167.0 / 255.0, blue: 220.0 / 255.0, alpha: 1.0), range: NSRange(location: 1746, length: 21))
         
         
         self.detailedLabel.attributedText = attributedString
@@ -64,6 +63,7 @@ class DocumentChecklistViewController: UIViewController {
         } else {
             self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
         }
+
     }
 
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
@@ -73,16 +73,11 @@ class DocumentChecklistViewController: UIViewController {
                      webView.setLinkURL(link: Constant.URLConstants.documentProofOffunds)
                     self.navigationController?.pushViewController(webView, animated: true)
 
-                 }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 770, length: 4)){
-                     let webView = WebViewViewController()
-                      webView.setLinkURL(link: Constant.URLConstants.passportDetails)
-                     self.navigationController?.pushViewController(webView, animated: true)
                  }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1151, length: 19)){
-                    let webView = WebViewViewController()
-                     webView.setLinkURL(link: Constant.URLConstants.checklistPhotocopy)
-                    self.navigationController?.pushViewController(webView, animated: true)
-                }
-                 else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1201, length: 9)){
+                     let webView = WebViewViewController()
+                      webView.setLinkURL(link: Constant.URLConstants.checklistPhotocopy)
+                     self.navigationController?.pushViewController(webView, animated: true)
+                 } else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1201, length: 9)){
                      let webView = WebViewViewController()
                       webView.setLinkURL(link: Constant.URLConstants.checklistAffidavit)
                      self.navigationController?.pushViewController(webView, animated: true)
@@ -110,6 +105,7 @@ class DocumentChecklistViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func markAsComplete(_ sender: Any) {
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
            appData.isComplete = true
            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
@@ -119,6 +115,7 @@ class DocumentChecklistViewController: UIViewController {
            }))
            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
            self.present(alert, animated: true)
+        }
        }
 
 

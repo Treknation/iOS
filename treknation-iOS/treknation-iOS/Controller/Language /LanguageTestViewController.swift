@@ -96,13 +96,15 @@ class LanguageTestViewController: UIViewController {
     }
     
     @IBAction func markAsComplete(_ sender: Any) {
-        let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-            self.appData.isComplete = true
-            self.navigationController?.popViewController(animated: true)
-        }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
+        if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
+            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                self.appData.isComplete = true
+                self.navigationController?.popViewController(animated: true)
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
     @IBAction func showResultsView(_ sender: Any) {

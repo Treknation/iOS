@@ -36,18 +36,18 @@ class OutsideCanadaViewController: UIViewController {
         let font = UIFont.systemFont(ofSize: 15)
         let boldFont = UIFont.boldSystemFont(ofSize: 16.0)
 
-      let attributedString = NSMutableAttributedString(string: "There are things you can do to prepare for life in Canada:\n\nUse free pre-arrival services, which help you:\n• Find out more about living and working in Canada\n\nTake steps to get recognition in Canada for your:\n• Education\n• Professional licences/certificates\n\nRead about living and finding work in Canada\n\nWhen you arrive in Canada you must have\n\n• You should have valid passport and/or travel documents\n• Your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if they gave you one)\n• Proof that you have the funds to support yourself and your family after you arrive in Canada\n\nWhen you arrive in Canada, you’ll meet an officer from the Canada Border Services Agency (CBSA). The officer will:\n• Make sure you’re entering Canada before or on the expiry date shown on your COPR\n• Make sure that you are the same person who was approved to travel to Canada (we may use your biometrics to do this)\n• Ask to see your passport and other travel documents\n• Ask you a few questions to make sure you still meet the terms to immigrate to Canada and the questions will be similar to the ones you answered when you applied\n• You need to disclose to the CBSA officer if you are carrying more than CAN$10,000. If you don’t tell them, you could be fined, and your funds could be seized.", attributes: [
+      let attributedString = NSMutableAttributedString(string: "There are things you can do to prepare for life in Canada:\n\nUse free pre-arrival services, which help you:\n• Find out more about living and working in Canada\n\nTake steps to get recognition in Canada for your:\n• Education\n• Professional licences/certificates\n\nRead about living and finding work in Canada\n\nWhen you arrive in Canada you must have\n\n• You should have valid passport and/or travel documents\n• Your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if they  gave you one)\n• Proof that you have the funds to support yourself and your family after you arrive in Canada\n\nWhen you arrive in Canada, you’ll meet an officer from the Canada Border Services Agency (CBSA). The officer will:\n• Make sure you’re entering Canada before or on the expiry date shown on your COPR\n• Make sure that you are the same person who was approved to travel to Canada (we may use your biometrics to do this)\n• Ask to see your passport and other travel documents\n• Ask you a few questions to make sure you still meet the terms to immigrate to Canada and the questions will be similar to the ones you answered when you applied\n• You need to disclose to the CBSA officer if you are carrying more than CAN$10,000. If you don’t tell them, you could be fined, and your funds could be seized.", attributes: [
          .font: font,
          .foregroundColor: UIColor(red: 70.0 / 255.0, green: 73.0 / 255.0, blue: 76.0 / 255.0, alpha: 1.0),
          .kern: 0.05
        ])
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 69, length: 11))
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 211, length: 9))
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 223, length: 12))
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 270, length: 18))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 69, length: 11))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 211, length: 9))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 223, length: 12))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 270, length: 18))
        attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 305, length: 39))
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 664, length: 36))
-       attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 1211, length: 10))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 665, length: 36))
+       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 1212, length: 10))
         
        self.detailedLabel.attributedText = attributedString
        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -77,11 +77,11 @@ class OutsideCanadaViewController: UIViewController {
          let webView = WebViewViewController()
           webView.setLinkURL(link: Constant.URLConstants.livingAndFinding)
          self.navigationController?.pushViewController(webView, animated: true)
-     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 664, length: 36)){
+     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 665, length: 36)){
          let webView = WebViewViewController()
           webView.setLinkURL(link: Constant.URLConstants.cbsaLink)
          self.navigationController?.pushViewController(webView, animated: true)
-     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1211, length: 10)){
+     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 1212, length: 10)){
          let webView = WebViewViewController()
           webView.setLinkURL(link: Constant.URLConstants.moneyAmount)
          self.navigationController?.pushViewController(webView, animated: true)

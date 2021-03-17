@@ -34,13 +34,13 @@ class InCanadaViewController: UIViewController {
         
         let font = UIFont.systemFont(ofSize: 15)
 
-        let attributedString = NSMutableAttributedString(string: "IRCC will contact you and let you know what to do next.\nYou’ll need to have a short interview with an officer. You have two options for your interview:\n• Make an appointment at one of our offices in Canada (best option)\n• Go to a Canadian “port of entry” (border crossing), and present proof that you have the funds to support yourself and your family and your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if applicable).\n\nDuring the interview the officer will:\n• Make sure all your documents are valid\n• Ask you a few questions to make sure you still meet the terms to immigrate to Canada\n• Confirm your Canadian mailing address, so we can mail your permanent resident card (PR card)\n\nIf you change your address within 180 days of getting your status, you must tell IRCC using the Webform.", attributes: [
+        let attributedString = NSMutableAttributedString(string: "IRCC contact you and let you know what to do next.\nYou’ll need to have a short interview with an officer. You have two options for your interview:\n• Make an appointment at one of our offices in Canada (best option)\n• Go to a Canadian “port of entry” (border crossing), and present proof that you have the funds to support yourself and your family and your Confirmation of Permanent Residence (COPR) and your permanent resident visa (if applicable).\n\nDuring the interview the officer will:\n• Make sure all your documents are valid\n• Ask you a few questions to make sure you still meet the terms to immigrate to Canada\n• Confirm your Canadian mailing address, so we can mail your permanent resident card (PR card)\n\nIf you change your address within 180 days of getting your status, you must tell IRCC using the Webform.", attributes: [
           .font: font,
           .foregroundColor: UIColor(red: 70.0 / 255.0, green: 73.0 / 255.0, blue: 76.0 / 255.0, alpha: 1.0),
           .kern: 0.05
         ])
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 162, length: 11))
-        attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 814, length: 7))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 157, length: 11))
+        attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 809, length: 7))
         
         self.detailedLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -54,12 +54,12 @@ class InCanadaViewController: UIViewController {
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
 
-     if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange:NSRange(location: 162, length: 11)){
+     if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange:NSRange(location: 157, length: 11)){
         let webView = WebViewViewController()
          webView.setLinkURL(link: Constant.URLConstants.inCanadaAppointment)
         self.navigationController?.pushViewController(webView, animated: true)
 
-     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 814, length: 7)){
+     }else if sender.didTapAttributedTextInLabel(label: self.detailedLabel, inRange: NSRange(location: 809, length: 7)){
          let webView = WebViewViewController()
           webView.setLinkURL(link: Constant.URLConstants.inCanadaWebForm)
          self.navigationController?.pushViewController(webView, animated: true)

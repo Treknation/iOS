@@ -40,14 +40,14 @@ class CRSScoreViewController: UIViewController {
         .foregroundColor: UIColor(red: 80.0 / 255.0, green: 83.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0),
         .kern: 0.05
       ])
-      attributedString.addAttribute(.link, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 243, length: 9))
+      attributedString.addAttribute(.foregroundColor, value: UIColor(red: 5.0 / 255.0, green: 135.0 / 255.0, blue: 204.0 / 255.0, alpha: 1.0), range: NSRange(location: 243, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 312, length: 20))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 916, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1464, length: 30))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1760, length: 6))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2076, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2244, length: 27))
-      attributedString.addAttribute(.link, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2515, length: 4))
+      attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2515, length: 4))
         
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
@@ -61,7 +61,6 @@ class CRSScoreViewController: UIViewController {
         } else {
             self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
         }
-        
     }
 
     @objc func handleTapOverview(_ sender: UITapGestureRecognizer) {
@@ -97,15 +96,17 @@ class CRSScoreViewController: UIViewController {
 
 
         @IBAction func markAsComplete(_ sender: Any) {
-            let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-                self.appData.isComplete = true
-                self.navigationController?.popViewController(animated: true)
-                UserDefaults.standard.setValue(true, forKey: self.appData.title)
+            if AppContext.sharedAppContext.canCompleteCurrentStep(appData: appData, vc: self) {
+                let alert = UIAlertController(title: "TrekNation", message: "Are you sure you want to mark this section as Complete?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+                    self.appData.isComplete = true
+                    self.navigationController?.popViewController(animated: true)
+                    UserDefaults.standard.setValue(true, forKey: self.appData.title)
 
-            }))
-            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-            self.present(alert, animated: true)
+                }))
+                alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+                self.present(alert, animated: true)
+            }
         }
         
         @IBAction func back(_ sender: Any) {

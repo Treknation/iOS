@@ -1,0 +1,6 @@
+framework module Pods_treknation_iOSTests {
+  umbrella header "Pods-treknation-iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

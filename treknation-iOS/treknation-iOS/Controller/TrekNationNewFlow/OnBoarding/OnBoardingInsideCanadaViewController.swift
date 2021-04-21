@@ -47,6 +47,8 @@ class OnBoardingInsideCanadaViewController: TNBaseViewController {
         
         self.logAnalyticsEventsForAction(eventName: "location_details", eventProperties: ["value":"inside"])
         
+        AppContext.sharedAppContext.saveInfoToUserCanadaDefaults(value: "Yes")
+        
         yesButton.applyRoundedBG(backgroundColor: .lightBlue, borderWidth: 1, borderColor: UIColor.clear.cgColor, tittleColor: .darkSlateBlue)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -59,6 +61,8 @@ class OnBoardingInsideCanadaViewController: TNBaseViewController {
     @IBAction func noButtonAction(_ sender: Any) {
         
         self.logAnalyticsEventsForAction(eventName: "location_details", eventProperties: ["value":"outside"])
+        
+        AppContext.sharedAppContext.saveInfoToUserCanadaDefaults(value: "No")
         
         noButton.applyRoundedBG(backgroundColor: .lightBlue, borderWidth: 1, borderColor: UIColor.clear.cgColor, tittleColor: .darkSlateBlue)
         

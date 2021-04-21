@@ -127,51 +127,61 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         switch indexPath.section {
         case 0:
             let overviewVC = OverviewViewController()
-            self.navigationController?.pushViewController(overviewVC, animated: true)
+            //self.navigationController?.pushViewController(overviewVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(overviewVC, animated: true)
             overviewVC.setAppData(data: dataArray[indexPath.section])
         case 1:
             let nocVC = NOCViewController()
-            self.navigationController?.pushViewController(nocVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(nocVC, animated: true)
             nocVC.setAppData(data: dataArray[indexPath.section])
         case 2:
             let ecaVC = ECAViewController()
-            self.navigationController?.pushViewController(ecaVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(ecaVC, animated: true)
             ecaVC.setAppData(data: dataArray[indexPath.section])
         case 3:
             let langVC = LanguageTestViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 4:
             let langVC = EligibilityViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 5:
             let langVC = CRSScoreViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+            langVC.completionHandler = { [weak self] vc in
+                guard let weakSelf = self else { return }
+                vc.navigationController?.popViewController(animated: false)
+                
+                weakSelf.tabBarController?.selectedIndex = 0
+                let crsMainViewController = CRSMainViewController(nibName: "CRSMainViewController", bundle:nil)
+                weakSelf.tabBarController?.selectedViewController?.navigationController?.pushViewController(crsMainViewController, animated: false)
+            }
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 6:
             let langVC = EnterEEViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 7:
             let langVC = ITAViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 8:
             let langVC = DocumentChecklistViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 9:
             let langVC = EPRViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 10:
             let langVC = PPRViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         case 11:
             let langVC = PrepareforLandingViewController()
-            self.navigationController?.pushViewController(langVC, animated: true)
+            //self.navigationController?.pushViewController(langVC, animated: true)
+        tabBarController?.selectedViewController?.navigationController?.pushViewController(langVC, animated: true)
             langVC.setAppData(data: dataArray[indexPath.section])
         default:
             print("")

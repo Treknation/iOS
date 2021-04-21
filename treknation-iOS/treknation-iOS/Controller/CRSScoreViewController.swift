@@ -14,7 +14,8 @@ class CRSScoreViewController: UIViewController {
     @IBOutlet weak var isCompletedBtn: UIButton!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
-
+    var completionHandler = { (_ vc: CRSScoreViewController) -> Void in }
+    
     func setAppData(data : AppData) {
         appData = data
     }
@@ -35,7 +36,7 @@ class CRSScoreViewController: UIViewController {
         let boldFont = UIFont.boldSystemFont(ofSize: 16.0)
         
         
-      let attributedString = NSMutableAttributedString(string: "Express Entry is a competitive system that chooses applicants with the highest CRS score in the pool for giving ITA. You should try to achieve the highest points possible to increase your chances of getting an ITA. Use this link to check your CRS Score. Below are some of the ways of increasing your CRS score.\n\nLanguage Proficiency\n\n• Increasing the points with the language test is the easiest and surest way of increasing the CRS score. So, it\'s best if you give the language test after sufficient practice. For example, increasing your score from CLB 7 to CLB 9 in each section increases your score by 14 points per section. So, in total your points increase by a total of 56 (14 x 4).\n• You can also earn extra points for your Secondary language abilities. You can earn 4 additional points if you get the score in the below range:\n\n\t• Speaking, Listening and Writing: \n\tCLB 5 - CLB 9\n\t• Reading: CLB 4 - CLB 9\n\nEducation\n\n• If you have a master\'s degree or have more than 1 degree from outside Canada, it is beneficial to submit the education Assessment for all the degrees and not just for the highest degree as it gives you points for the additional degrees as well. This does not cost an additional amount if done in one take.\n• You can earn 15 points if you get a 1-year Canadian degree and 30 points if your Canadian degree is 2 years or more in duration.\n• You earn an additional 50 points if Canadian education combined with Canadian work experience.\n\nNon - Canadian Work Experience\n\nIf your work experience outside Canada is less than 3 years, you can wait till you have completed 3 years. This will help you gain additional points in work experience. Receiving CLB 9 in ECA, along with 3 years of work experience can also add additional points.\n\nSpouse\n\nDepending on who is the primary applicant, your total points can change. If you are the primary applicant and your age is 40 years and your spouse’s age is 28 years, all other factors being the same, it could be beneficial to make your spouse the primary applicant since she gets additional points for age.\n\nJob Offer\n\nYou can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.\n\nProvincial Nominee Programs\n\nIf you are short of points even after trying all the above methods, you should try to apply for PNP. Getting a nomination through PNP gives you an additional 600 points. You can find more information for PNP for each of the provinces at this link.", attributes: [
+      let attributedString = NSMutableAttributedString(string: "Express Entry is a competitive system that chooses applicants with the highest CRS score in the pool for giving ITA. You should try to achieve the highest points possible to increase your chances of getting an ITA. Use this link to check your CRS Score. Below are some of the ways of increasing your CRS score.\n\nLanguage Proficiency\n\n• Increasing the points with the language test is the easiest and surest way of increasing the CRS score. So, it\'s best if you give the language test after sufficient practice. For example, increasing your score from CLB 7 to CLB 9 in each section increases your score by 14 points per section. So, in total your points increase by a total of 56 (14 x 4).\n• You can also earn extra points for your Secondary language abilities. You can earn 4 additional points if you get the score in the below range:\n\n\t• Speaking, Listening and Writing: \n\tCLB 5 - CLB 9\n\t• Reading: CLB 4 - CLB 9\n\nEducation\n\n• If you have a master\'s degree or have more than 1 degree from outside Canada, it is beneficial to submit the education Assessment for all the degrees and not just for the highest degree as it gives you points for the additional degrees as well. This does not cost an additional amount if done in one take.\n• You can earn 15 points if you get a 1-year Canadian degree and 30 points if your Canadian degree is 2 years or more in duration.\n• You earn an additional 50 points if Canadian education combined with Canadian work experience.\n\nNon - Canadian Work Experience\n\nIf your work experience outside Canada is less than 3 years, you can wait till you have completed 3 years. This will help you gain additional points in work experience. Receiving CLB 9 in ECA, along with 3 years of work experience can also add additional points.\n\nSpouse\n\nDepending on who is the primary applicant, your total points can change. If you are the primary applicant and your age is 40 years and your spouse’s age is 28 years, all other factors being the same, it could be beneficial to make your spouse the primary applicant since she gets additional points for age.\n\nJob Offer\n\nYou can earn 200 points if you have a job offer that belongs to NOC 00(Senior Management) and 50 points if have a job offer that belongs to NOC 0, A, or B.\n\nProvincial Nominee Programs\n\nIf you are short of points even after trying all the above methods, you should try to apply for PNP. Getting a nomination through PNP gives you an additional 600 points. You can find more information for PNP for each of the provinces at this link.\n\nCRS Calculator\n\n\nYou can use Calculator here to calculate your score.", attributes: [
         .font: font,
         .foregroundColor: UIColor(red: 80.0 / 255.0, green: 83.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0),
         .kern: 0.05
@@ -47,8 +48,10 @@ class CRSScoreViewController: UIViewController {
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 1760, length: 6))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2076, length: 9))
       attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2244, length: 27))
+      attributedString.addAttribute(.font, value: boldFont, range: NSRange(location: 2522, length: 14))
       attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2515, length: 4))
-        
+    attributedString.addAttribute(.foregroundColor, value: UIColor(red: 7.0 / 255.0, green: 124.0 / 255.0, blue: 197.0 / 255.0, alpha: 1.0), range: NSRange(location: 2560, length: 4))
+
         detailLabel.attributedText = attributedString
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.handleTap(_:)))
         gesture.numberOfTapsRequired = 1
@@ -89,7 +92,10 @@ class CRSScoreViewController: UIViewController {
                 let webView = WebViewViewController()
                     webView.setLinkURL(link: Constant.URLConstants.crsOverview)
                     self.navigationController?.pushViewController(webView, animated: true)
-            } else {
+           } else if sender.didTapAttributedTextInLabel(label: self.detailLabel, inRange: NSRange(location: 2544, length: 4)) {
+
+            completionHandler(self)
+           } else {
                 print("Tapped none")
             }
         }

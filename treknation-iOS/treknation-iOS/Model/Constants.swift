@@ -317,7 +317,8 @@ class Constant: NSObject {
         static let checklistAffidavit = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#affidavit"
         static let checklistTranslator = "https://www.cic.gc.ca/english/helpcentre/glossary.asp#certified_translator"
         static let checklistLOE = "https://drive.google.com/file/d/19NvaeMYNc2-jfc8atrkGtJWKUSk-CPo1/view?usp=sharing"
-        
+        static let digitalPhotoLink = "https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/apply-renew-replace/photo.html"
+
         static let feelist = "https://www.cic.gc.ca/english/information/fees/fees.asp#rprf"
         static let webform = "https://www.cic.gc.ca/english/contacts/web-form.asp"
         

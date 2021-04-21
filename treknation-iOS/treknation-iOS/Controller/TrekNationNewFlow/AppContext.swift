@@ -112,6 +112,11 @@ class AppContext: NSObject {
         userDefaults.set(email, forKey: "email")
     }
     
+    func saveInfoToUserCanadaDefaults(value:String) {
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(value, forKey: "canada")
+    }
+    
     func nextStep() -> AppData? {
         if let index = getIndexOfInProgressStep(), (index + 1) < appData.count {
             return appData[index + 1]

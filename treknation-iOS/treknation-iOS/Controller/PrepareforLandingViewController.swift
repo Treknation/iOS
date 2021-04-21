@@ -14,7 +14,10 @@ class PrepareforLandingViewController: UIViewController {
     @IBOutlet weak var isCompletedBtn: UIButton!
     @IBOutlet weak var inCanadaBtn: UIButton!
     @IBOutlet weak var outsideCanadaBtn: UIButton!
-
+    
+    @IBOutlet weak var insideImageView: UIImageView!
+    @IBOutlet weak var outsideImageView: UIImageView!
+    
     func setAppData(data : AppData) {
         appData = data
     }
@@ -48,6 +51,17 @@ class PrepareforLandingViewController: UIViewController {
             self.isCompletedBtn.setTitle("Completed", for: .normal)
         } else {
             self.isCompletedBtn.setTitle("Mark as Complete", for: .normal)
+        }
+        
+        let userDefaults = UserDefaults.standard
+        if let canada = userDefaults.string(forKey: "canada") {
+            if canada == "Yes" {
+                self.outsideCanadaBtn.isHidden = true
+                self.outsideImageView.isHidden = true
+            } else if canada == "No" {
+                self.inCanadaBtn.isHidden = true
+                self.insideImageView.isHidden = true
+            }
         }
     }
 

@@ -1134,13 +1134,14 @@
 				CODE_SIGN_ENTITLEMENTS = "treknation-iOS/TrekNation.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3.7;
+				CURRENT_PROJECT_VERSION = 3.9;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
 				PROVISIONING_PROFILE_SPECIFIER = TrekNationDistribution;
@@ -1157,13 +1158,14 @@
 				CODE_SIGN_ENTITLEMENTS = "treknation-iOS/TrekNation.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3.7;
+				CURRENT_PROJECT_VERSION = 3.9;
 				DEVELOPMENT_TEAM = V6H9UXC3LW;
 				INFOPLIST_FILE = "treknation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.prod.treknation;
 				PRODUCT_NAME = TrekNation;
 				PROVISIONING_PROFILE_SPECIFIER = TrekNationDistribution;
